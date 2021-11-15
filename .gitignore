@@ -1,0 +1,9 @@
+/*
+!/wp-content
+/wp-content/*
+!/wp-content/themes
+/wp-content/themes/*
+!/wp-content/themes/beevital
+!.gitignore 
+!.cpanel.yml
+/wp-content/themes/herbalapothecary/node_modules

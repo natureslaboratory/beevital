@@ -5620,4 +5620,16 @@ OVERRIDE THE STEPS PLUGIN STYLE ON TABS
 .quantity_select_wrapper:first-child {
   padding-left: 0;
 }
+
+#product_main .image img {
+  width: 100%;
+}
+
+#product_main .image a {
+  pointer-events: none;
+}
+
+#product_main .image {
+  aspect-ratio: 1 / 1;
+}
 /*# sourceMappingURL=style.css.map */

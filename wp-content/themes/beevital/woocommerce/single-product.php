@@ -13,12 +13,14 @@ if (!is_object($product)) {
     <!-- PRODUCT MAIN -->
     <div id="product_main_wrapper">
 
-        <div id="product_main" class="container__inner mw_1366">
+        <div id="product_main" <?php wc_product_class( "container__inner mw_1366", $product ); ?>>
 
             <div class="image">
-                <?php echo get_the_post_thumbnail(get_the_ID(), 'large'); ?>
+                <?php // echo get_the_post_thumbnail(get_the_ID(), 'large'); ?>
+                <?php do_action( 'woocommerce_before_single_product_summary' ); ?>
             </div>
 
+            
             <div class="description">
 
                 <a href="<?php echo get_permalink(bv__getShopPageID()); ?>" class="back_cta">

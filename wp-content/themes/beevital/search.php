@@ -18,7 +18,7 @@
 
         </div>
 
-        <?php bevital__includeTemplate('partials/vertical_icons') ?>
+        <?php bv__includeTemplate('partials/vertical_icons') ?>
 
 
     </div>
@@ -73,7 +73,7 @@
                     </div>
 
 
-                    <?php if($products = bevital__getSearchProductResults()) : ?>
+                    <?php if($products = bv__getSearchProductResults()) : ?>
                         <div class="product_listings">
                             <?php foreach($products as $product) : ?>
                                 <div class="product">
@@ -84,7 +84,7 @@
                                         <div class="name__price">
                                             <div class="name"><?php echo $product->get_title(); ?></div>
 
-                                            <?php if(bevital__isProductVariableById($product->get_id())): ?>
+                                            <?php if(bv__isProductVariableById($product->get_id())): ?>
                                                 <div class="price"><?php echo get_woocommerce_currency_symbol() .  $product->get_variation_regular_price('min') . ' - ' . get_woocommerce_currency_symbol() .  $product->get_variation_regular_price('max'); ?></div>
                                             <?php else: ?>
                                                 <div class="price"><?php echo $product->get_price_html(); ?></div>
@@ -117,7 +117,7 @@
                         <strong>Information</strong> results
                     </div>
 
-                    <?php if($pages = bevital__getSearchPageResults()) : ?>
+                    <?php if($pages = bv__getSearchPageResults()) : ?>
 
                         <?php foreach($pages as $page) : ?>
                             <div class="text">
@@ -145,7 +145,7 @@
                         <strong>Article</strong> results
                     </div>
 
-                    <?php if($posts = bevital__getSearchPostResults()) : ?>
+                    <?php if($posts = bv__getSearchPostResults()) : ?>
 
                         <?php foreach($posts as $post) : ?>
                             <div class="column text">

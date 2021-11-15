@@ -3,7 +3,7 @@
 
 add_action('wp_enqueue_scripts',function(){
 
-    wp_enqueue_style('bevital',get_bloginfo('stylesheet_directory') . '/style.css');
+    wp_enqueue_style('bv',get_bloginfo('stylesheet_directory') . '/style.css');
     wp_enqueue_style('font-awesome','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
     wp_enqueue_script('jquery');
@@ -191,7 +191,7 @@ add_filter('thwmsc_change_previous_button', function(string $text){
  * WOrDPrESS FUNCTION OVERRiDeS
  */
 
-function bevital__woocommerce_checkout_coupon_form() {
+function bv__woocommerce_checkout_coupon_form() {
     if ( is_user_logged_in() || WC()->checkout()->is_registration_enabled() || ! WC()->checkout()->is_registration_required() ) {
         wc_get_template(
             'checkout/form-coupon.php',
@@ -202,7 +202,7 @@ function bevital__woocommerce_checkout_coupon_form() {
     }
 }
 
-function bevital__comment_form( $args = array(), $post_id = null ) {
+function bv__comment_form( $args = array(), $post_id = null ) {
     if ( null === $post_id ) {
         $post_id = get_the_ID();
     }
@@ -588,7 +588,7 @@ function bevital__comment_form( $args = array(), $post_id = null ) {
 
 
 
-add_shortcode( 'bevital__wc_reg_form', function() {
+add_shortcode( 'bv__wc_reg_form', function() {
     if ( is_admin() ) return;
     if ( is_user_logged_in() ) return;
     ob_start();
@@ -660,7 +660,7 @@ function woocommerce_login_form( array $args = [] ) : void
 }
 
 /**
- * Bevital functions
+ * bv functions
  */
 
 
@@ -670,7 +670,7 @@ function woocommerce_login_form( array $args = [] ) : void
 /**
  * @param string $templateName
  */
-function bevital__includeTemplate(string $templateName) : void
+function bv__includeTemplate(string $templateName) : void
 {
     $dir = dirname(__FILE__) . '/';
     $path = $dir . str_replace('.php','',$templateName) . '.php';
@@ -690,7 +690,7 @@ function bevital__includeTemplate(string $templateName) : void
  * @param bool $echo
  * @return string|null
  */
-function bevital__getThemeImageUrl(string $imageName, bool $echo = true) : ?string
+function bv__getThemeImageUrl(string $imageName, bool $echo = true) : ?string
 {
     $base = get_bloginfo('stylesheet_directory') . '/images/';
 
@@ -706,7 +706,7 @@ function bevital__getThemeImageUrl(string $imageName, bool $echo = true) : ?stri
 /**
  * @return string|null
  */
-function bevital__getCurrentCategorySlug() : ?string
+function bv__getCurrentCategorySlug() : ?string
 {
     $object = get_queried_object();
 
@@ -717,7 +717,7 @@ function bevital__getCurrentCategorySlug() : ?string
 /**
  * @return string|null
  */
-function bevital__getCurrentCategoryName() : ?string
+function bv__getCurrentCategoryName() : ?string
 {
     $object = get_queried_object();
 
@@ -728,7 +728,7 @@ function bevital__getCurrentCategoryName() : ?string
 /**
  * @return string|null
  */
-function bevital__getCurrentRemedySlug() : ?string
+function bv__getCurrentRemedySlug() : ?string
 {
     $object = get_queried_object();
 
@@ -741,7 +741,7 @@ function bevital__getCurrentRemedySlug() : ?string
  * @param string $slug
  * @return bool
  */
-function bevital__isProductCategory(string $slug) : bool
+function bv__isProductCategory(string $slug) : bool
 {
 
     return is_product_category($slug);
@@ -750,7 +750,7 @@ function bevital__isProductCategory(string $slug) : bool
 /**
  * @return bool
  */
-function bevital__isOnRemedies() : bool
+function bv__isOnRemedies() : bool
 {
     return is_tax('remedies');
 }
@@ -760,7 +760,7 @@ function bevital__isOnRemedies() : bool
  * @param string $slug
  * @return bool
  */
-function bevital__isRemedy(string $slug) : bool
+function bv__isRemedy(string $slug) : bool
 {
     return is_tax('remedies',$slug);
 }
@@ -768,7 +768,7 @@ function bevital__isRemedy(string $slug) : bool
 /**
  * @return int
  */
-function bevital__countCart() : int
+function bv__countCart() : int
 {
     return WC()->cart->get_cart_contents_count();
 }
@@ -778,7 +778,7 @@ function bevital__countCart() : int
  * @param int $number
  * @return array|null
  */
-function bevital__getProductsForCategory(?string $slug, int $number = 12) : ?array
+function bv__getProductsForCategory(?string $slug, int $number = 12) : ?array
 {
 
 
@@ -817,11 +817,11 @@ function bevital__getProductsForCategory(?string $slug, int $number = 12) : ?arr
  * @param int $number
  * @return array|null
  */
-function bevital__getProductsForCurrentCategory(int $number = 12) : ?array
+function bv__getProductsForCurrentCategory(int $number = 12) : ?array
 {
 
 
-    return bevital__getProductsForCategory(bevital__getCurrentCategorySlug(),$number);
+    return bv__getProductsForCategory(bv__getCurrentCategorySlug(),$number);
 }
 
 /**
@@ -830,7 +830,7 @@ function bevital__getProductsForCurrentCategory(int $number = 12) : ?array
  * @param bool $bestSellers
  * @return array|null
  */
-function bevital__getProductsForRemedy(?string $slug, int $number = 12, bool $bestSellers = false) : ?array
+function bv__getProductsForRemedy(?string $slug, int $number = 12, bool $bestSellers = false) : ?array
 {
 
     $query = [
@@ -872,10 +872,10 @@ function bevital__getProductsForRemedy(?string $slug, int $number = 12, bool $be
  * @param bool $bestSellers
  * @return array|null
  */
-function bevital__getProductsForCurrentRemedy(int $number = 12, bool $bestSellers = false) : ?array
+function bv__getProductsForCurrentRemedy(int $number = 12, bool $bestSellers = false) : ?array
 {
 
-    return bevital__getProductsForRemedy(bevital__getCurrentRemedySlug(),$number,$bestSellers);
+    return bv__getProductsForRemedy(bv__getCurrentRemedySlug(),$number,$bestSellers);
 
 }
 
@@ -884,7 +884,7 @@ function bevital__getProductsForCurrentRemedy(int $number = 12, bool $bestSeller
  * @param WC_Product $product
  * @param array $args
  */
-function bevital__woocommerce_template_loop_add_to_cart( WC_Product $product, array $args = [] ) : void
+function bv__woocommerce_template_loop_add_to_cart( WC_Product $product, array $args = [] ) : void
 {
 
     if ( $product ) {
@@ -925,7 +925,7 @@ function bevital__woocommerce_template_loop_add_to_cart( WC_Product $product, ar
 /**
  * @return int
  */
-function bevital__getShopPageID() : int
+function bv__getShopPageID() : int
 {
     return (int)get_option( 'woocommerce_shop_page_id' );
 }
@@ -934,7 +934,7 @@ function bevital__getShopPageID() : int
  * @param int $number
  * @return array|null
  */
-function bevital__getBenefitsOfPropolis(int $number = 4) : ?array
+function bv__getBenefitsOfPropolis(int $number = 4) : ?array
 {
 
     $posts = get_posts([
@@ -952,7 +952,7 @@ function bevital__getBenefitsOfPropolis(int $number = 4) : ?array
  * @param string $key
  * @return string|null
  */
-function bevital__getExtraProductData(int $productId, string $key) : ?string
+function bv__getExtraProductData(int $productId, string $key) : ?string
 {
 
     $key = 'bevital__' . str_replace('bevital__','',$key);
@@ -966,7 +966,7 @@ function bevital__getExtraProductData(int $productId, string $key) : ?string
  * @param WC_Product $product
  * @return array|null
  */
-function bevital__getRemediesForProduct(WC_Product $product) : ?array
+function bv__getRemediesForProduct(WC_Product $product) : ?array
 {
 
     $remedies = wp_get_post_terms($product->get_id(),'remedies');
@@ -979,7 +979,7 @@ function bevital__getRemediesForProduct(WC_Product $product) : ?array
  * @param WP_Term $remedy
  * @return string
  */
-function bevital__getRemedyIconUrl(WP_Term $remedy) : string
+function bv__getRemedyIconUrl(WP_Term $remedy) : string
 {
 
     // replace  - with _ in slug
@@ -994,7 +994,7 @@ function bevital__getRemedyIconUrl(WP_Term $remedy) : string
  * @param int $productId
  * @return bool
  */
-function bevital__isProductVariableById(int $productId) : bool
+function bv__isProductVariableById(int $productId) : bool
 {
 
 
@@ -1009,7 +1009,7 @@ function bevital__isProductVariableById(int $productId) : bool
  * @param int $variationId
  * @return string
  */
-function bevital__getVariationNameById(int $variationId) : string
+function bv__getVariationNameById(int $variationId) : string
 {
     $variation = wc_get_product($variationId);
 
@@ -1021,7 +1021,7 @@ function bevital__getVariationNameById(int $variationId) : string
  * @param int $number
  * @return array|null
  */
-function bevital__getPopularProducts(int $number = 3) : ?array
+function bv__getPopularProducts(int $number = 3) : ?array
 {
     $products = get_posts([
         'post_type' 	=> 'product',
@@ -1038,7 +1038,7 @@ function bevital__getPopularProducts(int $number = 3) : ?array
 /**
  * @return array|null
  */
-function bevital__getSearchProductResults() : ?array
+function bv__getSearchProductResults() : ?array
 {
     global $wp_query;
 
@@ -1052,7 +1052,7 @@ function bevital__getSearchProductResults() : ?array
 
             if(get_post_type() == 'product'){
 
-                if(bevital__isProductVariableById(get_the_ID())){
+                if(bv__isProductVariableById(get_the_ID())){
                     $posts[] = new WC_Product_Variable(get_the_ID());
                 }else {
                     $posts[] = new WC_Product(get_the_ID());
@@ -1069,7 +1069,7 @@ function bevital__getSearchProductResults() : ?array
 /**
  * @return array|null
  */
-function bevital__getSearchPageResults() : ?array
+function bv__getSearchPageResults() : ?array
 {
     global $wp_query;
 
@@ -1095,7 +1095,7 @@ function bevital__getSearchPageResults() : ?array
 /**
  * @return array|null
  */
-function bevital__getSearchPostResults() : ?array
+function bv__getSearchPostResults() : ?array
 {
     global $wp_query;
 
@@ -1123,7 +1123,7 @@ function bevital__getSearchPostResults() : ?array
  * @param bool $useCurrentTax
  * @return array|null
  */
-function bevital__getLatestBlogPosts(int $number = 10, bool $useCurrentTax = false) : ?array
+function bv__getLatestBlogPosts(int $number = 10, bool $useCurrentTax = false) : ?array
 {
 
     $args = [
@@ -1135,7 +1135,7 @@ function bevital__getLatestBlogPosts(int $number = 10, bool $useCurrentTax = fal
 
     if($useCurrentTax){
 
-        $categorySlug = bevital__getCurrentCategorySlug();
+        $categorySlug = bv__getCurrentCategorySlug();
 
 
 
@@ -1157,7 +1157,7 @@ function bevital__getLatestBlogPosts(int $number = 10, bool $useCurrentTax = fal
 /**
  * @param int $postId
  */
-function bevital__outputPostCategoryList(int $postId) : void
+function bv__outputPostCategoryList(int $postId) : void
 {
 
     if($categories = wp_get_post_categories($postId)){
@@ -1178,7 +1178,7 @@ function bevital__outputPostCategoryList(int $postId) : void
 /**
  * Override the shipping html so we can use it with custom htl on form-shipping.php
  */
-function bevital__wc_cart_totals_shipping_html() : void
+function bv__wc_cart_totals_shipping_html() : void
 {
     $packages = WC()->shipping()->get_packages();
     $first    = true;

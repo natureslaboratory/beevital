@@ -8,7 +8,7 @@
         </div>
 
         <div class="form">
-            <?php echo do_shortcode('[bevital__wc_reg_form]'); ?>
+            <?php echo do_shortcode('[bv__wc_reg_form]'); ?>
 
         </div>
 

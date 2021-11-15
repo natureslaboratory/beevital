@@ -34,7 +34,7 @@
                 <div class="column">
 
                     <div class="icon">
-                        <img src="<?php bevital__getThemeImageUrl('global/misc/banner_icons/secured_payments.png'); ?>" />
+                        <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/secured_payments.png'); ?>" />
                     </div>
 
                     <div class="text">
@@ -50,7 +50,7 @@
                 <div class="column">
 
                     <div class="icon">
-                        <img src="<?php bevital__getThemeImageUrl('global/misc/banner_icons/free_uk_delivery.png'); ?>" />
+                        <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_uk_delivery.png'); ?>" />
                     </div>
 
                     <div class="text">
@@ -66,7 +66,7 @@
                 <div class="column">
 
                     <div class="icon">
-                        <img src="<?php bevital__getThemeImageUrl('global/misc/banner_icons/free_returns.png'); ?>" />
+                        <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_returns.png'); ?>" />
                     </div>
 
                     <div class="text">
@@ -108,7 +108,7 @@
                                 </div>
 
                                 <?php if(isset($cart_item['variation_id']) && is_numeric($cart_item['variation_id']) && $cart_item['variation_id'] > 0) : ?>
-                                    <div class="name"><p><?php echo bevital__getVariationNameById($cart_item['variation_id']); ?></p></div>
+                                    <div class="name"><p><?php echo bv__getVariationNameById($cart_item['variation_id']); ?></p></div>
 
                                 <?php else: ?>
                                     <div class="name"><p><?php echo $wcProduct->get_title(); ?></p></div>
@@ -168,7 +168,7 @@
 
 
                 <?php if ( wc_coupons_enabled() ) : ?>
-                    <?php bevital__woocommerce_checkout_coupon_form(); ?>
+                    <?php bv__woocommerce_checkout_coupon_form(); ?>
 
                 <?php endif; ?>
                 <!-- END OF BASKET CODE INPUT -->
@@ -304,7 +304,7 @@
                     <div class="product">
 
                         <div class="image">
-                            <img src="<?php bevital__getThemeImageUrl('global/placeholder__product.jpg'); ?>" />
+                            <img src="<?php bv__getThemeImageUrl('global/placeholder__product.jpg'); ?>" />
                         </div>
 
                         <div class="product_details">

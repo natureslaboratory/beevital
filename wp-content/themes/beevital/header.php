@@ -198,7 +198,7 @@
 
     <?php if(is_front_page()) : ?>
         <div class="color_bg linear">
-    <?php elseif(bevital__isOnRemedies()) : ?>
+    <?php elseif(bv__isOnRemedies()) : ?>
         <div class="color_bg">
     <?php elseif(is_page('propolis')) : ?>
         <div class="color_bg">
@@ -280,7 +280,7 @@
                                     </div>
 
                                     <div class="icon">
-                                        <img src="<?php bevital__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>" alt="Bee" />
+                                        <img src="<?php bv__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>" alt="Bee" />
                                     </div>
 
                                     <div class="icon">
@@ -386,7 +386,7 @@
                                     </div>
 
                                     <div class="icon">
-                                        <img src="<?php bevital__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>" alt="Bee" />
+                                        <img src="<?php bv__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>" alt="Bee" />
                                     </div>
 
                                     <div class="icon">
@@ -412,7 +412,7 @@
 
                     <a href="<?php echo site_url(); ?>" class="logo">
 	                    <span>BeeVital</span>
-                        <img src="<?php bevital__getThemeImageUrl('global/misc/beevital_logo.webp'); ?>" alt="BeeVital Propolis" />
+                        <img src="<?php bv__getThemeImageUrl('global/misc/beevital_logo.webp'); ?>" alt="BeeVital Propolis" />
                     </a>
 
                     <ul class="nav right">
@@ -465,7 +465,7 @@
 
                                                 <div class="product_details">
                                                     <?php if(isset($cart_item['variation_id']) && is_numeric($cart_item['variation_id']) && $cart_item['variation_id'] > 0) : ?>
-                                                        <div class="name"><?php echo bevital__getVariationNameById($cart_item['variation_id']); ?></div>
+                                                        <div class="name"><?php echo bv__getVariationNameById($cart_item['variation_id']); ?></div>
 
                                                     <?php else: ?>
                                                         <div class="name"><?php echo $wcProduct->get_title(); ?></div>
@@ -493,7 +493,7 @@
                                             View basket
                                         </a>
 
-                                        <?php if(bevital__countCart() > 0) : ?>
+                                        <?php if(bv__countCart() > 0) : ?>
                                             <a href="/checkout" class="block_cta checkout">
                                                 Checkout<i class="far fa-long-arrow-right"></i>
                                             </a>

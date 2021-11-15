@@ -22,7 +22,7 @@
 
                 <div class="image_wrapper">
                     <div class="image">
-                        <img src="<?php bevital__getThemeImageUrl('home/natures_pharmacist/honey_bee.png'); ?>"/>
+                        <img src="<?php bv__getThemeImageUrl('home/natures_pharmacist/honey_bee.png'); ?>"/>
                     </div>
                 </div>
 
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="icon">
-                    <img src="<?php bevital__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>"/>
+                    <img src="<?php bv__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>"/>
                 </div>
 
                 <div class="icon">
@@ -61,90 +61,90 @@
             <ul class="tabs_nav container__inner mw_1366" id="remedies_tabs_nav">
 
                 <li>
-                    <a href="/remedies/cold-and-flu" class="<?php echo bevital__isRemedy('cold-and-flu') ? 'active' : ''; ?>">
+                    <a href="/remedies/cold-and-flu" class="<?php echo bv__isRemedy('cold-and-flu') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bevital__getThemeImageUrl('global/misc/remedy_icons/cold_and_flu.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/cold_and_flu.png'); ?>"/>
                         </div>
                         Cold <span class="new_line">and flu</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="/remedies/joints-and-mobility" class="<?php echo bevital__isRemedy('joints-and-mobility') ? 'active' : ''; ?>">
+                    <a href="/remedies/joints-and-mobility" class="<?php echo bv__isRemedy('joints-and-mobility') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bevital__getThemeImageUrl('global/misc/remedy_icons/joints_and_mobility.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/joints_and_mobility.png'); ?>"/>
                         </div>
                         Joints <span class="new_line">and mobility</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="/remedies/skin-conditions" class="<?php echo bevital__isRemedy('skin-conditions') ? 'active' : ''; ?>">
+                    <a href="/remedies/skin-conditions" class="<?php echo bv__isRemedy('skin-conditions') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bevital__getThemeImageUrl('global/misc/remedy_icons/skin_conditions.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/skin_conditions.png'); ?>"/>
                         </div>
                         Skin <span class="new_line">conditions</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="/remedies/fatigue-and-recovery" class="<?php echo bevital__isRemedy('fatigue-and-recovery') ? 'active' : ''; ?>">
+                    <a href="/remedies/fatigue-and-recovery" class="<?php echo bv__isRemedy('fatigue-and-recovery') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bevital__getThemeImageUrl('global/misc/remedy_icons/fatigue_and_recovery.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/fatigue_and_recovery.png'); ?>"/>
                         </div>
                         Fatigue <span class="new_line">and recovery</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="/remedies/respiratory-conditions" class="<?php echo bevital__isRemedy('respiratory-conditions') ? 'active' : ''; ?>">
+                    <a href="/remedies/respiratory-conditions" class="<?php echo bv__isRemedy('respiratory-conditions') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bevital__getThemeImageUrl('global/misc/remedy_icons/respiratory_conditions.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/respiratory_conditions.png'); ?>"/>
                         </div>
                         Respiratory <span class="new_line">conditions</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="/remedies/oral-hygiene" class="<?php echo bevital__isRemedy('oral-hygiene') ? 'active' : ''; ?>">
+                    <a href="/remedies/oral-hygiene" class="<?php echo bv__isRemedy('oral-hygiene') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bevital__getThemeImageUrl('global/misc/remedy_icons/oral_hygiene.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/oral_hygiene.png'); ?>"/>
                         </div>
                         Oral <span class="new_line">hygiene</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="/remedies/cuts-and-burns" class="<?php echo bevital__isRemedy('cuts-and-burns') ? 'active' : ''; ?>">
+                    <a href="/remedies/cuts-and-burns" class="<?php echo bv__isRemedy('cuts-and-burns') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bevital__getThemeImageUrl('global/misc/remedy_icons/cuts_and_burns.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/cuts_and_burns.png'); ?>"/>
                         </div>
                         Cuts <span class="new_line">and burns</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="/remedies/digestive-health" class="<?php echo bevital__isRemedy('digestive-health') ? 'active' : ''; ?>">
+                    <a href="/remedies/digestive-health" class="<?php echo bv__isRemedy('digestive-health') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bevital__getThemeImageUrl('global/misc/remedy_icons/digestive_health.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/digestive_health.png'); ?>"/>
                         </div>
                         Digestive <span class="new_line">health</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="/remedies/healthy-ageing" class="<?php echo bevital__isRemedy('healthy-ageing') ? 'active' : ''; ?>">
+                    <a href="/remedies/healthy-ageing" class="<?php echo bv__isRemedy('healthy-ageing') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bevital__getThemeImageUrl('global/misc/remedy_icons/healthy_ageing.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/healthy_ageing.png'); ?>"/>
                         </div>
                         Healthy <span class="new_line">ageing</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="/remedies/immune-support" class="<?php echo bevital__isRemedy('immune-support') ? 'active' : ''; ?>">
+                    <a href="/remedies/immune-support" class="<?php echo bv__isRemedy('immune-support') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bevital__getThemeImageUrl('global/misc/remedy_icons/immune_support.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/immune_support.png'); ?>"/>
                         </div>
                         Immune <span class="new_line">support</span>
                     </a>
@@ -153,16 +153,16 @@
             </ul>
 
             <select class="tabs_mobile_nav" id="remedies_tabs_mobile_nav">
-                <option value="/remedies/cold-and-flu" <?php echo bevital__isRemedy('cold-and-flu') ? 'selected' : ''; ?>>Cold and flu</option>
-                <option value="/remedies/joints-and-mobility" <?php echo bevital__isRemedy('joints-and-mobility') ? 'selected' : ''; ?>>Joints and mobility</option>
-                <option value="/remedies/skin-conditions" <?php echo bevital__isRemedy('skin-conditions') ? 'selected' : ''; ?>>Skin conditions</option>
-                <option value="/remedies/fatigue-and-recovery" <?php echo bevital__isRemedy('fatigue-and-recovery') ? 'selected' : ''; ?>>Fatigue and recovery</option>
-                <option value="/remedies/respiratory-conditions" <?php echo bevital__isRemedy('respiratory-conditions') ? 'selected' : ''; ?>>Respiratory conditions</option>
-                <option value="/remedies/oral-hygiene" <?php echo bevital__isRemedy('oral-hygiene') ? 'selected' : ''; ?>>Oral hygiene</option>
-                <option value="/remedies/cuts-and-burns" <?php echo bevital__isRemedy('cuts-and-burns') ? 'selected' : ''; ?>>Cuts and burns</option>
-                <option value="/remedies/digestive-health" <?php echo bevital__isRemedy('digestive-health') ? 'selected' : ''; ?>>Digestive health</option>
-                <option value="/remedies/healthy-ageing" <?php echo bevital__isRemedy('healthy-ageing') ? 'selected' : ''; ?>>Healthy ageing</option>
-                <option value="/remedies/income-support" <?php echo bevital__isRemedy('income-support') ? 'selected' : ''; ?>>Immune support</option>
+                <option value="/remedies/cold-and-flu" <?php echo bv__isRemedy('cold-and-flu') ? 'selected' : ''; ?>>Cold and flu</option>
+                <option value="/remedies/joints-and-mobility" <?php echo bv__isRemedy('joints-and-mobility') ? 'selected' : ''; ?>>Joints and mobility</option>
+                <option value="/remedies/skin-conditions" <?php echo bv__isRemedy('skin-conditions') ? 'selected' : ''; ?>>Skin conditions</option>
+                <option value="/remedies/fatigue-and-recovery" <?php echo bv__isRemedy('fatigue-and-recovery') ? 'selected' : ''; ?>>Fatigue and recovery</option>
+                <option value="/remedies/respiratory-conditions" <?php echo bv__isRemedy('respiratory-conditions') ? 'selected' : ''; ?>>Respiratory conditions</option>
+                <option value="/remedies/oral-hygiene" <?php echo bv__isRemedy('oral-hygiene') ? 'selected' : ''; ?>>Oral hygiene</option>
+                <option value="/remedies/cuts-and-burns" <?php echo bv__isRemedy('cuts-and-burns') ? 'selected' : ''; ?>>Cuts and burns</option>
+                <option value="/remedies/digestive-health" <?php echo bv__isRemedy('digestive-health') ? 'selected' : ''; ?>>Digestive health</option>
+                <option value="/remedies/healthy-ageing" <?php echo bv__isRemedy('healthy-ageing') ? 'selected' : ''; ?>>Healthy ageing</option>
+                <option value="/remedies/income-support" <?php echo bv__isRemedy('income-support') ? 'selected' : ''; ?>>Immune support</option>
             </select>
 
         </div>
@@ -211,7 +211,7 @@
 
                 <div class="column image_wrapper">
 
-                    <div class="image" style="background-image: url('<?php bevital__getThemeImageUrl('remedies/cold_and_flu.jpg'); ?>');"></div>
+                    <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('remedies/cold_and_flu.jpg'); ?>');"></div>
 
                     <div class="caption">
                         How Does Propolis Support the Immune System?
@@ -234,7 +234,7 @@
                     <div class="intro">
 
                         <div class="heading">
-                            <strong>Best selling</strong> <?php echo bevital__getCurrentCategoryName(); ?> products
+                            <strong>Best selling</strong> <?php echo bv__getCurrentCategoryName(); ?> products
                         </div>
 
                     </div>
@@ -243,8 +243,8 @@
 
                 <div class="product_listings">
 
-                    <?php if($products = bevital__getProductsForCurrentRemedy(3,true)) : ?>
-                        <?php foreach($products as $_product) : $product = bevital__isProductVariableById($_product->ID) ? new WC_Product_Variable($_product->ID) : new WC_Product($_product->ID); ?>
+                    <?php if($products = bv__getProductsForCurrentRemedy(3,true)) : ?>
+                        <?php foreach($products as $_product) : $product = bv__isProductVariableById($_product->ID) ? new WC_Product_Variable($_product->ID) : new WC_Product($_product->ID); ?>
                             <div class="product">
 
                                 <div class="image">
@@ -256,7 +256,7 @@
                                     <div class="name__price">
                                         <div class="name"><?php echo $product->get_title(); ?></div>
 
-                                        <?php if(bevital__isProductVariableById($_product->ID)): ?>
+                                        <?php if(bv__isProductVariableById($_product->ID)): ?>
                                         <div class="price">From <?php echo woocommerce_price( $product->get_price_including_tax() ); ?></div>
                                     <?php else: ?>
                                         <div class="price"><?php echo woocommerce_price( $product->get_price_including_tax() ); ?></div>
@@ -279,7 +279,7 @@
 
         </div>
 		
-		<?php if($posts = bevital__getLatestBlogPosts(5,true)) : $p = 0 ?>
+		<?php if($posts = bv__getLatestBlogPosts(5,true)) : $p = 0 ?>
             <div class="container__inner mw_1146">
 
                 <?php foreach($posts as $post) :  ?>

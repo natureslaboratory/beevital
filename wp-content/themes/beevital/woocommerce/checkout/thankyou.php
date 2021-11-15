@@ -48,7 +48,7 @@ $orderItems = $order->get_items();
             <div class="column disabled">
 
                 <div class="icon">
-                    <img src="<?php echo bevital__getThemeImageUrl('global/misc/banner_icons/free_uk_delivery.png'); ?>" />
+                    <img src="<?php echo bv__getThemeImageUrl('global/misc/banner_icons/free_uk_delivery.png'); ?>" />
                 </div>
 
                 <div class="sub_heading">
@@ -62,7 +62,7 @@ $orderItems = $order->get_items();
             <div class="column disabled">
 
                 <div class="icon">
-                    <img src="<?php echo bevital__getThemeImageUrl('global/misc/banner_icons/secured_payments.png'); ?>" />
+                    <img src="<?php echo bv__getThemeImageUrl('global/misc/banner_icons/secured_payments.png'); ?>" />
                 </div>
 
                 <div class="sub_heading">
@@ -76,7 +76,7 @@ $orderItems = $order->get_items();
             <div class="column">
 
                 <div class="icon">
-                    <img src="<?php echo bevital__getThemeImageUrl('global/misc/banner_icons/secured_payments.png'); ?>" />
+                    <img src="<?php echo bv__getThemeImageUrl('global/misc/banner_icons/secured_payments.png'); ?>" />
                 </div>
 
                 <div class="sub_heading">

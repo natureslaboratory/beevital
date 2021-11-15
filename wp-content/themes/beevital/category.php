@@ -17,7 +17,7 @@
 
         </div>
 
-        <?php bevital__includeTemplate('partials/vertical_icons') ?>
+        <?php bv__includeTemplate('partials/vertical_icons') ?>
 
 
     </div>

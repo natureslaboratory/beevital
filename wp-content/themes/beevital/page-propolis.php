@@ -20,7 +20,7 @@
 
                 <div class="image_wrapper">
                     <div class="image">
-                        <img src="<?php bevital__getThemeImageUrl('remedies/plants_bees.png'); ?>" />
+                        <img src="<?php bv__getThemeImageUrl('remedies/plants_bees.png'); ?>" />
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="icon">
-                    <img src="<?php bevital__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>" />
+                    <img src="<?php bv__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>" />
                 </div>
 
                 <div class="icon">
@@ -99,7 +99,7 @@
 
                 <div class="column image_wrapper">
 
-                    <div class="image" style="background-image: url('<?php bevital__getThemeImageUrl('propolis/early_use.jpg'); ?>');"></div>
+                    <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('propolis/early_use.jpg'); ?>');"></div>
 
                     <div class="caption">
                         Ancient Egyptians used propolis
@@ -113,7 +113,7 @@
 
         <div class="container__inner mw_1366" id="propolis">
 
-            <div class="decline_in_use" style="background-image: url('<?php bevital__getThemeImageUrl('propolis/decline_in_use.png'); ?>');">
+            <div class="decline_in_use" style="background-image: url('<?php bv__getThemeImageUrl('propolis/decline_in_use.png'); ?>');">
 
                 <div class="container__inner mw_1146">
 
@@ -152,7 +152,7 @@
                     <div class="image">
 
                         <div class="logo">
-                            <img src="<?php bevital__getThemeImageUrl('global/misc/beevital_logo.png'); ?>" />
+                            <img src="<?php bv__getThemeImageUrl('global/misc/beevital_logo.png'); ?>" />
                         </div>
 
                     </div>
@@ -216,7 +216,7 @@
 
             <div class="image_wrapper">
 
-                <div class="image" style="background-image: url('<?php bevital__getThemeImageUrl('home/james_fearnley.jpg'); ?>');"></div>
+                <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('home/james_fearnley.jpg'); ?>');"></div>
 
                 <div class="caption">
                     James Fearnley leading propolis expert

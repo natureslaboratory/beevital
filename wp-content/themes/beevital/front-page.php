@@ -44,10 +44,10 @@
         </div>
 
         <div class="image">
-            <img src="<?php bevital__getThemeImageUrl('home/tincture.webp'); ?>" alt="Propolis Tincture" />
+            <img src="<?php bv__getThemeImageUrl('home/tincture.webp'); ?>" alt="Propolis Tincture" />
         </div>
 
-        <?php bevital__includeTemplate('partials/vertical_icons') ?>
+        <?php bv__includeTemplate('partials/vertical_icons') ?>
 
     </div>
     <!-- END OF HERO -->
@@ -61,7 +61,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bevital__getThemeImageUrl('global/misc/banner_icons/free_uk_delivery.png'); ?>" alt="Delivery" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_uk_delivery.png'); ?>" alt="Delivery" />
             </div>
 
             <div class="text">
@@ -74,7 +74,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bevital__getThemeImageUrl('global/misc/banner_icons/free_returns.png'); ?>" alt="Returns" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_returns.png'); ?>" alt="Returns" />
             </div>
 
             <div class="text">
@@ -87,7 +87,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bevital__getThemeImageUrl('global/misc/banner_icons/secured_payments.png'); ?>" alt="Payments" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/secured_payments.png'); ?>" alt="Payments" />
             </div>
 
             <div class="text">
@@ -100,7 +100,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bevital__getThemeImageUrl('global/misc/banner_icons/customer_service.png'); ?>" alt="Service" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/customer_service.png'); ?>" alt="Service" />
             </div>
 
             <div class="text">
@@ -200,7 +200,7 @@
     </div>
     <!-- END OF SHOP RANGES CTA -->
 
-    <?php if($popular = bevital__getPopularProducts()) : ?>
+    <?php if($popular = bv__getPopularProducts()) : ?>
         <!-- MOST POPULAR PRODUCTS -->
         <div class="products_partial container__inner mw_1366">
 
@@ -220,7 +220,7 @@
 
                 <?php foreach($popular as $popularProduct) :
 
-                    $product = bevital__isProductVariableById($popularProduct->ID) ? new WC_Product_Variable($popularProduct->ID) : new WC_Product($popularProduct->ID);
+                    $product = bv__isProductVariableById($popularProduct->ID) ? new WC_Product_Variable($popularProduct->ID) : new WC_Product($popularProduct->ID);
 
                     ?>
                     <div class="product">
@@ -234,7 +234,7 @@
                             <div class="name__price">
                                 <div class="name"><?php echo $product->get_title(); ?></div>
                                 
-                                <?php if(bevital__isProductVariableById($popularProduct->ID)): ?>
+                                <?php if(bv__isProductVariableById($popularProduct->ID)): ?>
                                     <div class="price">From <?php echo woocommerce_price($product->get_variation_regular_price('min')); ?></div>
                                 <?php else: ?>
                                     <div class="price"><?php echo woocommerce_price($product->get_price_including_tax()); ?></div>
@@ -296,7 +296,7 @@
             </div>
 
             <div class="column honey_bee">
-                <img src="<?php bevital__getThemeImageUrl('home/natures_pharmacist/honey_bee.png'); ?>" alt="Honey" />
+                <img src="<?php bv__getThemeImageUrl('home/natures_pharmacist/honey_bee.png'); ?>" alt="Honey" />
             </div>
 
             <div class="column">
@@ -374,15 +374,15 @@
     <div class="accreditation_logos">
 
         <div class="logo">
-            <img src="<?php bevital__getThemeImageUrl('home/accreditation_logos/iso.png'); ?>" alt="ISO" />
+            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/iso.png'); ?>" alt="ISO" />
         </div>
 
         <div class="logo">
-            <img src="<?php bevital__getThemeImageUrl('home/accreditation_logos/soil_association_organic.png'); ?>" alt="Organic Certification" />
+            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/soil_association_organic.png'); ?>" alt="Organic Certification" />
         </div>
 
         <div class="logo">
-            <img src="<?php bevital__getThemeImageUrl('home/accreditation_logos/living_wage_employer.png'); ?>" alt="Living Wage Employer" />
+            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/living_wage_employer.png'); ?>" alt="Living Wage Employer" />
         </div>
 
     </div>

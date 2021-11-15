@@ -18,7 +18,7 @@
 
         </div>
 
-        <?php bevital__includeTemplate('partials/vertical_icons') ?>
+        <?php bv__includeTemplate('partials/vertical_icons') ?>
 
 
     </div>
@@ -36,31 +36,31 @@
             </li>
 
             <li>
-                <a href="/products/whole-health/" class="<?php echo bevital__isProductCategory('whole-health') ? 'active' : '' ?>">
+                <a href="/products/whole-health/" class="<?php echo bv__isProductCategory('whole-health') ? 'active' : '' ?>">
                     Whole Health
                 </a>
             </li>
 
             <li>
-                <a href="/products/oral-health" class="<?php echo bevital__isProductCategory('oral-health') ? 'active' : '' ?>">
+                <a href="/products/oral-health" class="<?php echo bv__isProductCategory('oral-health') ? 'active' : '' ?>">
                     Oral Health
                 </a>
             </li>
 
             <li>
-                <a href="/products/skincare" class="<?php echo bevital__isProductCategory('skincare') ? 'active' : '' ?>">
+                <a href="/products/skincare" class="<?php echo bv__isProductCategory('skincare') ? 'active' : '' ?>">
                     Skincare
                 </a>
             </li>
 
             <li>
-                <a href="/products/pollen" class="<?php echo bevital__isProductCategory('pollen') ? 'active' : '' ?>">
+                <a href="/products/pollen" class="<?php echo bv__isProductCategory('pollen') ? 'active' : '' ?>">
                     Pollen
                 </a>
             </li>
 
             <li>
-                <a href="/products/honey" class="<?php echo bevital__isProductCategory('honey') ? 'active' : '' ?>">
+                <a href="/products/honey" class="<?php echo bv__isProductCategory('honey') ? 'active' : '' ?>">
                     Honey
                 </a>
             </li>
@@ -69,11 +69,11 @@
 
         <select class="tabs_mobile_nav" id="products_tabs_mobile_nav">
             <option value="/products" <?php echo is_shop() ? 'selected' : ''; ?>>All products</option>
-            <option value="/products/whole-health" <?php echo bevital__isProductCategory('whole-health') ? 'selected' : ''; ?>>Whole Health</option>
-            <option value="/products/oral-health" <?php echo bevital__isProductCategory('oral-health') ? 'selected' : ''; ?>>Oral Health</option>
-            <option value="/products/skincare" <?php echo bevital__isProductCategory('skincare') ? 'selected' : ''; ?>>Skincare</option>
-            <option value="/products/pollen" <?php echo bevital__isProductCategory('pollen') ? 'selected' : ''; ?>>Pollen</option>
-            <option value="/products/honey" <?php echo bevital__isProductCategory('honey') ? 'selected' : ''; ?>>Honey</option>
+            <option value="/products/whole-health" <?php echo bv__isProductCategory('whole-health') ? 'selected' : ''; ?>>Whole Health</option>
+            <option value="/products/oral-health" <?php echo bv__isProductCategory('oral-health') ? 'selected' : ''; ?>>Oral Health</option>
+            <option value="/products/skincare" <?php echo bv__isProductCategory('skincare') ? 'selected' : ''; ?>>Skincare</option>
+            <option value="/products/pollen" <?php echo bv__isProductCategory('pollen') ? 'selected' : ''; ?>>Pollen</option>
+            <option value="/products/honey" <?php echo bv__isProductCategory('honey') ? 'selected' : ''; ?>>Honey</option>
         </select>
 
     </div>
@@ -103,8 +103,8 @@
 
             <div class="product_listings">
 
-                <?php if($products = bevital__getProductsForCurrentCategory()) :
-                    foreach($products as $_product) : $product = bevital__isProductVariableById($_product->ID) ? new WC_Product_Variable($_product->ID) : new WC_Product($_product->ID); ?>
+                <?php if($products = bv__getProductsForCurrentCategory()) :
+                    foreach($products as $_product) : $product = bv__isProductVariableById($_product->ID) ? new WC_Product_Variable($_product->ID) : new WC_Product($_product->ID); ?>
                         <div class="product">
                             <div class="image">
                                 <?php echo get_the_post_thumbnail($product->get_id(),'medium'); ?>
@@ -113,7 +113,7 @@
                                 <div class="name__price">
                                     <div class="name"><?php echo $product->get_title(); ?></div>
 
-                                    <?php if(bevital__isProductVariableById($_product->ID)): ?>
+                                    <?php if(bv__isProductVariableById($_product->ID)): ?>
                                         <div class="price">From <?php echo woocommerce_price( $product->get_price_including_tax() ); ?></div>
                                     <?php else: ?>
                                         <div class="price"><?php echo woocommerce_price( $product->get_price_including_tax() ); ?></div>
@@ -140,7 +140,7 @@
     <div class="become_stockist_cta">
 
         <div class="logo">
-            <img src="<?php bevital__getThemeImageUrl('global/misc/beevital_logo.png'); ?>" />
+            <img src="<?php bv__getThemeImageUrl('global/misc/beevital_logo.png'); ?>" />
         </div>
 
         <div class="text">

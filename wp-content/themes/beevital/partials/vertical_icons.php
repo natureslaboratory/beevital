@@ -9,7 +9,7 @@
     </div>
 
     <div class="icon">
-        <img src="<?php bevital__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>" alt="Bee" />
+        <img src="<?php bv__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>" alt="Bee" />
     </div>
 
     <div class="icon">

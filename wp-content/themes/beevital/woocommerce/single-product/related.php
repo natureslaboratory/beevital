@@ -36,7 +36,7 @@ if ( $related_products ) : ?>
 
                     <div class="name__price">
                         <div class="name"><?php echo $related_product->get_title(); ?></div>
-                        <?php if(bevital__isProductVariableById($related_product->get_id())): ?>
+                        <?php if(bv__isProductVariableById($related_product->get_id())): ?>
                             <div class="price">From <?php echo woocommerce_price($related_product->get_variation_regular_price('min',1)); ?></div>
                         <?php else: ?>
                             <div class="price"><?php echo woocommerce_price($related_product->get_price_including_tax()); ?></div>

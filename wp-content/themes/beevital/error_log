@@ -1,0 +1,8 @@
+[01-Nov-2021 15:14:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_title() in /home/beevitalpropolis/public_html/wp-content/themes/bevital/header.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/beevitalpropolis/public_html/wp-content/themes/bevital/header.php on line 6
+[01-Nov-2021 15:14:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/beevitalpropolis/public_html/wp-content/themes/bevital/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/beevitalpropolis/public_html/wp-content/themes/bevital/index.php on line 1

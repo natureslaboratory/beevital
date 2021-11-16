@@ -114,9 +114,9 @@
                                     <div class="name"><?php echo $product->get_title(); ?></div>
 
                                     <?php if(bv__isProductVariableById($_product->ID)): ?>
-                                        <div class="price">From <?php echo woocommerce_price( $product->get_price_including_tax() ); ?></div>
+                                        <div class="price">From <?php echo wc_price(wc_get_price_including_tax($product)) ?></div>
                                     <?php else: ?>
-                                        <div class="price"><?php echo woocommerce_price( $product->get_price_including_tax() ); ?></div>
+                                        <div class="price"><?php echo wc_price(wc_get_price_including_tax($product) ); ?></div>
                                     <?php endif; ?>
                                 </div>
                                 <a href="<?php echo get_permalink($product->get_id()); ?>" class="block_cta">

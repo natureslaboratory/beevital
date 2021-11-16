@@ -4969,8 +4969,15 @@ OVERRIDE THE STEPS PLUGIN STYLE ON TABS
   aspect-ratio: 1 / 1;
 }
 
-p.stock.in_stock {
-  color: darkgreen;
+p.stock {
   font-weight: 700;
   font-size: 0.9rem;
+
+  &.out-of-stock {
+    color: #800;
+  }
+
+  &.in-stock {
+    color: darkgreen;
+  }
 }

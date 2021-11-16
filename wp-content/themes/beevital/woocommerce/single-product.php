@@ -37,7 +37,7 @@ if (!is_object($product)) {
                 </div>
 
                 <div class="price">
-                    <?= wc_price($product->get_price()) ?>
+                    <?= wc_price(wc_get_price_including_tax($product)) ?>
                 </div>
 
                 <div class="rating">
@@ -232,10 +232,16 @@ if (!is_object($product)) {
                         Reviews
                     </div>
 
+                    <?php 
+                    
+                    $comments = get_comments();
 
-                    <?php if (have_comments()) : ?>
+                    ?>
+
+                    <?php if ($comments) : ?>
                         <ol class="commentlist">
                             <?php wp_list_comments(apply_filters('woocommerce_product_review_list_args', array('callback' => 'woocommerce_comments'))); ?>
+                            <?php  ?>
                         </ol>
 
                         <?php

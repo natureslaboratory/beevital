@@ -5163,7 +5163,7 @@ body.open #mobile_nav {
   color:#444549;
 }
 
-#content-page ul li, #product_description ul ol{
+#content-page ul li, #product_description ul li{
   list-style: disc;
   padding-bottom: 10px;
 }

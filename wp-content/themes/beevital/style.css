@@ -5684,6 +5684,7 @@ ins{
 
 bdi{
 	color:gold;
+	padding-left:1rem;
 }
 
 bdi:after{

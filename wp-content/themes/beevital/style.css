@@ -582,7 +582,7 @@ span.new_line {
 }
 
 .container__inner.mw_1146 {
-  max-width: 1146px;
+  max-width: 1024px;
 }
 
 .container__inner .intro .heading:last-child,
@@ -5664,5 +5664,6 @@ figcaption{
 	font-size:0.9rem;
 	border-bottom:1px solid #f6f6f6;
 	color:#696969;
+	padding-bottom:.5em;
 }
 /*# sourceMappingURL=style.css.map */

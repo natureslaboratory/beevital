@@ -64,6 +64,12 @@
                     Honey
                 </a>
             </li>
+            
+            <li>
+                <a href="/products/honey" class="<?php echo bv__isProductCategory('books') ? 'active' : '' ?>">
+                    Books
+                </a>
+            </li>
 
         </ul>
 

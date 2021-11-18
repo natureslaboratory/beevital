@@ -66,7 +66,7 @@
             </li>
             
             <li>
-                <a href="/products/honey" class="<?php echo bv__isProductCategory('books') ? 'active' : '' ?>">
+                <a href="/products/books" class="<?php echo bv__isProductCategory('books') ? 'active' : '' ?>">
                     Books
                 </a>
             </li>

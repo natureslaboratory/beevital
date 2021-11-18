@@ -5682,12 +5682,11 @@ ins{
 	text-decoration: none;
 }
 
-bdi{
-	color:gold;
-	padding-left:1rem;
+ins bdi{
+
 }
 
-bdi:after{
-	content: " - Special Offer!";
+ins bdi:after{
+	content: "";
 }
 /*# sourceMappingURL=style.css.map */

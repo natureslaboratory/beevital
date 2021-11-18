@@ -5667,13 +5667,13 @@ figcaption{
 	padding-bottom:.5em;
 }
 
-a.wp-block-button__link{
+#content-page a.wp-block-button__link{
 	font-family: "Aller-Bold", sans-serif;
 	text-decoration: none;
 	background: #555469;
 }
 
-a.wp-block-button__link:hover{
+#content-page a.wp-block-button__link:hover{
 	background:#f6f6f6;
 	color:#555469;
 }

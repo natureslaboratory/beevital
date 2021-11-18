@@ -5649,4 +5649,20 @@ p.stock.out-of-stock {
 p.stock.in-stock {
   color: darkgreen;
 }
+
+figure.wp-block-image{
+	text-align: center;
+}
+
+figure.wp-block-image img{
+	margin:0 auto;
+	display:block;
+}
+
+figcaption{
+	font-family:"Aller-Light", sans-serif;
+	font-size:0.9rem;
+	border-bottom:1px solid #f6f6f6;
+	color:#696969;
+}
 /*# sourceMappingURL=style.css.map */

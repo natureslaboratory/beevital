@@ -5677,4 +5677,16 @@ figcaption{
 	background:#f6f6f6;
 	color:#555469;
 }
+
+ins{
+	text-decoration: none;
+}
+
+bdi{
+	color:gold;
+}
+
+bdi:after{
+	content: " - Special Offer!";
+}
 /*# sourceMappingURL=style.css.map */

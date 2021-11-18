@@ -5695,7 +5695,6 @@ ins bdi:after{
 }
 
 span.onsale{
-	element {
     font-family: "Aller-Bold", sans-serif;
     z-index: 20000;
     position: absolute;

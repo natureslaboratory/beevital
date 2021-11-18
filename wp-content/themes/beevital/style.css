@@ -5154,22 +5154,26 @@ body.open #mobile_nav {
   font-size: 1.5em;
 }
 
-#content-page ul {
+#content-page ul, #product_description ul {
   padding-left: 20px;
   margin-bottom: 30px;
+  font-family: "Aller-Light", sans-serif;
+  font-size: 1.1875em;
+  line-height: 1.4;
+  color:#444549;
 }
 
-#content-page ul li {
+#content-page ul li, #product_description ul ol{
   list-style: disc;
   padding-bottom: 10px;
 }
 
-#content-page ol {
+#content-page ol, #product_description ol {
   padding-left: 20px;
   margin-bottom: 30px;
 }
 
-#content-page ol li {
+#content-page ol li, #product_description ol li {
   list-style: decimal;
   padding-bottom: 10px;
 }

@@ -233,6 +233,9 @@
 
                             <div class="name__price">
                                 <div class="name"><?php echo $product->get_title(); ?></div>
+                                <?php  
+                                        
+                                ?>
                                 
                                 <?php if(bv__isProductVariableById($popularProduct->ID)): ?>
                                     <div class="price">From <?php echo wc_price($product->get_price()) ?></div>

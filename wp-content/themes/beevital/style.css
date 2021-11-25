@@ -5579,40 +5579,6 @@ OVERRIDE THE STEPS PLUGIN STYLE ON TABS
   margin-bottom: 20px;
 }
 
-#review_form #reply-title {
-  font-family: "Aller-Bold", sans-serif;
-  font-size: 1.1875em;
-  line-height: 1.4;
-  color: #444549;
-  margin-bottom: 20px;
-}
-
-#review_form .comment-form-rating label {
-  font-family: "Aller-Bold", sans-serif;
-  font-size: 1.1875em;
-  line-height: 1.4;
-  color: #444549;
-  margin-bottom: 20px;
-}
-
-#review_form .comment-form-rating .stars {
-  margin-top: 10px;
-}
-
-#review_form .comment-form-rating .stars a {
-  display: inline-block;
-  background: #444549;
-  color: white;
-  padding: 10px 15px;
-  border: 1px solid white;
-}
-
-#review_form .comment-form-rating .stars a:hover, #review_form .comment-form-rating .stars a.active {
-  border-color: #444549;
-  color: #444549;
-  background: white;
-}
-
 .woocommerce-variation.single_variation {
   margin-bottom: 1rem;
 }
@@ -5644,5 +5610,79 @@ p.stock.out-of-stock {
 
 p.stock.in-stock {
   color: darkgreen;
+}
+
+#product_main .description .price {
+  margin-bottom: 0;
+}
+
+.excerpt {
+  margin-top: 30px;
+}
+
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
+  padding: 1em;
+}
+
+.woocommerce #reviews #comments ol.commentlist {
+  margin-top: 1rem;
+}
+
+.woocommerce #reviews #comments h2, #reply-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2rem 0 2rem 0;
+  font-family: "Aller-Light", sans-serif;
+}
+
+#reply-title {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  display: block;
+}
+
+.woocommerce #review_form .comment-form-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+.woocommerce #review_form #respond p {
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.woocommerce .comment-form-rating .stars span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.woocommerce p.stars a {
+  padding-right: 1.3em;
+}
+
+.woocommerce #reviews #comment {
+  min-height: 120px;
+  font-size: 1.1rem;
+  padding: 1em;
+}
+
+.woocommerce label {
+  font-family: "Aller-Light", sans-serif;
+  font-size: 19px;
+}
+
+.woocommerce #review_form #respond .form-submit input {
+  min-width: 130px;
+  width: auto;
+  text-align: center;
+  margin-top: 0.6rem;
 }
 /*# sourceMappingURL=style.css.map */

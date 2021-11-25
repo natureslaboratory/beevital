@@ -238,7 +238,7 @@
                                 ?>
                                 
                                 <?php if(bv__isProductVariableById($popularProduct->ID)): ?>
-                                    <div class="price">From <?php echo wc_price($product->get_price()) ?></div>
+                                    <div class="price">From <?php echo wc_price(wc_get_price_including_tax($product)); ?></div>
                                 <?php else: ?>
                                     <div class="price"><?php echo wc_price(wc_get_price_including_tax($product)); ?></div>
                                 <?php endif; ?>

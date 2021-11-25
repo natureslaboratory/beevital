@@ -582,7 +582,7 @@ span.new_line {
 }
 
 .container__inner.mw_1146 {
-  max-width: 1146px;
+  max-width: 1024px;
 }
 
 .container__inner .intro .heading:last-child,
@@ -5154,22 +5154,26 @@ body.open #mobile_nav {
   font-size: 1.5em;
 }
 
-#content-page ul {
+#content-page ul, #product_description ul {
   padding-left: 20px;
   margin-bottom: 30px;
+  font-family: "Aller-Light", sans-serif;
+  font-size: 1.1875em;
+  line-height: 1.4;
+  color:#444549;
 }
 
-#content-page ul li {
+#content-page ul li, #product_description ul li{
   list-style: disc;
   padding-bottom: 10px;
 }
 
-#content-page ol {
+#content-page ol, #product_description ol {
   padding-left: 20px;
   margin-bottom: 30px;
 }
 
-#content-page ol li {
+#content-page ol li, #product_description ol li {
   list-style: decimal;
   padding-bottom: 10px;
 }
@@ -5684,5 +5688,63 @@ p.stock.in-stock {
   width: auto;
   text-align: center;
   margin-top: 0.6rem;
+figure.wp-block-image{
+	text-align: center;
+}
+
+figure.wp-block-image img{
+	margin:0 auto;
+	display:block;
+}
+
+figcaption{
+	font-family:"Aller-Light", sans-serif;
+	font-size:0.9rem;
+	border-bottom:1px solid #f6f6f6;
+	color:#696969;
+	padding-bottom:.5em;
+}
+
+#content-page a.wp-block-button__link{
+	font-family: "Aller-Bold", sans-serif;
+	text-decoration: none;
+	background: #555469;
+}
+
+#content-page a.wp-block-button__link:hover{
+	background:#f6f6f6;
+	color:#555469;
+}
+
+ins{
+	text-decoration: none;
+}
+
+ins bdi{
+
+}
+
+ins bdi:after{
+	content: "";
+}
+
+.price del{
+	color:#ccc;
+}
+
+span.onsale{
+    font-family: "Aller-Bold", sans-serif;
+    z-index: 20000;
+    position: absolute;
+    background: gold;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+    color: #fff;
+    transform: rotate(-10deg);
+    box-shadow: 0px 0px 10px #ddd;
 }
 /*# sourceMappingURL=style.css.map */

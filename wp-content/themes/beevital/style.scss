@@ -5003,6 +5003,13 @@ p.stock {
   font-weight: 600;
   margin: 2rem 0 2rem 0;
   font-family: "Aller-Light", sans-serif;
+  line-height: 1.4rem;
+}
+
+@media (max-width: 600px) {
+  #reply-title {
+    font-size: 1.1rem;
+  }
 }
 
 #reply-title {
@@ -5059,8 +5066,12 @@ p.stock {
 }
 
 .c-ingredients {
-  padding-bottom: 70px;
+  margin-top: 70px;
   justify-content: center;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 40px;
+  }
   
   .c-ingredients__heading {
     border-bottom: 1px solid rgba(192, 192, 192, 0.5);

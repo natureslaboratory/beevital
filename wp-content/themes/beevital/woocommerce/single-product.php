@@ -212,6 +212,35 @@ if (!is_object($product)) {
                     </div>
 
                 </div>
+                <?php
+
+                $ingredients = get_field("ingredients_list");
+                function show_ingredients($ingredients)
+                {
+                    foreach ($ingredients as $i) { ?>
+                        <div class="c-ingredient">
+                            <img src="<?= $i["ingredient_image"] ?>" alt="">
+                            <a href="<?= $i["ingredient_link"] ?>">
+                                <h3><?= $i["ingredient_name"] ?></h3>
+                            </a>
+                            <p><?= $i["ingredient_description"] ?></p>
+                        </div>
+                    <?php }
+                }
+
+                if ($ingredients) { ?>
+                    <div class="c-ingredients__wrapper">
+                        <div class="l-restrict c-ingredients">
+                            <div class="heading c-ingredients__heading">
+                                Key <strong>ingredients</strong>
+                            </div>
+                            <div class="c-ingredients__grid">
+                                <?php show_ingredients($ingredients) ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php }
+                ?>
 
             </div>
             <!-- END OF DESCRIPTION -->
@@ -243,37 +272,7 @@ if (!is_object($product)) {
 
     </div>
     <!-- END OF PRODUCT TABS -->
-</div>
-<?php
 
-$ingredients = get_field("ingredients_list");
-function show_ingredients($ingredients)
-{
-    foreach ($ingredients as $i) { ?>
-        <div class="c-ingredient">
-            <img src="<?= $i["ingredient_image"] ?>" alt="">
-            <a href="<?= $i["ingredient_link"] ?>">
-                <h3><?= $i["ingredient_name"] ?></h3>
-            </a>
-            <p><?= $i["ingredient_description"] ?></p>
-        </div>
-    <?php }
-}
-
-if ($ingredients) { ?>
-    <div class="container__outer c-ingredients__wrapper">
-        <div class="l-restrict c-ingredients">
-            <div class="heading c-ingredients__heading">
-                Key <strong>ingredients</strong>
-            </div>
-            <div class="c-ingredients__grid">
-                <?php show_ingredients($ingredients) ?>
-            </div>
-        </div>
-    </div>
-<?php }
-?>
-<div class="container__outer">
 
 
     <!-- KEY BENEFITS -->

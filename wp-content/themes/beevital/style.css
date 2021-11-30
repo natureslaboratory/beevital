@@ -5633,6 +5633,13 @@ p.stock.in-stock {
   font-weight: 600;
   margin: 2rem 0 2rem 0;
   font-family: "Aller-Light", sans-serif;
+  line-height: 1.4rem;
+}
+
+@media (max-width: 600px) {
+  #reply-title {
+    font-size: 1.1rem;
+  }
 }
 
 #reply-title {
@@ -5692,10 +5699,16 @@ p.stock.in-stock {
 }
 
 .c-ingredients {
-  padding-bottom: 70px;
+  margin-top: 70px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .c-ingredients {
+    margin-top: 40px;
+  }
 }
 
 .c-ingredients .c-ingredients__heading {

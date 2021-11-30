@@ -244,14 +244,17 @@ if (!is_object($product)) {
     </div>
     <!-- END OF PRODUCT TABS -->
 </div>
-<?php 
+<?php
 
 $ingredients = get_field("ingredients_list");
-function show_ingredients($ingredients) {
+function show_ingredients($ingredients)
+{
     foreach ($ingredients as $i) { ?>
         <div class="c-ingredient">
             <img src="<?= $i["ingredient_image"] ?>" alt="">
-            <a href="<?= $i["ingredient_link"] ?>"><h3><?= $i["ingredient_name"] ?></h3></a>
+            <a href="<?= $i["ingredient_link"] ?>">
+                <h3><?= $i["ingredient_name"] ?></h3>
+            </a>
             <p><?= $i["ingredient_description"] ?></p>
         </div>
     <?php }
@@ -259,8 +262,13 @@ function show_ingredients($ingredients) {
 
 if ($ingredients) { ?>
     <div class="container__outer c-ingredients__wrapper">
-        <div class="c-ingredients">
-            <?php show_ingredients($ingredients) ?>
+        <div class="l-restrict c-ingredients">
+            <div class="heading c-ingredients__heading">
+                Key <strong>ingredients</strong>
+            </div>
+            <div class="c-ingredients__grid">
+                <?php show_ingredients($ingredients) ?>
+            </div>
         </div>
     </div>
 <?php }

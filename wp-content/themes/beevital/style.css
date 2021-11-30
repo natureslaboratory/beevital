@@ -5686,7 +5686,25 @@ p.stock.in-stock {
   margin-top: 0.6rem;
 }
 
+.l-restrict {
+  max-width: 1146px;
+  margin: 0 auto;
+}
+
 .c-ingredients {
+  padding-bottom: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-ingredients .c-ingredients__heading {
+  border-bottom: 1px solid rgba(192, 192, 192, 0.5);
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.c-ingredients .c-ingredients__grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5695,12 +5713,9 @@ p.stock.in-stock {
   -ms-flex-line-pack: center;
       align-content: center;
   gap: 3rem;
-  padding-bottom: 70px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1146px;
-  margin: 0 auto;
 }
 
 .c-ingredients .c-ingredient {
@@ -5717,6 +5732,18 @@ p.stock.in-stock {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .c-ingredients .c-ingredient {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .c-ingredients .c-ingredient {
+    max-width: 200px;
+  }
 }
 
 .c-ingredients .c-ingredient img {
@@ -5740,7 +5767,19 @@ p.stock.in-stock {
   font-size: 1.3rem;
 }
 
+@media screen and (max-width: 1023px) {
+  .c-ingredients .c-ingredient h3 {
+    font-size: 1.1rem;
+  }
+}
+
 .c-ingredients .c-ingredient p {
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .c-ingredients .c-ingredient p {
+    font-size: 1em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

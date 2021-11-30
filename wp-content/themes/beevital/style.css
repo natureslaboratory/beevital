@@ -5686,10 +5686,6 @@ p.stock.in-stock {
   margin-top: 0.6rem;
 }
 
-.c-ingredients__wrapper {
-  background-color: #fff9e5a1;
-}
-
 .c-ingredients {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5699,7 +5695,7 @@ p.stock.in-stock {
   -ms-flex-line-pack: center;
       align-content: center;
   gap: 2rem;
-  padding: 70px 0;
+  padding-bottom: 70px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

@@ -5786,4 +5786,8 @@ p.stock.in-stock {
 .woocommerce-variation-availability {
   margin-top: 0.4rem;
 }
+
+.woocommerce-product-rating {
+  font-family: 'Aller-Light', sans-serif;
+}
 /*# sourceMappingURL=style.css.map */

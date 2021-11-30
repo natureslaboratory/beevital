@@ -582,7 +582,7 @@ span.new_line {
 }
 
 .container__inner.mw_1146 {
-  max-width: 1024px;
+  max-width: 1146px;
 }
 
 .container__inner .intro .heading:last-child,
@@ -5154,26 +5154,22 @@ body.open #mobile_nav {
   font-size: 1.5em;
 }
 
-#content-page ul, #product_description ul {
+#content-page ul {
   padding-left: 20px;
   margin-bottom: 30px;
-  font-family: "Aller-Light", sans-serif;
-  font-size: 1.1875em;
-  line-height: 1.4;
-  color:#444549;
 }
 
-#content-page ul li, #product_description ul li{
+#content-page ul li {
   list-style: disc;
   padding-bottom: 10px;
 }
 
-#content-page ol, #product_description ol {
+#content-page ol {
   padding-left: 20px;
   margin-bottom: 30px;
 }
 
-#content-page ol li, #product_description ol li {
+#content-page ol li {
   list-style: decimal;
   padding-bottom: 10px;
 }
@@ -5688,63 +5684,67 @@ p.stock.in-stock {
   width: auto;
   text-align: center;
   margin-top: 0.6rem;
-figure.wp-block-image{
-	text-align: center;
 }
 
-figure.wp-block-image img{
-	margin:0 auto;
-	display:block;
+.c-ingredients__wrapper {
+  background-color: #fff9e5a1;
 }
 
-figcaption{
-	font-family:"Aller-Light", sans-serif;
-	font-size:0.9rem;
-	border-bottom:1px solid #f6f6f6;
-	color:#696969;
-	padding-bottom:.5em;
+.c-ingredients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 2rem;
+  padding: 70px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1146px;
+  margin: 0 auto;
 }
 
-#content-page a.wp-block-button__link{
-	font-family: "Aller-Bold", sans-serif;
-	text-decoration: none;
-	background: #555469;
+.c-ingredients .c-ingredient {
+  max-width: 300px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
-#content-page a.wp-block-button__link:hover{
-	background:#f6f6f6;
-	color:#555469;
+.c-ingredients .c-ingredient img {
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }
 
-ins{
-	text-decoration: none;
+@media screen and (max-width: 370px) {
+  .c-ingredients .c-ingredient img {
+    width: 80%;
+  }
 }
 
-ins bdi{
-
+.c-ingredients .c-ingredient h3 {
+  font-weight: 600;
+  font-family: "Aller-Light", sans-serif;
+  margin: 1rem 0 0.6rem 0;
+  font-size: 1.3rem;
 }
 
-ins bdi:after{
-	content: "";
-}
-
-.price del{
-	color:#ccc;
-}
-
-span.onsale{
-    font-family: "Aller-Bold", sans-serif;
-    z-index: 20000;
-    position: absolute;
-    background: gold;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    line-height: 60px;
-    border-radius: 50%;
-    margin: 10px;
-    color: #fff;
-    transform: rotate(-10deg);
-    box-shadow: 0px 0px 10px #ddd;
+.c-ingredients .c-ingredient p {
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -14,7 +14,7 @@
 
                     <div class="text">
                         <p class="large">
-                             Propolis offers an array of benefits for many ailments and is one of nature’s richest sources of bioflavonoids for immune support. 
+                            Propolis offers an array of benefits for many ailments and is one of nature’s richest sources of bioflavonoids for immune support.
                         </p>
                     </div>
 
@@ -22,7 +22,7 @@
 
                 <div class="image_wrapper">
                     <div class="image">
-                        <img src="<?php bv__getThemeImageUrl('home/natures_pharmacist/honey_bee.png'); ?>"/>
+                        <img src="<?php bv__getThemeImageUrl('home/natures_pharmacist/honey_bee.png'); ?>" />
                     </div>
                 </div>
 
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="icon">
-                    <img src="<?php bv__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>"/>
+                    <img src="<?php bv__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>" />
                 </div>
 
                 <div class="icon">
@@ -63,7 +63,7 @@
                 <li>
                     <a href="/remedies/cold-and-flu" class="<?php echo bv__isRemedy('cold-and-flu') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/cold_and_flu.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/cold_and_flu.png'); ?>" />
                         </div>
                         Cold <span class="new_line">and flu</span>
                     </a>
@@ -72,7 +72,7 @@
                 <li>
                     <a href="/remedies/joints-and-mobility" class="<?php echo bv__isRemedy('joints-and-mobility') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/joints_and_mobility.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/joints_and_mobility.png'); ?>" />
                         </div>
                         Joints <span class="new_line">and mobility</span>
                     </a>
@@ -81,7 +81,7 @@
                 <li>
                     <a href="/remedies/skin-conditions" class="<?php echo bv__isRemedy('skin-conditions') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/skin_conditions.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/skin_conditions.png'); ?>" />
                         </div>
                         Skin <span class="new_line">conditions</span>
                     </a>
@@ -90,7 +90,7 @@
                 <li>
                     <a href="/remedies/fatigue-and-recovery" class="<?php echo bv__isRemedy('fatigue-and-recovery') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/fatigue_and_recovery.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/fatigue_and_recovery.png'); ?>" />
                         </div>
                         Fatigue <span class="new_line">and recovery</span>
                     </a>
@@ -99,7 +99,7 @@
                 <li>
                     <a href="/remedies/respiratory-conditions" class="<?php echo bv__isRemedy('respiratory-conditions') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/respiratory_conditions.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/respiratory_conditions.png'); ?>" />
                         </div>
                         Respiratory <span class="new_line">conditions</span>
                     </a>
@@ -108,7 +108,7 @@
                 <li>
                     <a href="/remedies/oral-hygiene" class="<?php echo bv__isRemedy('oral-hygiene') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/oral_hygiene.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/oral_hygiene.png'); ?>" />
                         </div>
                         Oral <span class="new_line">hygiene</span>
                     </a>
@@ -117,7 +117,7 @@
                 <li>
                     <a href="/remedies/cuts-and-burns" class="<?php echo bv__isRemedy('cuts-and-burns') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/cuts_and_burns.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/cuts_and_burns.png'); ?>" />
                         </div>
                         Cuts <span class="new_line">and burns</span>
                     </a>
@@ -126,7 +126,7 @@
                 <li>
                     <a href="/remedies/digestive-health" class="<?php echo bv__isRemedy('digestive-health') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/digestive_health.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/digestive_health.png'); ?>" />
                         </div>
                         Digestive <span class="new_line">health</span>
                     </a>
@@ -135,7 +135,7 @@
                 <li>
                     <a href="/remedies/healthy-ageing" class="<?php echo bv__isRemedy('healthy-ageing') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/healthy_ageing.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/healthy_ageing.png'); ?>" />
                         </div>
                         Healthy <span class="new_line">ageing</span>
                     </a>
@@ -144,7 +144,7 @@
                 <li>
                     <a href="/remedies/immune-support" class="<?php echo bv__isRemedy('immune-support') ? 'active' : ''; ?>">
                         <div class="icon">
-                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/immune_support.png'); ?>"/>
+                            <img src="<?php bv__getThemeImageUrl('global/misc/remedy_icons/immune_support.png'); ?>" />
                         </div>
                         Immune <span class="new_line">support</span>
                     </a>
@@ -203,7 +203,7 @@
             <div class="main_intro">
 
                 <div class="column mw_410">
-                    <?php do_action( 'woocommerce_archive_description' ); ?>
+                    <?php do_action('woocommerce_archive_description'); ?>
 
 
 
@@ -243,12 +243,12 @@
 
                 <div class="product_listings">
 
-                    <?php if($products = bv__getProductsForCurrentRemedy(3,true)) : ?>
-                        <?php foreach($products as $_product) : $product = bv__isProductVariableById($_product->ID) ? new WC_Product_Variable($_product->ID) : new WC_Product($_product->ID); ?>
+                    <?php if ($products = bv__getProductsForCurrentRemedy(3, true)) : ?>
+                        <?php foreach ($products as $_product) : $product = bv__isProductVariableById($_product->ID) ? new WC_Product_Variable($_product->ID) : new WC_Product($_product->ID); ?>
                             <div class="product">
 
                                 <div class="image">
-                                    <?php echo get_the_post_thumbnail($product->get_id(),'medium'); ?>
+                                    <?php echo get_the_post_thumbnail($product->get_id(), 'medium'); ?>
                                 </div>
 
                                 <div class="overlay">
@@ -256,12 +256,12 @@
                                     <div class="name__price">
                                         <div class="name"><?php echo $product->get_title(); ?></div>
 
-                                        <?php if(bv__isProductVariableById($_product->ID)): ?>
-                                        <div class="price">From <?= wc_price(wc_get_price_including_tax($product) ); ?></div>
-                                    <?php else: ?>
-                                        <div class="price"><?= wc_price(wc_get_price_including_tax($product) ); ?></div>
-                                    <?php endif; ?>
-                                        <?php woocommerce_template_loop_rating() ?>
+                                        <?php if (bv__isProductVariableById($_product->ID)) : ?>
+                                            <div class="price">From <?= wc_price(wc_get_price_including_tax($product)); ?></div>
+                                        <?php else : ?>
+                                            <div class="price"><?= wc_price(wc_get_price_including_tax($product)); ?></div>
+                                        <?php endif; ?>
+                                        <?= wc_review_ratings_enabled() ? wc_get_rating_html( $product->get_average_rating() ) : "" ?>
                                     </div>
                                     <a href="<?php echo get_permalink($product->get_id()); ?>" class="block_cta">
                                         <i class="fas fa-plus"></i>Read More
@@ -279,26 +279,26 @@
             <!-- END OF COLD AND FLU PRODUCTS -->
 
         </div>
-		
-		<?php if($posts = bv__getLatestBlogPosts(5,true)) : $p = 0 ?>
+
+        <?php if ($posts = bv__getLatestBlogPosts(5, true)) : $p = 0 ?>
             <div class="container__inner mw_1146">
 
-                <?php foreach($posts as $post) :  ?>
+                <?php foreach ($posts as $post) :  ?>
                     <div class="remedy_tab_section">
 
-                        <?php if($p % 2 == 0) : ?>
+                        <?php if ($p % 2 == 0) : ?>
                             <div class="column text">
 
                                 <div class="heading">
-                                    <?php echo apply_filters('the_title',$post->post_title); ?>
+                                    <?php echo apply_filters('the_title', $post->post_title); ?>
                                 </div>
-                                
-								<p>
-                                <?php 
-								$excerpt = substr(strip_tags($post->post_content),0,320);
-								echo $excerpt."&hellip;"; 
-								?>
-								</p>
+
+                                <p>
+                                    <?php
+                                    $excerpt = substr(strip_tags($post->post_content), 0, 320);
+                                    echo $excerpt . "&hellip;";
+                                    ?>
+                                </p>
 
                                 <a href="<?php echo get_permalink($post->ID); ?>" class="inline_cta" title="<?php echo $post->post_title; ?>">
                                     Read more<i class="far fa-long-arrow-right"></i>
@@ -309,29 +309,29 @@
 
                             <div class="column image">
 
-                                <?php echo get_the_post_thumbnail($post->ID,'large'); ?>
-								
+                                <?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
+
                             </div>
 
-                        <?php else: ?>
+                        <?php else : ?>
 
                             <div class="column image">
-                                <?php echo get_the_post_thumbnail($post->ID,'large'); ?>
+                                <?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
                             </div>
 
                             <div class="column text">
 
                                 <div class="heading">
-                                    <?php echo apply_filters('the_title',$post->post_title); ?>
+                                    <?php echo apply_filters('the_title', $post->post_title); ?>
                                 </div>
-								
-								<p>
-                                <?php 
-								$excerpt = substr(strip_tags($post->post_content),0,320);
-								echo $excerpt."&hellip;"; 
-								?>
-								</p>
-								
+
+                                <p>
+                                    <?php
+                                    $excerpt = substr(strip_tags($post->post_content), 0, 320);
+                                    echo $excerpt . "&hellip;";
+                                    ?>
+                                </p>
+
                                 <a href="<?php echo get_permalink($post->ID); ?>" class="inline_cta" title="<?php echo $post->post_title; ?>">
                                     Read more<i class="far fa-long-arrow-right"></i>
                                 </a>
@@ -341,10 +341,10 @@
 
 
                     </div>
-                <?php 
-				$p++;
-				endforeach; 
-				?>
+                <?php
+                    $p++;
+                endforeach;
+                ?>
 
             </div>
         <?php endif; ?>

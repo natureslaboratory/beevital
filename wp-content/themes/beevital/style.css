@@ -5808,4 +5808,8 @@ p.stock.in-stock {
   float: unset;
   margin-top: 0.4rem;
 }
+
+.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta {
+  margin-top: 0.3rem;
+}
 /*# sourceMappingURL=style.css.map */

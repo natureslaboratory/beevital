@@ -124,7 +124,7 @@
                                     <?php else: ?>
                                         <div class="price"><?php echo wc_price(wc_get_price_including_tax($product) ); ?></div>
                                     <?php endif; ?>
-                                    <?php woocommerce_template_loop_rating() ?>
+                                    <?= wc_review_ratings_enabled() ? wc_get_rating_html( $product->get_average_rating() ) : "" ?>
                                 </div>
                                 <a href="<?php echo get_permalink($product->get_id()); ?>" class="block_cta">
                                     <i class="fas fa-plus"></i>Read More

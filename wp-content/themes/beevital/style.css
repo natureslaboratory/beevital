@@ -5803,4 +5803,9 @@ p.stock.in-stock {
 .woocommerce-product-rating {
   font-family: 'Aller-Light', sans-serif;
 }
+
+.woocommerce .star-rating {
+  float: unset;
+  margin-top: 0.4rem;
+}
 /*# sourceMappingURL=style.css.map */

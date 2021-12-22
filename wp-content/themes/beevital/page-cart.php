@@ -18,6 +18,9 @@
                     </div>
 
                     <div class="text">
+	                    <p>
+		                    <strong>Please note that we are now closed for Christmas. Any orders placed will not be processed until 4th January.</strong>
+		                </p>
                         <p>
                             You have <strong><?php echo WC()->cart->get_cart_contents_count(); ?></strong> items at <strong><?php echo WC()->cart->get_cart_subtotal(); ?></strong>
                         </p>

@@ -5850,4 +5850,10 @@ p.stock.in-stock {
 .woocommerce #reviews #comments ol.commentlist li .comment-text p.meta {
   margin-top: 0.3rem;
 }
+
+figcaption{
+	font-family: "Aller-Light", sans-serif;
+	font-size:0.9rem;
+	color:#777;
+}
 /*# sourceMappingURL=style.css.map */

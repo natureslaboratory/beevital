@@ -274,7 +274,17 @@
   }
 }
 </script>
-
+<script type="text/javascript">
+  window.woorankAssistantOptions = window.woorankAssistantOptions || {};
+  window.woorankAssistantOptions.url = 'beevitalpropolis.com';
+  window.woorankAssistantOptions.assistantPublicKey = '53e7c3e05e6b83beabe349e078b321d1';
+  window.woorankAssistantOptions.collectWebVitals = true;
+  (function() {
+    var wl = document.createElement('script'); wl.type = 'text/javascript'; wl.async = true;
+    wl.src = 'https://assistant.woorank.com/hydra/assistantLoader.latest.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wl, s);
+  })();
+</script>
 
 </body>
 </html>

@@ -585,6 +585,10 @@ span.new_line {
   max-width: 1146px;
 }
 
+.container__inner.mw_800 {
+  max-width: 800px;
+}
+
 .container__inner .intro .heading:last-child,
 .container__inner .main_header .heading:last-child {
   margin-bottom: 0;
@@ -5854,6 +5858,16 @@ p.stock.in-stock {
 figcaption{
 	font-family: "Aller-Light", sans-serif;
 	font-size:0.9rem;
+	color:#333;
+}
+
+a.wp-block-button__link{
+	text-decoration: none;
+	font-family: "Aller-Light", sans-serif;
+}
+
+a.wp-block-button__link:hover{
+	background:#777;
 	color:#333;
 }
 /*# sourceMappingURL=style.css.map */

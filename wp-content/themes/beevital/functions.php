@@ -1282,8 +1282,3 @@ function ha_upload_handler() {
 		}
 }
 add_action( 'admin_post_ha_upload_stock', 'ha_upload_handler');
-
-// function to check if we're on a blog page
-function is_blog () {
-    return ( is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type();
-}

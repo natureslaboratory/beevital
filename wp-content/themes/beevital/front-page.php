@@ -16,8 +16,8 @@
                     </div>
 
                     <div class="heading large">
-						<h1>Propolis</h1>
-						<h2><strong>21st century natural medicine</strong></h2>
+                        <h1>Propolis</h1>
+                        <h2><strong>21st century natural medicine</strong></h2>
                     </div>
 
                     <p>
@@ -176,7 +176,7 @@
 
                 <div class="btn_wrapper">
                     <a data-fancybox data-type="html" href="https://www.youtube.com/watch?v=2NZ63-2lnfw" class="btn">
-	                    <span>Watch a Video</span>
+                        <span>Watch a Video</span>
                         <i class="fas fa-play"></i>
                     </a>
                 </div>
@@ -200,7 +200,7 @@
     </div>
     <!-- END OF SHOP RANGES CTA -->
 
-    <?php if($popular = bv__getPopularProducts()) : ?>
+    <?php if ($popular = bv__getPopularProducts()) : ?>
         <!-- MOST POPULAR PRODUCTS -->
         <div class="products_partial container__inner mw_1366">
 
@@ -218,28 +218,28 @@
 
             <div class="product_listings">
 
-                <?php foreach($popular as $popularProduct) :
+                <?php foreach ($popular as $popularProduct) :
 
                     $product = bv__isProductVariableById($popularProduct->ID) ? new WC_Product_Variable($popularProduct->ID) : new WC_Product($popularProduct->ID);
 
-                    ?>
+                ?>
                     <div class="product">
 
                         <div class="image">
-                            <?php echo get_the_post_thumbnail($popularProduct->ID,'medium'); ?>
+                            <?php echo get_the_post_thumbnail($popularProduct->ID, 'medium'); ?>
                         </div>
 
                         <div class="overlay">
 
                             <div class="name__price">
                                 <div class="name"><?php echo $product->get_title(); ?></div>
-                                <?php  
-                                        
+                                <?php
+
                                 ?>
-                                
-                                <?php if(bv__isProductVariableById($popularProduct->ID)): ?>
+
+                                <?php if (bv__isProductVariableById($popularProduct->ID)) : ?>
                                     <div class="price">From <?php echo wc_price(wc_get_price_including_tax($product)); ?></div>
-                                <?php else: ?>
+                                <?php else : ?>
                                     <div class="price"><?php echo wc_price(wc_get_price_including_tax($product)); ?></div>
                                 <?php endif; ?>
                             </div>
@@ -410,8 +410,8 @@
 
                 <div class="heading">
                     <h2>
-						What exactly is <strong>propolis?</strong>
-					</h2>
+                        What exactly is <strong>propolis?</strong>
+                    </h2>
                 </div>
 
                 <p>
@@ -428,8 +428,8 @@
 
                 <div class="heading">
                     <h2>
-						How does <strong>propolis</strong> work?
-					</h2>
+                        How does <strong>propolis</strong> work?
+                    </h2>
                 </div>
 
                 <p>
@@ -448,4 +448,72 @@
     <!-- END OF SPLIT CTA -->
 
 </div>
+<?php if ($posts = bv__getLatestBlogPosts(5, false)) : $p = 0 ?>
+    <div class="container__inner mw_1146">
+
+        <?php foreach ($posts as $post) :  ?>
+            <div class="remedy_tab_section">
+
+                <?php if ($p % 2 == 0) : ?>
+                    <div class="column text">
+
+                        <div class="heading">
+                            <?php echo apply_filters('the_title', $post->post_title); ?>
+                        </div>
+
+                        <p>
+                            <?php
+                            $excerpt = substr(strip_tags($post->post_content), 0, 320);
+                            echo $excerpt . "&hellip;";
+                            ?>
+                        </p>
+
+                        <a href="<?php echo get_permalink($post->ID); ?>" class="inline_cta" title="<?php echo $post->post_title; ?>">
+                            Read more<i class="far fa-long-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="column image">
+
+                        <?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
+
+                    </div>
+
+                <?php else : ?>
+
+                    <div class="column image">
+                        <?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
+                    </div>
+
+                    <div class="column text">
+
+                        <div class="heading">
+                            <?php echo apply_filters('the_title', $post->post_title); ?>
+                        </div>
+
+                        <p>
+                            <?php
+                            $excerpt = substr(strip_tags($post->post_content), 0, 320);
+                            echo $excerpt . "&hellip;";
+                            ?>
+                        </p>
+
+                        <a href="<?php echo get_permalink($post->ID); ?>" class="inline_cta" title="<?php echo $post->post_title; ?>">
+                            Read more<i class="far fa-long-arrow-right"></i>
+                        </a>
+
+                    </div>
+                <?php endif; ?>
+
+
+            </div>
+        <?php
+            $p++;
+        endforeach;
+        ?>
+
+    </div>
+<?php endif; ?>
 <?php get_footer(); ?>

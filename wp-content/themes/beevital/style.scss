@@ -5184,3 +5184,19 @@ p.stock {
 .woocommerce #reviews #comments ol.commentlist li .comment-text p.meta {
   margin-top: 0.3rem;
 }
+
+// Yoast FAQ
+
+.schema-faq.wp-block-yoast-faq-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.schema-faq-section {
+  strong {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    display: block;
+  }
+}

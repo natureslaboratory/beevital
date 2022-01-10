@@ -7,6 +7,13 @@ add_action('wp_enqueue_scripts',function(){
     wp_enqueue_style('font-awesome','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
     wp_enqueue_script('jquery');
+    wp_enqueue_script('faq', "/wp-content/themes/beevital/dist/scripts/index.js", [], false, true);
+    ?> 
+    <script>
+        console.log("<?php echo get_template_directory() . "/dist/index.js" ?>");
+    </script>
+    
+    <?php
 
     /** Font awesome js */
     wp_register_script('font-awesome','https://kit.fontawesome.com/fae2de29d1.js',['jquery']);

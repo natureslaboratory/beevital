@@ -5862,9 +5862,35 @@ p.stock.in-stock {
   gap: 2rem;
 }
 
+.schema-faq-section .schema-faq-question-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.schema-faq-section .schema-faq-question-container i {
+  font-size: 1.4rem;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+}
+
 .schema-faq-section strong {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
   display: block;
+  cursor: pointer;
+}
+
+.schema-faq-section .schema-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: 150ms;
+  transition: 150ms;
 }
 /*# sourceMappingURL=style.css.map */

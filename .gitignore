@@ -6,4 +6,4 @@
 !/wp-content/themes/beevital
 !.gitignore 
 !.cpanel.yml
-/wp-content/themes/herbalapothecary/node_modules
+/wp-content/themes/beevital/node_modules

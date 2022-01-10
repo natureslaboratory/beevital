@@ -5194,9 +5194,28 @@ p.stock {
 }
 
 .schema-faq-section {
+
+  .schema-faq-question-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    i {
+      font-size: 1.4rem;
+      transition: 150ms;
+    }
+  }
+
   strong {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
     display: block;
+    cursor: pointer;
+  }
+
+  .schema-faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: 150ms;
   }
 }

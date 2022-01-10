@@ -7,8 +7,6 @@ faqContainers.forEach(c => {
     new Faq(c);
 })
 
-console.log("hello");
-
 // create instances of question (has method hide/show)
 // add event listeners for click for opening/closing
 

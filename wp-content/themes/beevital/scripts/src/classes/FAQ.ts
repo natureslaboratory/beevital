@@ -25,7 +25,7 @@ export default class Faq {
 
     attachEventListeners() {
         this.questions.forEach(q => {
-            q.node.addEventListener("click", (e) => {
+            q.question.addEventListener("click", (e) => {
                 q.isShowing ? q.hide() : q.show();
             })
         })

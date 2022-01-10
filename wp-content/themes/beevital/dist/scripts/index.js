@@ -57,7 +57,7 @@ var Faq = /** @class */ (function () {
     };
     Faq.prototype.attachEventListeners = function () {
         this.questions.forEach(function (q) {
-            q.node.addEventListener("click", function (e) {
+            q.question.addEventListener("click", function (e) {
                 q.isShowing ? q.hide() : q.show();
             });
         });
@@ -89,13 +89,12 @@ var Question = /** @class */ (function () {
         // adds chevron
         this.chevron = document.createElement("i");
         this.chevron.className = "far fa-chevron-down";
-        var question = this.node.getElementsByClassName("schema-faq-question")[0];
+        this.question = this.node.getElementsByClassName("schema-faq-question")[0];
         var questionContainer = document.createElement("div");
         questionContainer.className = "schema-faq-question-container";
-        questionContainer.appendChild(question);
+        questionContainer.appendChild(this.question);
         questionContainer.appendChild(this.chevron);
         this.node.insertBefore(questionContainer, this.answer);
-        console.log(this.node, this.answer);
     }
     Object.defineProperty(Question.prototype, "isShowing", {
         get: function () {
@@ -195,7 +194,6 @@ var faqContainers = Array.from(document.getElementsByClassName("schema-faq"));
 faqContainers.forEach(function (c) {
     new _classes_FAQ__WEBPACK_IMPORTED_MODULE_0__["default"](c);
 });
-console.log("hello");
 // create instances of question (has method hide/show)
 // add event listeners for click for opening/closing
 

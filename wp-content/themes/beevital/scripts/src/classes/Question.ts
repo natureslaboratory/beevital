@@ -1,5 +1,6 @@
 export default class Question {
     node: HTMLElement;
+    question: HTMLElement;
     answer: HTMLElement;
     chevron: HTMLElement;
 
@@ -20,14 +21,13 @@ export default class Question {
         // adds chevron
         this.chevron = document.createElement("i");
         this.chevron.className = "far fa-chevron-down"
-        let question = (this.node.getElementsByClassName("schema-faq-question") as HTMLCollectionOf<HTMLElement>)[0];
+        this.question = (this.node.getElementsByClassName("schema-faq-question") as HTMLCollectionOf<HTMLElement>)[0];
         let questionContainer = document.createElement("div");
         questionContainer.className = "schema-faq-question-container";
-        questionContainer.appendChild(question);
+        questionContainer.appendChild(this.question);
         questionContainer.appendChild(this.chevron);
         this.node.insertBefore(questionContainer, this.answer);
 
-        console.log(this.node, this.answer);
     }
 
     show() {

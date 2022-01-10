@@ -31,12 +31,15 @@ export default class Question {
     }
 
     show() {
+        this.answer.style.transition = `${this.answer.scrollHeight/2 + 150}ms`
         this.answer.style.maxHeight = `${this.answer.scrollHeight}px`;
+        this.answer.style.marginBottom = null;
         this.chevron.style.transform = 'rotate(180deg)';
     }
 
     hide() {
         this.answer.style.maxHeight = null;
+        this.answer.style.marginBottom = "-1rem";
         this.chevron.style.transform = 'rotate(0deg)';
     }
 }

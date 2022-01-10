@@ -190,7 +190,7 @@ p:last-child,
 #checkout_confirmation .section .order_details .listing .product .product_details:last-child,
 #checkout_confirmation .section .order_details .listing .price:last-child,
 #checkout_confirmation .section .total_cost .row .column:last-child {
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1023px) {
@@ -5216,6 +5216,8 @@ p.stock {
   .schema-faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: 150ms;
+    transition: 150ms ease-in;
+    padding-top: 1rem;
+    margin-bottom: -1rem;
   }
 }

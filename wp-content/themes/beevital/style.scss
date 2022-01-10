@@ -5199,6 +5199,7 @@ p.stock {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0.5rem;
 
     i {
       font-size: 1.4rem;
@@ -5207,7 +5208,6 @@ p.stock {
   }
 
   strong {
-    margin-bottom: 0.5rem;
     font-size: 1.5rem;
     display: block;
     cursor: pointer;

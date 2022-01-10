@@ -5872,6 +5872,7 @@ p.stock.in-stock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .schema-faq-section .schema-faq-question-container i {
@@ -5881,7 +5882,6 @@ p.stock.in-stock {
 }
 
 .schema-faq-section strong {
-  margin-bottom: 0.5rem;
   font-size: 1.5rem;
   display: block;
   cursor: pointer;

@@ -108,7 +108,7 @@ var Question = /** @class */ (function () {
         configurable: true
     });
     Question.prototype.show = function () {
-        this.answer.style.transition = "".concat(this.answer.scrollHeight / 2 + 150, "ms");
+        this.answer.style.transition = "".concat(this.answer.scrollHeight / 4 + 150, "ms");
         this.answer.style.maxHeight = "".concat(this.answer.scrollHeight, "px");
         this.answer.style.marginBottom = null;
         this.chevron.style.transform = 'rotate(180deg)';

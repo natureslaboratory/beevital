@@ -234,7 +234,7 @@
                     <div class="intro">
 
                         <div class="heading">
-                            <strong>Best selling</strong> <?php echo bv__getCurrentCategoryName(); ?> products
+                            <strong>Browse our</strong> <?php echo bv__getCurrentCategoryName(); ?> products
                         </div>
 
                     </div>

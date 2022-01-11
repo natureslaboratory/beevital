@@ -230,7 +230,7 @@ if (!is_object($product)) {
                         <div class="c-ingredients__wrapper">
                             <div class="l-restrict c-ingredients">
                                 <div class="heading c-ingredients__heading">
-                                    Key <strong>ingredients</strong>
+                                    <h2>Key <strong>ingredients</strong></h2>
                                 </div>
                                 <div class="c-ingredients__grid">
                                     <?php show_ingredients($ingredients) ?>

@@ -243,7 +243,7 @@
 
                 <div class="product_listings">
 
-                    <?php if($products = bv__getProductsForCurrentRemedy(3,true)) : ?>
+                    <?php if($products = bv__getProductsForCurrentRemedy(30,true)) : ?>
                         <?php foreach($products as $_product) : $product = bv__isProductVariableById($_product->ID) ? new WC_Product_Variable($_product->ID) : new WC_Product($_product->ID); ?>
                             <div class="product">
 

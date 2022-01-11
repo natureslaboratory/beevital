@@ -248,9 +248,7 @@
                             <div class="product">
 
                                 <div class="image">
-                                    <a href="<?php echo get_permalink($product->get_id()); ?>">
-	                                    <?php echo get_the_post_thumbnail($product->get_id(),'medium'); ?>
-		                            </a>
+                                    <?php echo get_the_post_thumbnail($product->get_id(),'medium'); ?>
                                 </div>
 
                                 <div class="overlay">

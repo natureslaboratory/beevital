@@ -147,7 +147,7 @@
     <div class="become_stockist_cta">
 
         <div class="logo">
-            <img src="<?php bv__getThemeImageUrl('global/misc/beevital_logo.png'); ?>" />
+            <img src="<?php bv__getThemeImageUrl('global/misc/beevital_logo.png'); ?>" alt="BeeVital Propolis" />
         </div>
 
         <div class="text">

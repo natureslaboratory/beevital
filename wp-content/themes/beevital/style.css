@@ -2920,6 +2920,10 @@ body.open #mobile_nav {
   font-size: 3em;
 }
 
+.product_description .heading.c-ingredients__heading h2{
+	font-size:auto;
+}
+
 .product_description h3 {
   font-size: 2.5em;
 }

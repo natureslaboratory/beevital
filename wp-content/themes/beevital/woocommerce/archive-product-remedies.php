@@ -184,7 +184,7 @@
 
                     <div class="heading">
                         <!--<strong>Cold</strong> and flu-->
-                        <?php echo single_term_title(); ?>
+                        <h1><?php echo single_term_title(); ?></h1>
                     </div>
 
                 </div>

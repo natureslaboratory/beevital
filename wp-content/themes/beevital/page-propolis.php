@@ -9,7 +9,7 @@
                 <div>
 
                     <div class="heading large">
-                        What is propolis?
+                        <h1>What is propolis?</h1>
                     </div>
 
                     <div class="text">

@@ -2,14 +2,9 @@
 
 <?php
 	if(is_tag()){
-		
-		$wp_query = null;
-$args = array('posts_per_page' => 5, 'tag' => get_query_var('tag'));
-$posts = new WP_Query($args);
 ?>
 <div class="container__outer">
-	<h1><?php echo get_query_var('tag'); ?></h1>
-<?php if ($posts) : $p = 0 ?>
+<?php if ($posts = bv__getLatestBlogPosts(5, false)) : $p = 0 ?>
     <div class="container__inner mw_1146">
 
         <?php foreach ($posts as $post) :  ?>

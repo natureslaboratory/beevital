@@ -22,7 +22,7 @@
 
                 <div class="image_wrapper">
                     <div class="image">
-                        <img src="<?php bv__getThemeImageUrl('home/natures_pharmacist/honey_bee.png'); ?>"/>
+                        <img src="<?php bv__getThemeImageUrl('home/natures_pharmacist/honey_bee.png'); ?>" alt="Honey Bee" />
                     </div>
                 </div>
 
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="icon">
-                    <img src="<?php bv__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>"/>
+                    <img src="<?php bv__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>" alt="Bee" />
                 </div>
 
                 <div class="icon">

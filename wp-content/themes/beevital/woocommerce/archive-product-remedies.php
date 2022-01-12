@@ -300,7 +300,7 @@
 								</p>
 
                                 <a href="<?php echo get_permalink($post->ID); ?>" class="inline_cta" title="<?php echo $post->post_title; ?>">
-                                    Read more<i class="far fa-long-arrow-right"></i>
+                                    <?php echo $post->post_title; ?><i class="far fa-long-arrow-right"></i>
                                 </a>
 
                             </div>
@@ -332,7 +332,7 @@
 								</p>
 								
                                 <a href="<?php echo get_permalink($post->ID); ?>" class="inline_cta" title="<?php echo $post->post_title; ?>">
-                                    Read more<i class="far fa-long-arrow-right"></i>
+                                    <?php echo $post->post_title; ?><i class="far fa-long-arrow-right"></i>
                                 </a>
 
                             </div>

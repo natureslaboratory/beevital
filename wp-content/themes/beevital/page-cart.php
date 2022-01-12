@@ -14,7 +14,7 @@
                 <div id="page_intro">
 
                     <div class="heading large">
-                        Basket
+                        <h1>Basket</h1>
                     </div>
 
                     <div class="text">

@@ -4,10 +4,9 @@
 	if(is_tag()){
 ?>
 <div class="container__outer">
-	<h1>Posts Tagged '<?php echo $tag; ?>'</h1>
 <?php if ($posts = bv__getLatestBlogPosts(20, false)) : $p = 0 ?>
     <div class="container__inner mw_1146">
-
+		<h1>Posts Tagged '<?php echo $tag; ?>'</h1>
         <?php foreach ($posts as $post) :  ?>
             <div class="remedy_tab_section">
 

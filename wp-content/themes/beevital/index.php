@@ -8,6 +8,7 @@ $args = array('posts_per_page' => 5, 'tag' => $_GET['tag']);
 $posts = new WP_Query($args);
 ?>
 <div class="container__outer">
+	<h1><?php echo $_GET['tag']; ?></h1>
 <?php if ($posts) : $p = 0 ?>
     <div class="container__inner mw_1146">
 

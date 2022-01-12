@@ -448,6 +448,7 @@
     <!-- END OF SPLIT CTA -->
 
 </div>
+<div class="container__outer">
 <?php if ($posts = bv__getLatestBlogPosts(5, false)) : $p = 0 ?>
     <div class="container__inner mw_1146">
 
@@ -515,5 +516,6 @@
         ?>
 
     </div>
+</div>
 <?php endif; ?>
 <?php get_footer(); ?>

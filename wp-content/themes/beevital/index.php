@@ -63,7 +63,6 @@
                     </div>
                 <?php endif; ?>
 
-
             </div>
         <?php
             $p++;
@@ -72,6 +71,7 @@
 
     </div>
 </div>
+<?php endif; ?>
 <?php		
 	}
 ?>

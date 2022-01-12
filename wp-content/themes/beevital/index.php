@@ -8,7 +8,7 @@
     <div class="container__inner mw_1146">
 	    <div id="page_intro">
 		    <div class="heading large">
-				<h1>Posts Tagged '<?php echo $tag; ?>'</h1>
+				<h1>Posts Tagged '<?php echo $_GET['tag']; ?>'</h1>
 		    </div>
 	    </div>
         <?php foreach ($posts as $post) :  ?>

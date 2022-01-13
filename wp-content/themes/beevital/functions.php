@@ -1289,3 +1289,12 @@ function ha_upload_handler() {
 		}
 }
 add_action( 'admin_post_ha_upload_stock', 'ha_upload_handler');
+
+function bv_tag_query($query) {
+    if ($query->is_tag()) {
+        $query->set("posts_per_page", 5);
+    }
+    // echo "<pre>" . print_r($query, true) . "</pre>";
+} 
+
+add_action("pre_get_posts", "bv_tag_query", 20);

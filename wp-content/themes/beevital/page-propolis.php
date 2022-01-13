@@ -9,7 +9,7 @@
                 <div>
 
                     <div class="heading large">
-                        What is propolis?
+                        <h1>What is propolis?</h1>
                     </div>
 
                     <div class="text">
@@ -20,7 +20,7 @@
 
                 <div class="image_wrapper">
                     <div class="image">
-                        <img src="<?php bv__getThemeImageUrl('remedies/plants_bees.png'); ?>" />
+                        <img src="<?php bv__getThemeImageUrl('remedies/plants_bees.png'); ?>" alt="Plant and Bee" />
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="icon">
-                    <img src="<?php bv__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>" />
+                    <img src="<?php bv__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>" alt="Bee" />
                 </div>
 
                 <div class="icon">
@@ -152,7 +152,7 @@
                     <div class="image">
 
                         <div class="logo">
-                            <img src="<?php bv__getThemeImageUrl('global/misc/beevital_logo.png'); ?>" />
+                            <img src="<?php bv__getThemeImageUrl('global/misc/beevital_logo.png'); ?>" alt="BeeVital Propolis Logo" />
                         </div>
 
                     </div>

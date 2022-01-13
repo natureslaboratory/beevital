@@ -211,3 +211,6 @@ $orderItems = $order->get_items();
         </div>
     </div>
 </div>
+<script>
+pintrk('track', 'checkout');
+</script>

@@ -22,7 +22,7 @@
 
                 <div class="image_wrapper">
                     <div class="image">
-                        <img src="<?php bv__getThemeImageUrl('home/natures_pharmacist/honey_bee.png'); ?>"/>
+                        <img src="<?php bv__getThemeImageUrl('home/natures_pharmacist/honey_bee.png'); ?>" alt="Honey Bee" />
                     </div>
                 </div>
 
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="icon">
-                    <img src="<?php bv__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>"/>
+                    <img src="<?php bv__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>" alt="Bee" />
                 </div>
 
                 <div class="icon">
@@ -184,7 +184,7 @@
 
                     <div class="heading">
                         <!--<strong>Cold</strong> and flu-->
-                        <?php echo single_term_title(); ?>
+                        <h1><?php echo single_term_title(); ?></h1>
                     </div>
 
                 </div>
@@ -234,7 +234,7 @@
                     <div class="intro">
 
                         <div class="heading">
-                            <strong>Best selling</strong> <?php echo bv__getCurrentCategoryName(); ?> products
+                            <strong>Browse our</strong> <?php echo bv__getCurrentCategoryName(); ?> products
                         </div>
 
                     </div>
@@ -243,7 +243,7 @@
 
                 <div class="product_listings">
 
-                    <?php if($products = bv__getProductsForCurrentRemedy(3,true)) : ?>
+                    <?php if($products = bv__getProductsForCurrentRemedy(30,true)) : ?>
                         <?php foreach($products as $_product) : $product = bv__isProductVariableById($_product->ID) ? new WC_Product_Variable($_product->ID) : new WC_Product($_product->ID); ?>
                             <div class="product">
 
@@ -300,7 +300,7 @@
 								</p>
 
                                 <a href="<?php echo get_permalink($post->ID); ?>" class="inline_cta" title="<?php echo $post->post_title; ?>">
-                                    Read more<i class="far fa-long-arrow-right"></i>
+                                    <?php echo $post->post_title; ?><i class="far fa-long-arrow-right"></i>
                                 </a>
 
                             </div>
@@ -332,7 +332,7 @@
 								</p>
 								
                                 <a href="<?php echo get_permalink($post->ID); ?>" class="inline_cta" title="<?php echo $post->post_title; ?>">
-                                    Read more<i class="far fa-long-arrow-right"></i>
+                                    <?php echo $post->post_title; ?><i class="far fa-long-arrow-right"></i>
                                 </a>
 
                             </div>

@@ -5,7 +5,7 @@
     <div class="container__inner" id="auth">
 
         <div class="heading">
-            Login or <a href="/register">Register</a>
+            <h1>Login or <a href="/register">Register</a></h1>
         </div>
 
         <div class="form">

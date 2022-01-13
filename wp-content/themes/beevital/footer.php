@@ -116,6 +116,12 @@
                             How Does Propolis Work?
                         </a>
                     </li>
+                    
+                    <li>
+                        <a href="/faq/" title="Propolis FAQ">
+                            FAQ
+                        </a>
+                    </li>
 					
                 </ul>
 

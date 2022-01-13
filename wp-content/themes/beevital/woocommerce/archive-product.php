@@ -96,7 +96,7 @@
                 <div class="main_header">
 
                     <div class="heading">
-                        <strong><?php echo is_shop() ? 'All' : single_term_title(); ?></strong> <?php echo is_shop() ? 'products' : 'range'; ?>
+                        <h1><strong><?php echo is_shop() ? 'All' : single_term_title(); ?></strong> <?php echo is_shop() ? 'products' : 'range'; ?></h1>
                     </div>
 
                     <div class="text">
@@ -147,7 +147,7 @@
     <div class="become_stockist_cta">
 
         <div class="logo">
-            <img src="<?php bv__getThemeImageUrl('global/misc/beevital_logo.png'); ?>" />
+            <img src="<?php bv__getThemeImageUrl('global/misc/beevital_logo.png'); ?>" alt="BeeVital Propolis" />
         </div>
 
         <div class="text">

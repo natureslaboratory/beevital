@@ -448,6 +448,7 @@
     <!-- END OF SPLIT CTA -->
 
 </div>
+<div class="container__outer">
 <?php if ($posts = bv__getLatestBlogPosts(5, false)) : $p = 0 ?>
     <div class="container__inner mw_1146">
 
@@ -469,7 +470,7 @@
                         </p>
 
                         <a href="<?php echo get_permalink($post->ID); ?>" class="inline_cta" title="<?php echo $post->post_title; ?>">
-                            Read more<i class="far fa-long-arrow-right"></i>
+                            <?php echo $post->post_title; ?><i class="far fa-long-arrow-right"></i>
                         </a>
 
                     </div>
@@ -501,7 +502,7 @@
                         </p>
 
                         <a href="<?php echo get_permalink($post->ID); ?>" class="inline_cta" title="<?php echo $post->post_title; ?>">
-                            Read more<i class="far fa-long-arrow-right"></i>
+                            <?php echo $post->post_title; ?><i class="far fa-long-arrow-right"></i>
                         </a>
 
                     </div>
@@ -515,5 +516,6 @@
         ?>
 
     </div>
+</div>
 <?php endif; ?>
 <?php get_footer(); ?>

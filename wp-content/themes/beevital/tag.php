@@ -4,7 +4,7 @@
 	    <div id="page_intro">
 		    <div class="heading large">
 	        <?php $tag = get_queried_object(); echo "<h1>Tag: " . ucwords($tag->name); echo "</h1>"; ?>
-	        <?php echo "<p>"$tag->description."</p>"; ?>
+	        <?php echo "<p>".$tag->description."</p>"; ?>
 	        <?php $p = 0; ?>
 		    </div>
 	    </div>

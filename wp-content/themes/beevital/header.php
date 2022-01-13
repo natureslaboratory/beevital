@@ -433,6 +433,12 @@
                             </a>
                         </li>
 
+                        <li>
+                            <a href="<?= get_post_type_archive_link('post'); ?>">
+                                Blog
+                            </a>
+                        </li>
+
                     </ul>
 
                     <a href="<?php echo site_url(); ?>" class="logo">
@@ -445,6 +451,12 @@
                         <li>
                             <a href="#" class="search_popup_open">
                                 Search
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/faq">
+                                FAQ
                             </a>
                         </li>
 

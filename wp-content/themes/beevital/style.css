@@ -1068,7 +1068,7 @@ body.open #mobile_nav {
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1177px) {
   #header_wrapper {
     width: calc(100% + 60px);
     -webkit-transform: translateX(-30px);
@@ -5943,6 +5943,10 @@ body {
   font-family: "Aller-Light", sans-serif;
   margin-top: 65px;
   text-align: center;
+}
+
+#page_intro + .c-blog-posts > .remedy_tab_section:first-of-type {
+  padding-top: 0;
 }
 
 .c-blog-posts .remedy_tab_section {

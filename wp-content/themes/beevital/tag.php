@@ -4,6 +4,7 @@
 	    <div id="page_intro">
 		    <div class="heading large">
 	        <?php $tag = get_queried_object(); echo "<h1>Tag: " . $tag->name . "</h1>"; ?>
+	        <?php $tag->description; ?>
 	        <?php $p = 0; ?>
 		    </div>
 	    </div>

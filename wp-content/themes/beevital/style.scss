@@ -967,7 +967,7 @@ body.open #mobile_nav {
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1177px) {
   #header_wrapper {
     width: calc(100% + 60px);
     -o-transform: translateX(-30px);
@@ -5258,6 +5258,10 @@ body {
   text-align: center;
 }
 
+#page_intro + .c-blog-posts > .remedy_tab_section:first-of-type {
+  padding-top: 0;
+}
+
 .c-blog-posts {
   .remedy_tab_section {
     display: flex;
@@ -5268,6 +5272,17 @@ body {
 
     &:nth-child(2n) {
       flex-direction: row-reverse;
+    }
+
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+      max-width: 600px;
+      margin: 0 auto;
+      width: 100%;
+
+      &:nth-child(2n) {
+        flex-direction: column;
+      }
     }
 
     .text {

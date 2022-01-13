@@ -84,6 +84,9 @@
     .tabs_nav_wrapper.dark .tabs_nav li a .icon img,#product_main .description .remedy_list .remedies .icon img{
 	    object-fit:contain;
     }
+    .c-ingredients__heading{
+	    font-size:1em;
+    }
     </style>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />

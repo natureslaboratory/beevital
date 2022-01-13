@@ -35,7 +35,7 @@ if ( $related_products ) : ?>
                 <div class="overlay">
 
                     <div class="name__price">
-                        <div class="name"><?php echo $related_product->get_title(); ?></div>
+                        <div class="name"><a href="<?php echo get_permalink($product->get_id()); ?>" title="<?php echo $product->get_title(); ?>"><?php echo $product->get_title(); ?></a></div>
                         <?php if(bv__isProductVariableById($related_product->get_id())): ?>
                             <div class="price">From <?php echo woocommerce_price($related_product->get_variation_regular_price('min',1)); ?></div>
                         <?php else: ?>

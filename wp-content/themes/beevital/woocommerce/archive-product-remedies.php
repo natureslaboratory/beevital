@@ -254,7 +254,7 @@
                                 <div class="overlay">
 
                                     <div class="name__price">
-                                        <div class="name"><?php echo $product->get_title(); ?></div>
+                                        <div class="name"><a href="<?php echo get_permalink($product->get_id()); ?>" title="<?php echo $product->get_title(); ?>"><?php echo $product->get_title(); ?></a></div>
 
                                         <?php if(bv__isProductVariableById($_product->ID)): ?>
                                         <div class="price">From <?php echo woocommerce_price( $product->get_price_including_tax() ); ?></div>

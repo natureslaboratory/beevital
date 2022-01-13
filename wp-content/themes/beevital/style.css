@@ -5904,6 +5904,7 @@ p.stock.in-stock {
   gap: 1rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 #content-page a.c-tag {

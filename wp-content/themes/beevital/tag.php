@@ -3,7 +3,7 @@
     <div class="container__inner mw_1146">
 	    <div id="page_intro">
 		    <div class="heading large">
-	        <?php $tag = get_queried_object(); echo "<h1>Tag: " . $tag->name . "</h1>"; ?>
+	        <?php $tag = get_queried_object(); echo "<h1>Tag: " . $tag->name . "</h1>"; print_r($tag);?>
 	        <?php $tag->description; ?>
 	        <?php $p = 0; ?>
 		    </div>

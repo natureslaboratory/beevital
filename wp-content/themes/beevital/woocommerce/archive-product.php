@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+<?php 
+
+global $wp_query;
+// echo "<pre>" . print_r($wp_query, true) . "</pre>"
+?>
+
 <div class="container__outer">
 
     <!-- PAGE INTRO -->
@@ -109,33 +115,32 @@
 
             <div class="product_listings">
 
-                <?php if($products = bv__getProductsForCurrentCategory()) :
-                    foreach($products as $_product) : $product = bv__isProductVariableById($_product->ID) ? new WC_Product_Variable($_product->ID) : new WC_Product($_product->ID); ?>
-                        <div class="product woocommerce">
-                            <div class="image">
-                                <?php echo get_the_post_thumbnail($product->get_id(),'medium'); ?>
-                            </div>
-                            <div class="overlay">
-                                <div class="name__price">
-                                    <div class="name"><?php echo $product->get_title(); ?></div>
-
-                                    <?php if(bv__isProductVariableById($_product->ID)): ?>
-                                        <div class="price">From <?php echo wc_price(wc_get_price_including_tax($product)) ?></div>
-                                    <?php else: ?>
-                                        <div class="price"><?php echo wc_price(wc_get_price_including_tax($product) ); ?></div>
-                                    <?php endif; ?>
-                                    <?= wc_review_ratings_enabled() ? wc_get_rating_html( $product->get_average_rating() ) : "" ?>
-                                </div>
-                                <a href="<?php echo get_permalink($product->get_id()); ?>" class="block_cta">
-                                    <i class="fas fa-plus"></i>Read More
-                                </a>
-                            </div>
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <?php global $product; ?>
+                    <div class="product woocommerce">
+                        <div class="image">
+                            <?php the_post_thumbnail('medium'); ?>
                         </div>
-                    <?php endforeach;
-
-                endif; ?>
-
+                        <div class="overlay">
+                            <div class="name__price">
+                                <div class="name"><?php the_title() ?></div>
+                                <?php if(bv__isProductVariableById(get_the_ID())): ?>
+                                    <div class="price">From <?php echo wc_price(wc_get_price_including_tax($product)) ?></div>
+                                <?php else: ?>
+                                    <div class="price"><?php echo wc_price(wc_get_price_including_tax($product)); ?></div>
+                                <?php endif; ?>
+                                <?= wc_review_ratings_enabled() ? wc_get_rating_html( $product->get_average_rating() ) : "" ?>
+                            </div>
+                            <a href="<?php echo get_permalink($product->get_id()); ?>" class="block_cta">
+                                <i class="fas fa-plus"></i>Read More
+                            </a>
+                        </div>
+                    </div>
+                <?php endwhile; else : ?>
+                    <li><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></li>
+                <?php endif; ?>
             </div>
+            <?php do_action('woocommerce_after_shop_loop'); ?>
 
         </div>
         <!-- END OF ALL PRODUCTS -->

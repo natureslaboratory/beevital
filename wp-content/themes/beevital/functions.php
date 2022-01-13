@@ -1298,3 +1298,12 @@ function bv_tag_query($query) {
 } 
 
 add_action("pre_get_posts", "bv_tag_query", 20);
+
+function bv_wc_pagination($args) {
+    $leftArrow = "<i class='far fa-chevron-left'></i>";
+    $rightArrow = "<i class='far fa-chevron-right'></i>";
+    $args["prev_text"] = is_rtl() ? $rightArrow : $leftArrow . " Prev";
+    $args["next_text"] = is_rtl() ? $leftArrow : "Next " . $rightArrow;
+    return $args;
+}
+add_filter("woocommerce_pagination_args", "bv_wc_pagination");

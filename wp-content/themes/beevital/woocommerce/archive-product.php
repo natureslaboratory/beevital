@@ -123,7 +123,7 @@ global $wp_query;
                         </div>
                         <div class="overlay">
                             <div class="name__price">
-                                <div class="name"><?php the_title() ?></div>
+                                <div class="name"><a href="<?php echo get_permalink($product->get_id()); ?>" title="<?php echo $product->get_title(); ?>"><?php echo $product->get_title(); ?></a></div>
                                 <?php if(bv__isProductVariableById(get_the_ID())): ?>
                                     <div class="price">From <?php echo wc_price(wc_get_price_including_tax($product)) ?></div>
                                 <?php else: ?>

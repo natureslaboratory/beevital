@@ -7,7 +7,7 @@
         <div id="page_intro" class="container__inner mw_1146">
 
             <div class="heading large">
-                <?php echo single_term_title(); ?>
+                <?php echo ucwords(single_term_title()); ?>
             </div>
 
             <div class="text">

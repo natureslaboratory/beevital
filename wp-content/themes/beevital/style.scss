@@ -5223,6 +5223,7 @@ p.stock {
 .c-tags {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 #content-page a.c-tag {

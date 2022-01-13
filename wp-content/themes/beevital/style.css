@@ -2920,10 +2920,6 @@ body.open #mobile_nav {
   font-size: 3em;
 }
 
-.product_description .heading.c-ingredients__heading h2{
-	font-size:1em
-}
-
 .product_description h3 {
   font-size: 2.5em;
 }
@@ -5906,6 +5902,8 @@ p.stock.in-stock {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #content-page a.c-tag {

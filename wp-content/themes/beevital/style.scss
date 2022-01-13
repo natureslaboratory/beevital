@@ -5274,6 +5274,17 @@ body {
       flex-direction: row-reverse;
     }
 
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+      max-width: 600px;
+      margin: 0 auto;
+      width: 100%;
+
+      &:nth-child(2n) {
+        flex-direction: column;
+      }
+    }
+
     .text {
       display: flex;
       flex-direction: column;

@@ -5968,6 +5968,24 @@ body {
           flex-direction: row-reverse;
 }
 
+@media screen and (max-width: 1023px) {
+  .c-blog-posts .remedy_tab_section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .c-blog-posts .remedy_tab_section:nth-child(2n) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .c-blog-posts .remedy_tab_section .text {
   display: -webkit-box;
   display: -ms-flexbox;

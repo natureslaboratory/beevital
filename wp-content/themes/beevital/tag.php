@@ -2,8 +2,9 @@
 <div class="container__outer">
     <div class="container__inner mw_1146">
 	    <div id="page_intro">
+		    <p>Posts Tagged</p>
 		    <div class="heading large">
-	        <?php $tag = get_queried_object(); echo "<h1>Tag: " . ucwords($tag->name); echo "</h1>"; ?>
+	        <?php $tag = get_queried_object(); echo "<h1>" .ucwords($tag->name); echo "</h1>"; ?>
 	        <?php $p = 0; ?>
 		    </div>
 		    <?php echo "<p>".$tag->description."</p>"; ?>

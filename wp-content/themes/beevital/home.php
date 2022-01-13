@@ -19,12 +19,12 @@
         <?php 
         	
             // posts_nav_link();
-            $prevLink = get_previous_posts_link("<i class='far fa-chevron-left'></i> Prev");
-            $nextLink = get_next_posts_link("Next <i class='far fa-chevron-right'></i>");
+            $prevLink = get_previous_posts_link("<i class='far fa-chevron-left'></i> Newer");
+            $nextLink = get_next_posts_link("Older <i class='far fa-chevron-right'></i>");
         ?>
         <div class="c-pagination">
-            <?= $prevLink ? $prevLink : "<a class='disabled'><i class='far fa-chevron-left'></i> Prev</a>" ?>
-            <?= $nextLink ? $nextLink : "<a class='disabled'>Next <i class='far fa-chevron-right'></i></a>" ?>
+            <?= $prevLink ? $prevLink : "<a class='disabled'><i class='far fa-chevron-left'></i> Newer</a>" ?>
+            <?= $nextLink ? $nextLink : "<a class='disabled'>Older <i class='far fa-chevron-right'></i></a>" ?>
         </div>
     </div>
 </div>

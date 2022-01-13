@@ -5001,7 +5001,8 @@ p.stock {
   margin-top: 1rem;
 }
 
-.woocommerce #reviews #comments h2, #reply-title {
+.woocommerce #reviews #comments h2,
+#reply-title {
   font-size: 1.2rem;
   font-weight: 600;
   margin: 2rem 0 2rem 0;
@@ -5066,8 +5067,9 @@ p.stock {
 
 .product_description {
   gap: 2rem;
-  grid-template-areas: "text grey"
-                       "ingredients ingredients";
+  grid-template-areas:
+    "text grey"
+    "ingredients ingredients";
   .c-ingredients__wrapper {
     grid-area: ingredients;
   }
@@ -5095,7 +5097,6 @@ p.stock {
   }
 }
 
-
 .c-ingredients {
   margin-top: 70px;
   justify-content: center;
@@ -5103,7 +5104,7 @@ p.stock {
   @media screen and (max-width: 600px) {
     margin-top: 40px;
   }
-  
+
   .c-ingredients__heading {
     border-bottom: 1px solid rgba(192, 192, 192, 0.5);
     padding-bottom: 1rem;
@@ -5136,8 +5137,6 @@ p.stock {
   @media screen and (max-width: 500px) {
     max-width: unset;
   }
-
-
 
   img {
     width: 50%;
@@ -5173,7 +5172,7 @@ p.stock {
 }
 
 .woocommerce-product-rating {
-  font-family: 'Aller-Light', sans-serif;
+  font-family: "Aller-Light", sans-serif;
 }
 
 .woocommerce .star-rating {
@@ -5194,7 +5193,6 @@ p.stock {
 }
 
 .schema-faq-section {
-
   .schema-faq-question-container {
     display: flex;
     justify-content: space-between;
@@ -5219,5 +5217,120 @@ p.stock {
     transition: 150ms ease-in;
     padding-top: 1rem;
     margin-bottom: -1rem;
+  }
+}
+
+.c-tags {
+  display: flex;
+  gap: 1rem;
+}
+
+#content-page a.c-tag {
+  text-decoration: none;
+  background-color: #f0f0f0;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-family: "Aller-Light", sans-serif;
+}
+
+#content-page a.c-tag:hover {
+  background-color: #dadada;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container__outer {
+  flex-grow: 2;
+}
+
+.c-tag-page__title {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-family: "Aller-Light", sans-serif;
+  margin-top: 65px;
+  text-align: center;
+}
+
+.c-blog-posts {
+  .remedy_tab_section {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 40px);
+    padding-top: 130px;
+    margin: 0 -20px;
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .image {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 370px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.c-pagination {
+  margin: 4rem auto 0 auto;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    font-size: 1.4rem;
+    font-family: "Aller-Light", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+
+    
+
+    i {
+      font-size: 1rem;
+      transform: translateX(0px);
+      transition: 150ms;
+      margin-bottom: -1px;
+      font-weight: 600;
+      
+      &[class *= "left"]{
+        margin-bottom: 1px;
+      }
+    }
+
+    
+    &:hover:not(.disabled) {
+      &:first-child {
+        i {
+          transform: translateX(-3px);
+        }
+      }
+
+      &:last-child {
+        i {
+          transform: translateX(3px);
+        }
+      }
+    }
+
+    &.disabled {
+      color: rgb(199, 199, 199);
+    }
   }
 }

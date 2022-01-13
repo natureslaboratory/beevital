@@ -4,6 +4,15 @@
         <h1 class="heading large"><?php the_title(); ?></h1>
         <!-- <ul id="categories-list"><?php bv__outputPostCategoryList(get_the_ID()); ?></ul> -->
         <?php the_content(); ?>
+        <div class="c-tags">
+            <?php 
+                $tags = get_tags(); 
+                // echo "<pre>" . print_r($tags, true) . "</pre>";
+                foreach ($tags as $tag) { ?>
+                    <a class="c-tag" href="/tag/<?= $tag->slug ?>"><?= $tag->name ?></a>
+                <?php }
+            ?>
+        </div>
     </div>
 </div>
 <?php get_footer(); ?>

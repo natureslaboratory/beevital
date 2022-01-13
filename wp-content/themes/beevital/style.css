@@ -5626,7 +5626,8 @@ p.stock.in-stock {
   margin-top: 1rem;
 }
 
-.woocommerce #reviews #comments h2, #reply-title {
+.woocommerce #reviews #comments h2,
+#reply-title {
   font-size: 1.2rem;
   font-weight: 600;
   margin: 2rem 0 2rem 0;
@@ -5839,7 +5840,7 @@ p.stock.in-stock {
 }
 
 .woocommerce-product-rating {
-  font-family: 'Aller-Light', sans-serif;
+  font-family: "Aller-Light", sans-serif;
 }
 
 .woocommerce .star-rating {
@@ -5894,5 +5895,146 @@ p.stock.in-stock {
   transition: 150ms ease-in;
   padding-top: 1rem;
   margin-bottom: -1rem;
+}
+
+.c-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+#content-page a.c-tag {
+  text-decoration: none;
+  background-color: #f0f0f0;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-family: "Aller-Light", sans-serif;
+}
+
+#content-page a.c-tag:hover {
+  background-color: #dadada;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.container__outer {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.c-tag-page__title {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-family: "Aller-Light", sans-serif;
+  margin-top: 65px;
+  text-align: center;
+}
+
+.c-blog-posts .remedy_tab_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% + 40px);
+  padding-top: 130px;
+  margin: 0 -20px;
+}
+
+.c-blog-posts .remedy_tab_section:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.c-blog-posts .remedy_tab_section .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-blog-posts .remedy_tab_section .image {
+  width: 100%;
+}
+
+.c-blog-posts .remedy_tab_section .image img {
+  width: 100%;
+  height: 370px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.c-pagination {
+  margin: 4rem auto 0 auto;
+  width: 100%;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-pagination a {
+  font-size: 1.4rem;
+  font-family: "Aller-Light", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.c-pagination a i {
+  font-size: 1rem;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: 150ms;
+  transition: 150ms;
+  margin-bottom: -1px;
+  font-weight: 600;
+}
+
+.c-pagination a i[class*="left"] {
+  margin-bottom: 1px;
+}
+
+.c-pagination a:hover:not(.disabled):first-child i {
+  -webkit-transform: translateX(-3px);
+          transform: translateX(-3px);
+}
+
+.c-pagination a:hover:not(.disabled):last-child i {
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+}
+
+.c-pagination a.disabled {
+  color: #c7c7c7;
 }
 /*# sourceMappingURL=style.css.map */

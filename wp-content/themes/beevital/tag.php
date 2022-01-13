@@ -1,9 +1,12 @@
 <?php get_header(); ?>
 <div class="container__outer">
     <div class="container__inner mw_1146">
-        <?php $tag = get_queried_object(); echo "<h1 class='c-tag-page__title'>Tag: " . $tag->name . "</h1>"; ?>
+	    <div id="page_intro">
+		    <div class="heading large">
+        <?php $tag = get_queried_object(); echo "<h1>Tag: " . $tag->name . "</h1>"; ?>
         <?php $p = 0; ?>
-
+		    </div>
+	    </div>
 
         <div class="c-blog-posts">
         <!-- Loop Begins -->

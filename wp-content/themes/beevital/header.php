@@ -185,6 +185,18 @@
                     Propolis
                 </a>
             </li>
+            
+            <li>
+            	<a href="/blog">
+	            	Blog
+            	</a>
+            </li>
+            
+            <li>
+            	<a href="/faq">
+	            	Propolis FAQ
+            	</a>
+            </li>
 
         </ul>
 

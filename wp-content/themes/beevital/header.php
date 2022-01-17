@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title(); ?></title>
     <?php wp_head(); ?>
+    
     <!-- FOR PINTEREST -->
     <meta name="p:domain_verify" content="f64c6cc71bda1715105675e41de13d50"/>
     <!-- Pinterest Tag -->

@@ -62,7 +62,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_uk_delivery.png'); ?>" alt="Delivery" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_uk_delivery.webp'); ?>" alt="Delivery" />
             </div>
 
             <div class="text">
@@ -75,7 +75,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_returns.png'); ?>" alt="Returns" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_returns.webp'); ?>" alt="Returns" />
             </div>
 
             <div class="text">
@@ -88,7 +88,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/secured_payments.png'); ?>" alt="Payments" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/secured_payments.webp'); ?>" alt="Payments" />
             </div>
 
             <div class="text">
@@ -101,7 +101,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/customer_service.png'); ?>" alt="Service" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/customer_service.webp'); ?>" alt="Service" />
             </div>
 
             <div class="text">
@@ -288,7 +288,7 @@
                     </div>
 
                     <p>
-                        Produced by the honey bee as a natural defense for the beehive, propolis is an astounding material.
+                        Produced by the honey bee as a natural defence for the beehive, propolis is an astounding material.
                     </p>
 
                     <p>
@@ -300,7 +300,7 @@
             </div>
 
             <div class="column honey_bee">
-                <img src="<?php bv__getThemeImageUrl('home/natures_pharmacist/honey_bee.png'); ?>" alt="Honey" />
+                <img src="<?php bv__getThemeImageUrl('home/natures_pharmacist/honey_bee.webp'); ?>" alt="Honey" />
             </div>
 
             <div class="column">
@@ -378,15 +378,15 @@
     <div class="accreditation_logos">
 
         <div class="logo">
-            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/iso.png'); ?>" alt="ISO" />
+            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/iso.webp'); ?>" alt="ISO" />
         </div>
 
         <div class="logo">
-            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/soil_association_organic.png'); ?>" alt="Organic Certification" />
+            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/soil_association_organic.webp'); ?>" alt="Organic Certification" />
         </div>
 
         <div class="logo">
-            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/living_wage_employer.png'); ?>" alt="Living Wage Employer" />
+            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/living_wage_employer.webp'); ?>" alt="Living Wage Employer" />
         </div>
 
     </div>

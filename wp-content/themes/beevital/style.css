@@ -146,7 +146,7 @@ table {
 @font-face {
   font-family: "Aller-Light";
   src: url("fonts/Aller-Light.woff2") format("woff2"), url("fonts/Aller-Light.woff") format("woff");
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: normal;
 }
@@ -154,7 +154,7 @@ table {
 @font-face {
   font-family: "Aller-Regular";
   src: url("fonts/Aller-Regular.woff2") format("woff2"), url("fonts/Aller-Regular.woff") format("woff");
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: normal;
 }
@@ -162,7 +162,7 @@ table {
 @font-face {
   font-family: "Aller-Bold";
   src: url("fonts/Aller-Bold.woff2") format("woff2"), url("fonts/Aller-Bold.woff") format("woff");
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: normal;
 }

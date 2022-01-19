@@ -58,31 +58,31 @@
                 <ul class="quick_links">
 
                     <li>
-                        <a href="/ordering">
+                        <a href="/ordering/">
                             Ordering
                         </a>
                     </li>
 
                     <li>
-                        <a href="/delivery-and-returns">
+                        <a href="/delivery-and-returns/">
                             Delivery and returns
                         </a>
                     </li>
 
                     <li>
-                        <a href="/customer-service">
+                        <a href="/customer-service/">
                             Customer service
                         </a>
                     </li>
 
                     <li>
-                        <a href="/privacy-policy">
+                        <a href="/privacy-policy/">
                             Privacy policy
                         </a>
                     </li>
 
                     <li>
-                        <a href="/terms-conditions">
+                        <a href="/terms-conditions/">
                             Terms & Conditions
                         </a>
                     </li>
@@ -154,7 +154,7 @@
                     </li>
 
                     <li>
-                        <a href="https://natureslaboratory.co.uk">
+                        <a href="https://natureslaboratory.co.uk" title="Natural Healthcare Product Manufacturer">
                             Nature's Laboratory
                         </a>
                     </li>
@@ -269,13 +269,14 @@
    "https://twitter.com/BeeVitalUK",
    "https://www.facebook.com/beevitalpropolis", 
    "https://www.instagram.com/beevitalpropolis",
-   "https://www.linkedin.com/company/beevital-propolis"
+   "https://www.linkedin.com/company/beevital-propolis",
+   "https://www.yelp.com/biz/beevital-whitby"
    ],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Unit 3B Enterprise Way",
     "addressRegion": "Whitby",
-    "postalCode": "YO224NH",
+    "postalCode": "YO22 4NH",
     "addressCountry": "UK"
   }
 }

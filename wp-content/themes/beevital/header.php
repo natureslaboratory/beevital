@@ -136,37 +136,37 @@
                 <ul class="dropdown">
 
                     <li>
-                        <a href="/products">
+                        <a href="/products/">
                             All products
                         </a>
                     </li>
 
                     <li>
-                        <a href="/products/whole-health">
+                        <a href="/products/whole-health/">
                             Whole Health
                         </a>
                     </li>
 
                     <li>
-                        <a href="/products/oral-health">
+                        <a href="/products/oral-health/">
                             Oral Health
                         </a>
                     </li>
 
                     <li>
-                        <a href="/products/skincare">
+                        <a href="/products/skincare/">
                             Skincare
                         </a>
                     </li>
 
                     <li>
-                        <a href="/products/pollen">
+                        <a href="/products/pollen/">
                             Pollen
                         </a>
                     </li>
 
                     <li>
-                        <a href="/products/honey">
+                        <a href="/products/honey/">
                             Honey
                         </a>
                     </li>
@@ -175,25 +175,25 @@
             </li>
 
             <li>
-                <a href="/remedies/cold-and-flu">
+                <a href="/remedies/cold-and-flu/">
                     Remedies
                 </a>
             </li>
 
             <li>
-                <a href="/propolis">
+                <a href="/propolis/">
                     Propolis
                 </a>
             </li>
             
             <li>
-            	<a href="/blog">
+            	<a href="/blog/">
 	            	Blog
             	</a>
             </li>
             
             <li>
-            	<a href="/faq">
+            	<a href="/faq/">
 	            	Propolis FAQ
             	</a>
             </li>
@@ -262,37 +262,37 @@
                                     <ul>
 
                                         <li>
-                                            <a href="/products">
+                                            <a href="/products/">
                                                 All products
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/products/whole-health">
+                                            <a href="/products/whole-health/">
                                                 Whole Health
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/products/oral-health">
+                                            <a href="/products/oral-health/">
                                                 Oral Health
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/products/skincare">
+                                            <a href="/products/skincare/">
                                                 Skincare
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/products/pollen">
+                                            <a href="/products/pollen/">
                                                 Pollen
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/products/honey">
+                                            <a href="/products/honey/">
                                                 Honey
                                             </a>
                                         </li>
@@ -340,37 +340,37 @@
                                     <ul>
 
                                         <li>
-                                            <a href="/remedies/cold-and-flu">
+                                            <a href="/remedies/cold-and-flu/">
                                                 Cold and flu
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/remedies/joints-and-mobility">
+                                            <a href="/remedies/joints-and-mobility/">
                                                 Joints and mobility
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/remedies/skin-conditions">
+                                            <a href="/remedies/skin-conditions/">
                                                 Skin conditions
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/remedies/fatigue-and-recovery">
+                                            <a href="/remedies/fatigue-and-recovery/">
                                                 Fatigue and recovery
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/remedies/respiratory-conditions">
+                                            <a href="/remedies/respiratory-conditions/">
                                                 Respiratory conditions
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/remedies/oral-hygiene">
+                                            <a href="/remedies/oral-hygiene/">
                                                 Oral hygiene
                                             </a>
                                         </li>
@@ -380,25 +380,25 @@
                                     <ul>
 
                                         <li>
-                                            <a href="/remedies/cuts-and-burns">
+                                            <a href="/remedies/cuts-and-burns/">
                                                 Cuts and burns
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/remedies/digestive-health">
+                                            <a href="/remedies/digestive-health/">
                                                 Digestive health
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/remedies/healthy-ageing">
+                                            <a href="/remedies/healthy-ageing/">
                                                 Healthy ageing
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/remedies/immune-support">
+                                            <a href="/remedies/immune-support/">
                                                 Immune support
                                             </a>
                                         </li>
@@ -462,27 +462,27 @@
                         </li>
 
                         <li>
-                            <a href="/faq">
+                            <a href="/faq/">
                                 FAQ
                             </a>
                         </li>
 
                         <?php if(!is_user_logged_in()): ?>
                             <li>
-                                <a href="/login">
+                                <a href="/login/">
                                     Login
                                 </a>
                             </li>
                         <?php else: ?>
                             <li>
-                                <a href="/my-account">
+                                <a href="/my-account/">
                                     My Account
                                 </a>
                             </li>
                         <?php endif; ?>
 
                         <li class="with_dropdown">
-                            <a href="/cart">
+                            <a href="/cart/">
                                 Basket
                             </a>
 

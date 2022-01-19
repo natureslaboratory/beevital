@@ -211,9 +211,9 @@ if (!is_object($product)) {
                         
                         <?php if ($herbaldocs = bv__getExtraProductData($product->get_id(), 'herbaldocs')) : ?>
                             <div class="sub_heading">
-                                The Herbal Docs Say...
+                                The Herbal Docs Say
                             </div>
-
+							<a href="/herbal-docs/" title="The Herbal Docs"><img class="herbaldocs" src="/wp-content/themes/beevital/images/products/herbaldocs.webp" alt="The Herbal Docs" /></a>
                             <p>
                                 <?php echo $herbaldocs; ?>
                             </p>

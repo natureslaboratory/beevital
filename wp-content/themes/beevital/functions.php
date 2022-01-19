@@ -141,6 +141,11 @@ add_filter( 'rwmb_meta_boxes', function ( $meta_boxes ) {
                 'type' => 'wysiwyg',
                 'name' => esc_html__( 'How To Take', 'online-generator' ),
                 'id'   => $prefix . 'howtotake',
+            ],
+            [
+                'type' => 'wysiwyg',
+                'name' => esc_html__( 'Herbal Docs', 'herbaldocs' ),
+                'id'   => $prefix . 'herbaldocs',
             ]
         ],
     ];

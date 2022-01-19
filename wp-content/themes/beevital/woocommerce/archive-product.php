@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php 
+<?php
 
 global $wp_query;
 // echo "<pre>" . print_r($wp_query, true) . "</pre>"
@@ -70,7 +70,7 @@ global $wp_query;
                     Honey
                 </a>
             </li>
-            
+
             <li>
                 <a href="/products/books" class="<?php echo bv__isProductCategory('books') ? 'active' : '' ?>">
                     Books
@@ -106,7 +106,7 @@ global $wp_query;
                     </div>
 
                     <div class="text">
-                        <?php do_action( 'woocommerce_archive_description' ); ?>
+                        <?php do_action('woocommerce_archive_description'); ?>
                     </div>
 
                 </div>
@@ -115,29 +115,32 @@ global $wp_query;
 
             <div class="product_listings">
 
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                    <?php global $product; ?>
-                    <div class="product woocommerce">
-                        <div class="image">
-                            <?php the_post_thumbnail('medium'); ?>
-                        </div>
-                        <div class="overlay">
-                            <div class="name__price">
-                                <div class="name"><a href="<?php echo get_permalink($product->get_id()); ?>" title="<?php echo $product->get_title(); ?>"><?php echo $product->get_title(); ?></a></div>
-                                <?php if(bv__isProductVariableById(get_the_ID())): ?>
-                                    <div class="price">From <?php echo wc_price(wc_get_price_including_tax($product)) ?></div>
-                                <?php else: ?>
-                                    <div class="price"><?php echo wc_price(wc_get_price_including_tax($product)); ?></div>
-                                <?php endif; ?>
-                                <?= wc_review_ratings_enabled() ? wc_get_rating_html( $product->get_average_rating() ) : "" ?>
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                        <?php global $product; ?>
+                        <div class="product woocommerce">
+                            <div class="image">
+                                <?php the_post_thumbnail('medium'); ?>
                             </div>
-                            <a href="<?php echo get_permalink($product->get_id()); ?>" class="block_cta">
-                                <i class="fas fa-plus"></i>Read More
+                            <a href="<?= get_permalink($product->get_id()); ?>" title="<?= $product->get_title(); ?>">
+                                <div class="overlay">
+                                    <div class="name__price">
+                                        <div class="name"><?= $product->get_title(); ?></div>
+                                        <?php if (bv__isProductVariableById(get_the_ID())) : ?>
+                                            <div class="price">From <?= wc_price(wc_get_price_including_tax($product)) ?></div>
+                                        <?php else : ?>
+                                            <div class="price"><?= wc_price(wc_get_price_including_tax($product)); ?></div>
+                                        <?php endif; ?>
+                                        <?= wc_review_ratings_enabled() ? wc_get_rating_html($product->get_average_rating()) : "" ?>
+                                    </div>
+                                    <div class="block_cta">
+                                        <i class="fas fa-plus"></i>Read More
+                                    </div>
+                                </div>
                             </a>
                         </div>
-                    </div>
-                <?php endwhile; else : ?>
-                    <li><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></li>
+                    <?php endwhile;
+                else : ?>
+                    <li><?php esc_html_e('Sorry, no posts matched your criteria.'); ?></li>
                 <?php endif; ?>
             </div>
             <?php do_action('woocommerce_after_shop_loop'); ?>

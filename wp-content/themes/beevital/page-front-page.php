@@ -62,7 +62,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_uk_delivery.png'); ?>" alt="Delivery" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_uk_delivery.webp'); ?>" alt="Delivery" />
             </div>
 
             <div class="text">
@@ -75,7 +75,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_returns.png'); ?>" alt="Returns" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_returns.webp'); ?>" alt="Returns" />
             </div>
 
             <div class="text">
@@ -88,7 +88,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/secured_payments.png'); ?>" alt="Payments" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/secured_payments.webp'); ?>" alt="Payments" />
             </div>
 
             <div class="text">
@@ -101,7 +101,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/customer_service.png'); ?>" alt="Service" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/customer_service.webp'); ?>" alt="Service" />
             </div>
 
             <div class="text">
@@ -227,29 +227,24 @@
                     <div class="product">
 
                         <div class="image">
-                            <?php echo get_the_post_thumbnail($popularProduct->ID, 'medium'); ?>
+                            <?= get_the_post_thumbnail($popularProduct->ID, 'medium'); ?>
                         </div>
 
-                        <a href="<?= get_permalink($product->get_id()); ?>">
+                        <a href="<?= get_permalink($product->get_id()); ?>" title="<?= $product->get_title(); ?>">
                             <div class="overlay">
-    
+
                                 <div class="name__price">
-                                    <div class="name"><?php echo $product->get_title(); ?></div>
-                                    <?php
-    
-                                    ?>
-    
+                                    <div class="name"><?= $product->get_title(); ?></div>
                                     <?php if (bv__isProductVariableById($popularProduct->ID)) : ?>
-                                        <div class="price">From <?php echo wc_price(wc_get_price_including_tax($product)); ?></div>
+                                        <div class="price">From <?= wc_price(wc_get_price_including_tax($product)); ?></div>
                                     <?php else : ?>
-                                        <div class="price"><?php echo wc_price(wc_get_price_including_tax($product)); ?></div>
+                                        <div class="price"><?= wc_price(wc_get_price_including_tax($product)); ?></div>
                                     <?php endif; ?>
                                 </div>
-    
+
                                 <div class="block_cta">
                                     <i class="fas fa-plus"></i>View Product
                                 </div>
-    
                             </div>
                         </a>
 
@@ -290,7 +285,7 @@
                     </div>
 
                     <p>
-                        Produced by the honey bee as a natural defense for the beehive, propolis is an astounding material.
+                        Produced by the honey bee as a natural defence for the beehive, propolis is an astounding material.
                     </p>
 
                     <p>
@@ -302,7 +297,7 @@
             </div>
 
             <div class="column honey_bee">
-                <img src="<?php bv__getThemeImageUrl('home/natures_pharmacist/honey_bee.png'); ?>" alt="Honey" />
+                <img src="<?php bv__getThemeImageUrl('home/natures_pharmacist/honey_bee.webp'); ?>" alt="Honey" />
             </div>
 
             <div class="column">
@@ -380,15 +375,15 @@
     <div class="accreditation_logos">
 
         <div class="logo">
-            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/iso.png'); ?>" alt="ISO" />
+            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/iso.webp'); ?>" alt="ISO" />
         </div>
 
         <div class="logo">
-            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/soil_association_organic.png'); ?>" alt="Organic Certification" />
+            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/soil_association_organic.webp'); ?>" alt="Organic Certification" />
         </div>
 
         <div class="logo">
-            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/living_wage_employer.png'); ?>" alt="Living Wage Employer" />
+            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/living_wage_employer.webp'); ?>" alt="Living Wage Employer" />
         </div>
 
     </div>

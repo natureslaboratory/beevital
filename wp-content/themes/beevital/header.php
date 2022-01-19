@@ -23,14 +23,6 @@
 	  src="https://ct.pinterest.com/v3/?event=init&tid=2613183829422&pd[em]=<hashed_email_address>&noscript=1" />
 	</noscript>
 	<!-- end Pinterest Tag -->
-
-	<script type="text/javascript">
-	    (function(c,l,a,r,i,t,y){
-	        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-	        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-	        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-	    })(window, document, "clarity", "script", "a55dnlc90a");
-	</script>
 	<style>
 		.thwmsc-buttons {
 
@@ -91,6 +83,9 @@
     }
     .tabs_nav_wrapper.dark .tabs_nav li a .icon img,#product_main .description .remedy_list .remedies .icon img{
 	    object-fit:contain;
+    }
+    .c-ingredients__heading{
+	    font-size:1em;
     }
     </style>
     
@@ -189,6 +184,18 @@
                 <a href="/propolis">
                     Propolis
                 </a>
+            </li>
+            
+            <li>
+            	<a href="/blog">
+	            	Blog
+            	</a>
+            </li>
+            
+            <li>
+            	<a href="/faq">
+	            	Propolis FAQ
+            	</a>
             </li>
 
         </ul>

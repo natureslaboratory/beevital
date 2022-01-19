@@ -34,20 +34,18 @@ if ( $related_products ) : ?>
 
                 <a href="<?php echo get_permalink($related_product->get_id()); ?>">
                     <div class="overlay">
-    
                         <div class="name__price">
                             <div class="name"><?php echo $related_product->get_title(); ?></div>
                             <?php if(bv__isProductVariableById($related_product->get_id())): ?>
-                                <div class="price">From <?php echo woocommerce_price($related_product->get_variation_regular_price('min',1)); ?></div>
+                                <div class="price">From <?php echo wc_price($related_product->get_variation_regular_price('min',1)); ?></div>
                             <?php else: ?>
-                                <div class="price"><?php echo woocommerce_price($related_product->get_price_including_tax()); ?></div>
+                                <div class="price"><?php echo wc_price($related_product->get_price_including_tax()); ?></div>
                             <?php endif; ?>
                         </div>
-    
+        
                         <div class="block_cta">
                             <i class="fas fa-plus"></i>Read more
                         </div>
-    
                     </div>
                 </a>
             </div>

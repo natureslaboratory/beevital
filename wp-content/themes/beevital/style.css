@@ -2776,7 +2776,6 @@ body.open #mobile_nav {
 }
 
 #product_main .description .options .quantity_select_wrapper label {
-  display: none;
   width: 50px;
   font-family: "Aller-Regular", sans-serif;
   font-size: 1em;

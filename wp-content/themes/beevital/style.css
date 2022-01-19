@@ -6112,4 +6112,16 @@ body {
 .woocommerce-pagination ul li span {
   font-weight: 600;
 }
+
+.product_listings .product {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 150ms;
+  transition: 150ms;
+}
+
+.product_listings .product:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
 /*# sourceMappingURL=style.css.map */

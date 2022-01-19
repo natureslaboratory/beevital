@@ -5396,3 +5396,15 @@ body {
     }
   }
 }
+
+.product_listings {
+  .product {
+    transform: scale(1);
+    transition: 150ms;
+  }
+  
+  .product:hover {
+    transform: scale(1.02);
+  }
+}
+

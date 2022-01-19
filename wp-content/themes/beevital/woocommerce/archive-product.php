@@ -121,20 +121,22 @@ global $wp_query;
                         <div class="image">
                             <?php the_post_thumbnail('medium'); ?>
                         </div>
-                        <div class="overlay">
-                            <div class="name__price">
-                                <div class="name"><?php the_title() ?></div>
-                                <?php if(bv__isProductVariableById(get_the_ID())): ?>
-                                    <div class="price">From <?php echo wc_price(wc_get_price_including_tax($product)) ?></div>
-                                <?php else: ?>
-                                    <div class="price"><?php echo wc_price(wc_get_price_including_tax($product)); ?></div>
-                                <?php endif; ?>
-                                <?= wc_review_ratings_enabled() ? wc_get_rating_html( $product->get_average_rating() ) : "" ?>
+                        <a href="<?php echo get_permalink($product->get_id()); ?>">
+                            <div class="overlay">
+                                <div class="name__price">
+                                    <div class="name"><?php the_title() ?></div>
+                                    <?php if(bv__isProductVariableById(get_the_ID())): ?>
+                                        <div class="price">From <?php echo wc_price(wc_get_price_including_tax($product)) ?></div>
+                                    <?php else: ?>
+                                        <div class="price"><?php echo wc_price(wc_get_price_including_tax($product)); ?></div>
+                                    <?php endif; ?>
+                                    <?= wc_review_ratings_enabled() ? wc_get_rating_html( $product->get_average_rating() ) : "" ?>
+                                </div>
+                                <div class="block_cta">
+                                    <i class="fas fa-plus"></i>Read More
+                                </div>
                             </div>
-                            <a href="<?php echo get_permalink($product->get_id()); ?>" class="block_cta">
-                                <i class="fas fa-plus"></i>Read More
-                            </a>
-                        </div>
+                        </a>
                     </div>
                 <?php endwhile; else : ?>
                     <li><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></li>

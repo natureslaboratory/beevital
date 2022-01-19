@@ -90,14 +90,14 @@ do_action('woocommerce_before_add_to_cart_form'); ?>
 
                     <a href="#" class="btn minus">
                         <i class="fas fa-minus"></i>
-                        Reduce Quantity
+                        <span>Reduce Quantity</span>
                     </a>
 
                     <input type="number" name="quantity" id="quantity" class="qty" step="any" min="1" value="1" />
 
                     <a href="#" class="btn plus">
                         <i class="fas fa-plus"></i>
-                        Increase Quantity
+                        <span>Increase Quantity</span>
                     </a>
 
                 </div>

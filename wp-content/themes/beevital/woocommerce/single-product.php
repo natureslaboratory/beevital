@@ -214,9 +214,7 @@ if (!is_object($product)) {
                                 <a href="/herbal-docs/" title="The Herbal Docs">The Herbal Docs</a> Say
                             </div>
 							<a href="/herbal-docs/" title="The Herbal Docs"><img class="herbaldocs" src="/wp-content/themes/beevital/images/products/herbaldocs.webp" alt="The Herbal Docs" /></a>
-                            <p>&ldquo;
-                                <?php echo $herbaldocs; ?>
-                            &rdquo;</p>
+                            <p>&ldquo;<?php echo $herbaldocs; ?>&rdquo;</p>
                         <?php endif; ?>
 
                     </div>

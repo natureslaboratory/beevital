@@ -8,10 +8,7 @@ add_action('wp_enqueue_scripts',function(){
 
     wp_enqueue_script('jquery');
     wp_enqueue_script('faq', "/wp-content/themes/beevital/dist/scripts/index.js", [], false, true);
-    ?> 
-    <script>
-        console.log("<?php echo get_template_directory() . "/dist/index.js" ?>");
-    </script>
+    ?>
     
     <?php
 

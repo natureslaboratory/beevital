@@ -38,18 +38,20 @@ if ( $product->is_in_stock() ) : ?>
                 do_action( 'woocommerce_before_add_to_cart_quantity' ); ?>
 
 
-                <label>Qty:</label>
+                <label for="quantity">Qty:</label>
 
                 <div class="quantity_select">
 
                     <a href="#" class="btn minus">
                         <i class="fas fa-minus"></i>
+                        Reduce Quantity
                     </a>
 
-                    <input type="number" name="quantity" class="qty" step="any" min="1" value="1" />
+                    <input type="number" name="quantity" id="quantity" class="qty" step="any" min="1" value="1" />
 
                     <a href="#" class="btn plus">
                         <i class="fas fa-plus"></i>
+                        Increase Quantity
                     </a>
 
                 </div>

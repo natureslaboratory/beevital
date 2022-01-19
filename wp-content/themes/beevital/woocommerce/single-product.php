@@ -340,7 +340,7 @@ if (!is_object($product)) {
             <div class="text">
                 <div class="sub_heading">Free UK delivery</div>
                 <p>Free delivery on orders over &pound;20</p>
-                <a href="/delivery-and-returns" class="inline_cta">Read more<i class="far fa-long-arrow-right"></i></a>
+                <a href="/delivery-and-returns/" class="inline_cta">Delivery<i class="far fa-long-arrow-right"></i></a>
             </div>
 
         </div>
@@ -356,7 +356,7 @@ if (!is_object($product)) {
             <div class="text">
                 <div class="sub_heading">Free returns</div>
                 <p>30-days free return policy</p>
-                <a href="/delivery-and-returns" class="inline_cta">Read more<i class="far fa-long-arrow-right"></i></a>
+                <a href="/delivery-and-returns/" class="inline_cta">Returns<i class="far fa-long-arrow-right"></i></a>
             </div>
 
         </div>
@@ -372,7 +372,7 @@ if (!is_object($product)) {
             <div class="text">
                 <div class="sub_heading">Customer service</div>
                 <p>Excellent customer care</p>
-                <a href="/customer-service" class="inline_cta">Read more<i class="far fa-long-arrow-right"></i></a>
+                <a href="/customer-service/" class="inline_cta">Customer Service<i class="far fa-long-arrow-right"></i></a>
             </div>
 
         </div>

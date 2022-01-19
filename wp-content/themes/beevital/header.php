@@ -93,6 +93,12 @@
 	    margin-left:10px;
 	    margin-bottom:10px;
     }
+    .btn.minus span,.btn.plus span{
+	    display:block;
+	    width:0px;
+	    height:0px;
+	    overflow: hidden;
+    }
     </style>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/beevital/images/favicon/apple-touch-icon.png">

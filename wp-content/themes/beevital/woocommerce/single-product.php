@@ -208,6 +208,16 @@ if (!is_object($product)) {
                                 <?php echo $manufactured; ?>
                             </p>
                         <?php endif; ?>
+                        
+                        <?php if ($herbaldocs = bv__getExtraProductData($product->get_id(), 'herbaldocs')) : ?>
+                            <div class="sub_heading">
+                                The Herbal Docs Say...
+                            </div>
+
+                            <p>
+                                <?php echo $herbaldocs; ?>
+                            </p>
+                        <?php endif; ?>
 
                     </div>
                     <?php

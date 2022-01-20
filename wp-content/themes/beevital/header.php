@@ -112,7 +112,7 @@
 	    height:24px;
 	    color:#444549;
     }
-    .mobile_basket_cta a svg{
+    .mobile_basket_cta svg{
 	    height:24px;
 	    margin-right:10px;
 	    color:#444549;

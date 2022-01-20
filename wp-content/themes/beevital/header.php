@@ -108,6 +108,23 @@
 	    width:22px;
 	    color:#444549;
     }
+    .social_links svg{
+	    height:24px;
+	    color:#444549;
+    }
+    .mobile_basket_cta a svg{
+	    height:24px;
+	    margin-right:10px;
+	    color:#444549;
+    }
+    .burger_cta svg{
+	    height:32px;
+	    color:#444549;
+    }
+    .close_cta svg{
+	    height:32px;
+	    color:#444549;
+    }
     </style>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/beevital/images/favicon/apple-touch-icon.png">

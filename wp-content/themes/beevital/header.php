@@ -125,7 +125,19 @@
 	    height:32px;
 	    color:#444549;
     }
-    
+    .play_cta svg{
+	    height:24px;
+	    color:#444549;
+    }
+    .block_cta .fa-plus{
+	    display:none;
+    }
+    .payment_methods svg{
+	    height:32px;
+    }
+    .remove_cta svg{
+	    height:32px;
+    }
     </style>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/beevital/images/favicon/apple-touch-icon.png">

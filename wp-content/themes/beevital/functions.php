@@ -1311,3 +1311,5 @@ function bv_wc_pagination($args) {
     return $args;
 }
 add_filter("woocommerce_pagination_args", "bv_wc_pagination");
+
+add_filter( 'wp_lazy_loading_enabled', '__return_false' );

@@ -6067,6 +6067,10 @@ body {
   text-decoration: none;
 }
 
+.c-pagination .c-pagination__link-wrapper a[rel=next] {
+  text-align: right;
+}
+
 .c-pagination a {
   font-size: 1.4rem;
   font-family: "Aller-Light", sans-serif;

@@ -99,6 +99,11 @@
 	    height:0px;
 	    overflow: hidden;
     }
+    .icon svg{
+	    width:32px;
+	    height:auto;
+	    color:#444549;
+    }
     </style>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/beevital/images/favicon/apple-touch-icon.png">

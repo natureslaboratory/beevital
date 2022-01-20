@@ -5341,6 +5341,10 @@ body {
   display: flex;
   justify-content: space-between;
 
+  .c-pagination--wide {
+    max-width: auto;
+  }
+
   .c-pagination__link-wrapper {
     display: flex;
     gap: 1rem;

@@ -10,7 +10,7 @@
             $prevPost = get_previous_post();
             $nextPost = get_next_post();
         ?>
-        <div class="c-pagination">
+        <div class="c-pagination c-pagination--wide">
             <div class="c-pagination__link-wrapper"><?= get_previous_post_link() ?></div>
             <div class="c-pagination__link-wrapper"><?= get_next_post_link() ?></div>
         </div>

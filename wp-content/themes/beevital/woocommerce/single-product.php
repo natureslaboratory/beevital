@@ -430,12 +430,12 @@ if (!is_object($product)) {
 
         // TABS
 
-        $('#product_tabs .tabs_nav li a').click(function(e) {
+        $('#product_tabs .tabs_nav li button').click(function(e) {
             e.preventDefault();
 
             const tabID = $(this).attr('data-tab');
 
-            $('#product_tabs .tabs_nav li a').removeClass('active');
+            $('#product_tabs .tabs_nav li button').removeClass('active');
             $('.tab').removeClass('active');
 
             $(this).addClass('active');

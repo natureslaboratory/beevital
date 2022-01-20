@@ -6049,7 +6049,7 @@ body {
 }
 
 .c-pagination.c-pagination--wide {
-  max-width: auto;
+  max-width: unset;
 }
 
 .c-pagination .c-pagination__link-wrapper {

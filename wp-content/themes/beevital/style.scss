@@ -5342,7 +5342,7 @@ body {
   justify-content: space-between;
 
   &.c-pagination--wide {
-    max-width: auto;
+    max-width: unset;
   }
 
   .c-pagination__link-wrapper {

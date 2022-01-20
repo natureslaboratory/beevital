@@ -6059,6 +6059,7 @@ body {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+  width:50%;
 }
 
 .c-pagination .c-pagination__link-wrapper a {

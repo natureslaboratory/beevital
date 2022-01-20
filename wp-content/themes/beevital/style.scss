@@ -5341,7 +5341,7 @@ body {
   display: flex;
   justify-content: space-between;
 
-  .c-pagination--wide {
+  &.c-pagination--wide {
     max-width: auto;
   }
 

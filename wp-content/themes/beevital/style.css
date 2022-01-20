@@ -6048,7 +6048,7 @@ body {
           justify-content: space-between;
 }
 
-.c-pagination .c-pagination--wide {
+.c-pagination.c-pagination--wide {
   max-width: auto;
 }
 

@@ -4,12 +4,6 @@
         <h1 class="heading large"><?php the_title(); ?></h1>
         <!-- <ul id="categories-list"><?php bv__outputPostCategoryList(get_the_ID()); ?></ul> -->
         <?php the_content(); ?>
-        <?php 
-        	
-            // posts_nav_link();
-            $prevPost = get_previous_post();
-            $nextPost = get_next_post();
-        ?>
         <div class="c-pagination c-pagination--wide">
             <div class="c-pagination__link-wrapper"><?= get_previous_post_link() ?></div>
             <div class="c-pagination__link-wrapper"><?= get_next_post_link() ?></div>

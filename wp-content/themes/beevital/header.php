@@ -468,7 +468,7 @@
 
                     <a href="<?php echo site_url(); ?>" class="logo">
 	                    <span>BeeVital</span>
-                        <img src="<?php bv__getThemeImageUrl('global/misc/beevital_logo.webp'); ?>" alt="BeeVital Propolis" />
+                        <img src="<?php bv__getThemeImageUrl('global/misc/beevital_logo.webp'); ?>" alt="BeeVital Propolis" width="180" height="42" />
                     </a>
 
                     <ul class="nav right">

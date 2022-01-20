@@ -80,7 +80,7 @@ if (!is_object($product)) {
 
                             <?php /** @var WP_Term $remedy */ foreach ($remedies as $remedy) : ?>
                                 <div class="icon">
-                                    <img src="<?php echo bv__getRemedyIconUrl($remedy); ?>" alt="BeeVital Propolis" />
+                                    <img src="<?php echo bv__getRemedyIconUrl($remedy); ?>" alt="BeeVital Propolis" width="38" height="38" />
                                 </div>
                             <?php endforeach; ?>
 
@@ -334,7 +334,7 @@ if (!is_object($product)) {
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_uk_delivery.png'); ?>" alt="Delivery" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_uk_delivery.png'); ?>" alt="Delivery" width="40" height="40" />
             </div>
 
             <div class="text">
@@ -350,7 +350,7 @@ if (!is_object($product)) {
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_returns.png'); ?>" alt="Returns" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_returns.png'); ?>" alt="Returns" width="40" height="40" />
             </div>
 
             <div class="text">
@@ -366,7 +366,7 @@ if (!is_object($product)) {
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/customer_service.png'); ?>" alt="Customer Service" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/customer_service.png'); ?>" alt="Customer Service" width="40" height="40" />
             </div>
 
             <div class="text">

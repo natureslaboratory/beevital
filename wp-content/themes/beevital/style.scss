@@ -5341,6 +5341,11 @@ body {
   display: flex;
   justify-content: space-between;
 
+  .c-pagination__link-wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+
   a {
     font-size: 1.4rem;
     font-family: "Aller-Light", sans-serif;

@@ -6048,6 +6048,13 @@ body {
           justify-content: space-between;
 }
 
+.c-pagination .c-pagination__link-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
 .c-pagination a {
   font-size: 1.4rem;
   font-family: "Aller-Light", sans-serif;

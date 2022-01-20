@@ -100,7 +100,7 @@
 	    overflow: hidden;
     }
     .icon svg{
-	    width:32px;
+	    width:22px;
 	    height:auto;
 	    color:#444549;
     }

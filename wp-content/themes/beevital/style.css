@@ -146,7 +146,7 @@ table {
 @font-face {
   font-family: "Aller-Light";
   src: url("fonts/Aller-Light.woff2") format("woff2"), url("fonts/Aller-Light.woff") format("woff");
-  font-display: swap;
+  font-display: auto;
   font-style: normal;
   font-weight: normal;
 }
@@ -154,7 +154,7 @@ table {
 @font-face {
   font-family: "Aller-Regular";
   src: url("fonts/Aller-Regular.woff2") format("woff2"), url("fonts/Aller-Regular.woff") format("woff");
-  font-display: swap;
+  font-display: auto;
   font-style: normal;
   font-weight: normal;
 }
@@ -162,7 +162,7 @@ table {
 @font-face {
   font-family: "Aller-Bold";
   src: url("fonts/Aller-Bold.woff2") format("woff2"), url("fonts/Aller-Bold.woff") format("woff");
-  font-display: swap;
+  font-display: auto;
   font-style: normal;
   font-weight: normal;
 }
@@ -1818,7 +1818,6 @@ body.open #mobile_nav {
   border-right: none !important;
 }
 
-.tabs_nav_wrapper .tabs_nav li button,
 .tabs_nav_wrapper .tabs_nav li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1838,19 +1837,13 @@ body.open #mobile_nav {
   padding: 0 10px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  width:100%;
-  font-size:1rem;
-  font-family:"Aller";
 }
 
-.tabs_nav_wrapper .tabs_nav li button:hover,
-.tabs_nav_wrapper .tabs_nav li button.active,
 .tabs_nav_wrapper .tabs_nav li a:hover,
 .tabs_nav_wrapper .tabs_nav li a.active {
   color: #ae5432;
 }
 
-.tabs_nav_wrapper .tabs_nav li button.active:after,
 .tabs_nav_wrapper .tabs_nav li a.active:after {
   content: "";
   position: absolute;
@@ -2783,7 +2776,7 @@ body.open #mobile_nav {
 }
 
 #product_main .description .options .quantity_select_wrapper label {
-  display:block;
+  display: none;
   width: 50px;
   font-family: "Aller-Regular", sans-serif;
   font-size: 1em;
@@ -6130,5 +6123,14 @@ body {
 .product_listings .product:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+.product__out-of-stock {
+  color: darkred;
+  font-weight: bold;
+  margin: 0;
+  font-size: 1rem;
+  margin-top: -0.3rem;
+  margin-bottom: 0.3rem;
 }
 /*# sourceMappingURL=style.css.map */

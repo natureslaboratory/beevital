@@ -126,8 +126,23 @@ global $wp_query;
                                     <div class="name__price">
                                         <div class="name"><?= $product->get_title(); ?></div>
                                         <?php if (bv__isProductVariableById(get_the_ID())) : ?>
+                                            <?php
+                                                $variation_ids = $product->get_children();
+                                                $in_stock = false;
+                                                foreach ($variation_ids as $id) {
+                                                    $variation = wc_get_product($id);
+                                                    if ($variation->is_in_stock()) {
+                                                        $in_stock = true;
+                                                        break;
+                                                    }
+                                                }
+                                                if (!$in_stock) {
+                                                    echo "<p class='product__out-of-stock'>Out Of Stock</p>";
+                                                }
+                                            ?>
                                             <div class="price">From <?= wc_price(wc_get_price_including_tax($product)) ?></div>
                                         <?php else : ?>
+                                            <?= $product->is_in_stock() ? "" : "<p class='product__out-of-stock'>Out Of Stock</p>"; ?>
                                             <div class="price"><?= wc_price(wc_get_price_including_tax($product)); ?></div>
                                         <?php endif; ?>
                                         <?= wc_review_ratings_enabled() ? wc_get_rating_html($product->get_average_rating()) : "" ?>

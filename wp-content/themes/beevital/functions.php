@@ -13,9 +13,11 @@ add_action('wp_enqueue_scripts',function(){
     <?php
 
     /** Font awesome js */
+/*
     wp_register_script('font-awesome','https://kit.fontawesome.com/fae2de29d1.js',['jquery']);
     wp_enqueue_script('font-awesome');
     wp_script_add_data( 'font-awesome', 'crossorigin', 'anonymous');
+*/
 
 });
 

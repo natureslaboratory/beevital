@@ -237,11 +237,7 @@
 
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-
 <?php wp_footer(); ?>
-
-
 
 <!-- Matomo -->
 <script>

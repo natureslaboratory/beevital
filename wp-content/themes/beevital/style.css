@@ -1818,7 +1818,8 @@ body.open #mobile_nav {
   border-right: none !important;
 }
 
-.tabs_nav_wrapper .tabs_nav li button {
+.tabs_nav_wrapper .tabs_nav li button,
+.tabs_nav_wrapper .tabs_nav li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1843,11 +1844,14 @@ body.open #mobile_nav {
 }
 
 .tabs_nav_wrapper .tabs_nav li button:hover,
-.tabs_nav_wrapper .tabs_nav li button.active {
+.tabs_nav_wrapper .tabs_nav li button.active,
+.tabs_nav_wrapper .tabs_nav li a:hover,
+.tabs_nav_wrapper .tabs_nav li a.active {
   color: #ae5432;
 }
 
-.tabs_nav_wrapper .tabs_nav li button.active:after {
+.tabs_nav_wrapper .tabs_nav li button.active:after,
+.tabs_nav_wrapper .tabs_nav li a.active:after {
   content: "";
   position: absolute;
   top: 100%;

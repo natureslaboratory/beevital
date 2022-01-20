@@ -136,21 +136,21 @@ if (!is_object($product)) {
                 <ul class="tabs_nav">
 
                     <li>
-                        <a href="javascript:void(0)" class="active" data-tab="description_tab">
+                        <button onclick="javascript:void(0)" class="active" data-tab="description_tab">
                             Description
-                        </a>
+                        </button>
                     </li>
 
                     <li>
-                        <a href="javascript:void(0)" data-tab="how_to_take_tab">
+                        <button onclick="javascript:void(0)" data-tab="how_to_take_tab">
                             How to take
-                        </a>
+                        </button>
                     </li>
 
                     <li>
-                        <a href="javascript:void(0)" data-tab="reviews_tab">
+                        <button onclick="javascript:void(0)" data-tab="reviews_tab">
                             Reviews
-                        </a>
+                        </button>
                     </li>
 
                 </ul>

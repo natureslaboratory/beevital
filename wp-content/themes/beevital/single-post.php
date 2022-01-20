@@ -4,16 +4,18 @@
         <h1 class="heading large"><?php the_title(); ?></h1>
         <!-- <ul id="categories-list"><?php bv__outputPostCategoryList(get_the_ID()); ?></ul> -->
         <?php the_content(); ?>
+        <h3>Previous/Next Post</h3>
         <div class="c-pagination c-pagination--wide">
             <div class="c-pagination__link-wrapper"><?= get_previous_post_link() ?></div>
             <div class="c-pagination__link-wrapper"><?= get_next_post_link() ?></div>
         </div>
+        <h3>Tags</h3>
         <div class="c-tags">
             <?php 
                 $tags = get_tags(); 
                 // echo "<pre>" . print_r($tags, true) . "</pre>";
                 foreach ($tags as $tag) { ?>
-                    <a class="c-tag" href="/tag/<?= $tag->slug ?>"><?= $tag->name ?></a>
+                    <a class="c-tag" href="/tag/<?= $tag->slug ?>/"><?= $tag->name ?></a>
                 <?php }
             ?>
         </div>

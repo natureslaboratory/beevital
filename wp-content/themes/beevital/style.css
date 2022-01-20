@@ -375,12 +375,11 @@ img {
 }
 
 .checkbox_field > label .checkbox.tick::after {
-  content: "\f00c";
+  content: "✔";
   width: auto;
   height: auto;
   background: none;
   border-radius: 0;
-  font-family: "Font Awesome 5 Free";
   font-size: 16px;
   font-weight: 900;
   line-height: 16px;

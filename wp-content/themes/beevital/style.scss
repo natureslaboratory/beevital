@@ -4520,6 +4520,7 @@ body.open #mobile_nav {
 
   a {
     text-decoration: underline;
+    text-underline-offset: 0.1rem;
     &:hover {
       text-decoration: none;
     }
@@ -5348,6 +5349,12 @@ body {
   .c-pagination__link-wrapper {
     display: flex;
     gap: 1rem;
+    margin-bottom: 1rem;
+
+    a {
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
   }
 
   a {

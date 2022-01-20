@@ -5174,6 +5174,7 @@ body.open #mobile_nav {
 
 #content-page a {
   text-decoration: underline;
+  text-underline-offset: 0.1rem;
 }
 
 #content-page a:hover {
@@ -6057,6 +6058,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.c-pagination .c-pagination__link-wrapper a {
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 
 .c-pagination a {

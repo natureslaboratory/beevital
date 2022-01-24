@@ -1349,7 +1349,7 @@ $user_posts = get_author_posts_url( get_the_author_meta( 'ID' , $post->post_auth
    
 if ( ! empty( $display_name ) )
   
-$author_details = '<p class="author_name">About ' . $display_name . '</p>';
+$author_details = '<p class="author_name">Written by ' . $display_name . '</p>';
   
 if ( ! empty( $user_description ) )
 // Author avatar and bio

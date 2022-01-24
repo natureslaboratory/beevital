@@ -138,6 +138,14 @@
     .remove_cta svg{
 	    height:32px;
     }
+    figcaption{
+	    font-family:"Aller",sans-serif;
+	    font-size:0.9rem;
+	    color:#777;
+    }
+    ol{
+	    font-family:"Aller";
+    }
     </style>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/beevital/images/favicon/apple-touch-icon.png">

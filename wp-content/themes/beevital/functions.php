@@ -1378,7 +1378,7 @@ return $content;
 }
   
 // Add our function to the post content filter 
-add_action( 'the_content', 'wpb_author_info_box' );
+//add_action( 'the_content', 'wpb_author_info_box' );
   
 // Allow HTML in author bio section 
 remove_filter('pre_user_description', 'wp_filter_kses');

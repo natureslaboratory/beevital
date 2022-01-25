@@ -173,7 +173,14 @@ if (!is_object($product)) {
                     <div class="column">
 
                         <?php echo apply_filters('the_content', $product->get_description()); ?>
-
+						
+						<?php if ($shankar = bv__getExtraProductData($product->get_id(), 'shankar')) : ?>
+							<div class="shankar">
+	                            <p><strong><a href="/about-us/" title="About Us">Dr. Shankar</a> Says</strong></p>
+	                            <a href="/about-us/" title="The Herbal Docs"><img class="herbaldocs" src="/wp-content/themes/beevital/images/products/shankar.webp" alt="Dr Shankar" /></a>
+	                            <p>&ldquo;<?php echo $shankar; ?>&rdquo;</p>
+							</div>
+                        <?php endif; ?>
 
                     </div>
 

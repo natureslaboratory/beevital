@@ -6166,4 +6166,19 @@ body {
   margin-top: -0.3rem;
   margin-bottom: 0.3rem;
 }
+
+.shankar{
+	width:100%;
+	background:#f6f6f6;
+	padding:1rem;
+}
+
+.shankar img{
+	float:left;
+	margin-right:1rem;
+	margin-bottom:1rem;
+	border-radius:50%;
+	width:100px;
+	height:auto;
+}
 /*# sourceMappingURL=style.css.map */

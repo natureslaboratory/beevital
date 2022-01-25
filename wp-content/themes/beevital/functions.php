@@ -148,6 +148,11 @@ add_filter( 'rwmb_meta_boxes', function ( $meta_boxes ) {
                 'type' => 'textarea',
                 'name' => esc_html__( 'Herbal Docs', 'herbaldocs' ),
                 'id'   => $prefix . 'herbaldocs',
+            ],
+            [
+                'type' => 'textarea',
+                'name' => esc_html__( 'Shankar Says...', 'shankar' ),
+                'id'   => $prefix . 'shankar',
             ]
         ],
     ];

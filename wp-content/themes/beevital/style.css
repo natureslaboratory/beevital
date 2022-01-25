@@ -5881,7 +5881,10 @@ p.stock.in-stock {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0px;
-  background:#f1f2f2;
+}
+
+.schema-faq-section .schema-faq-question-container:hover strong{
+	color:#777;
 }
 
 .schema-faq-section .schema-faq-question-container i {

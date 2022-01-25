@@ -23,6 +23,9 @@
 	  src="https://ct.pinterest.com/v3/?event=init&tid=2613183829422&pd[em]=<hashed_email_address>&noscript=1" />
 	</noscript>
 	<!-- end Pinterest Tag -->
+	<!-- TrustBox script -->
+	<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+	<!-- End TrustBox script -->
 	<style>
 		.thwmsc-buttons {
 

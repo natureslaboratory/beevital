@@ -5853,6 +5853,12 @@ p.stock.in-stock {
   margin-top: 0.3rem;
 }
 
+.schema-faq-section{
+	padding: 1rem;
+	background: #f6f6f6;
+	margin-bottom: 1.4rem;
+}
+
 .schema-faq.wp-block-yoast-faq-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5874,7 +5880,8 @@ p.stock.in-stock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0px;
+  background:#f1f2f2;
 }
 
 .schema-faq-section .schema-faq-question-container i {

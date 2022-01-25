@@ -1837,6 +1837,9 @@ body.open #mobile_nav {
   padding: 0 10px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  width:100%;
+  font-size:1rem;
+  font-family:"Aller",sans-serif;
 }
 
 .tabs_nav_wrapper .tabs_nav li a:hover,

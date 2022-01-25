@@ -25,7 +25,7 @@ if (!is_object($product)) {
             <div class="description">
 
                 <a href="<?php echo get_permalink(bv__getShopPageID()); ?>" class="back_cta">
-                    <i class="fas fa-arrow-left"></i>Back
+                    &larr; Back
                 </a>
 
                 <div class="type">

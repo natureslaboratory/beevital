@@ -1818,7 +1818,7 @@ body.open #mobile_nav {
   border-right: none !important;
 }
 
-.tabs_nav_wrapper .tabs_nav li a {
+.tabs_nav_wrapper .tabs_nav li a,.tabs_nav_wrapper .tabs_nav li button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1840,7 +1840,9 @@ body.open #mobile_nav {
 }
 
 .tabs_nav_wrapper .tabs_nav li a:hover,
-.tabs_nav_wrapper .tabs_nav li a.active {
+.tabs_nav_wrapper .tabs_nav li a.active,
+.tabs_nav_wrapper .tabs_nav li button:hover,
+.tabs_nav_wrapper .tabs_nav li button.active {
   color: #ae5432;
 }
 

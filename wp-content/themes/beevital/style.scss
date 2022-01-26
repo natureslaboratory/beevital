@@ -5199,17 +5199,12 @@ p.stock {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.5rem;
-
-    i {
-      font-size: 1.4rem;
-      transition: 150ms;
-    }
+    cursor: pointer;
   }
 
   strong {
     font-size: 1.5rem;
     display: block;
-    cursor: pointer;
   }
 
   .schema-faq-answer {

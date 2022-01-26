@@ -57,7 +57,7 @@ var Faq = /** @class */ (function () {
     };
     Faq.prototype.attachEventListeners = function () {
         this.questions.forEach(function (q) {
-            q.question.addEventListener("click", function (e) {
+            q.node.addEventListener("click", function (e) {
                 q.isShowing ? q.hide() : q.show();
             });
         });
@@ -87,8 +87,9 @@ var Question = /** @class */ (function () {
             this.answer = answers[0];
         }
         // adds chevron
-        this.chevron = document.createElement("i");
-        this.chevron.className = "far fa-chevron-down";
+        this.chevron = document.createElement("div");
+        this.chevron.innerHTML = "&#10133;";
+        this.chevron.classList.add("icon");
         this.question = this.node.getElementsByClassName("schema-faq-question")[0];
         var questionContainer = document.createElement("div");
         questionContainer.className = "schema-faq-question-container";
@@ -110,12 +111,12 @@ var Question = /** @class */ (function () {
         this.answer.style.transition = "".concat(this.answer.scrollHeight / 4 + 150, "ms");
         this.answer.style.maxHeight = "".concat(this.answer.scrollHeight, "px");
         this.answer.style.marginBottom = "1rem";
-        this.chevron.style.transform = 'rotate(180deg)';
+        this.chevron.innerHTML = "&#10134;";
     };
     Question.prototype.hide = function () {
         this.answer.style.maxHeight = null;
         this.answer.style.marginBottom = "-1rem";
-        this.chevron.style.transform = 'rotate(0deg)';
+        this.chevron.innerHTML = "&#10133;";
     };
     return Question;
 }());

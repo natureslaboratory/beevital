@@ -5875,18 +5875,12 @@ p.stock.in-stock {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0.5rem;
-}
-
-.schema-faq-section .schema-faq-question-container i {
-  font-size: 1.4rem;
-  -webkit-transition: 150ms;
-  transition: 150ms;
+  cursor: pointer;
 }
 
 .schema-faq-section strong {
   font-size: 1.5rem;
   display: block;
-  cursor: pointer;
 }
 
 .schema-faq-section .schema-faq-answer {

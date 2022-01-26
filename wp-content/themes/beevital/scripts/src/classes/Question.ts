@@ -19,8 +19,9 @@ export default class Question {
         }
 
         // adds chevron
-        this.chevron = document.createElement("i");
-        this.chevron.className = "far fa-chevron-down"
+        this.chevron = document.createElement("div");
+        this.chevron.innerHTML = "&#10133;";
+        this.chevron.classList.add("icon");
         this.question = (this.node.getElementsByClassName("schema-faq-question") as HTMLCollectionOf<HTMLElement>)[0];
         let questionContainer = document.createElement("div");
         questionContainer.className = "schema-faq-question-container";
@@ -34,12 +35,12 @@ export default class Question {
         this.answer.style.transition = `${this.answer.scrollHeight/4 + 150}ms`
         this.answer.style.maxHeight = `${this.answer.scrollHeight}px`;
         this.answer.style.marginBottom = "1rem";
-        this.chevron.style.transform = 'rotate(180deg)';
+        this.chevron.innerHTML = "&#10134;"
     }
 
     hide() {
         this.answer.style.maxHeight = null;
         this.answer.style.marginBottom = "-1rem";
-        this.chevron.style.transform = 'rotate(0deg)';
+        this.chevron.innerHTML = "&#10133;"
     }
 }

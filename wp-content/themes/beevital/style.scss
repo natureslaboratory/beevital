@@ -147,7 +147,7 @@ table {
 @font-face {
   font-family: "Aller-Light";
   src: url("fonts/Aller-Light.woff2") format("woff2"), url("fonts/Aller-Light.woff") format("woff");
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: normal;
 }
@@ -155,7 +155,7 @@ table {
 @font-face {
   font-family: "Aller-Regular";
   src: url("fonts/Aller-Regular.woff2") format("woff2"), url("fonts/Aller-Regular.woff") format("woff");
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: normal;
 }
@@ -163,7 +163,7 @@ table {
 @font-face {
   font-family: "Aller-Bold";
   src: url("fonts/Aller-Bold.woff2") format("woff2"), url("fonts/Aller-Bold.woff") format("woff");
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: normal;
 }
@@ -363,14 +363,13 @@ img {
   border-radius: 2px;
 }
 .checkbox_field > label .checkbox.tick::after {
-  content: "\f00c";
+  content: "✔";
   width: auto;
   height: auto;
   background: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  font-family: "Font Awesome 5 Free";
   font-size: 16px;
   font-weight: 900;
   line-height: 16px;
@@ -570,7 +569,7 @@ span.new_line {
   max-width: 1366px;
 }
 .container__inner.mw_1146 {
-  max-width: 1146px;
+  max-width: 1024px;
 }
 .container__inner .intro .heading:last-child,
 .container__inner .main_header .heading:last-child {
@@ -580,6 +579,10 @@ span.new_line {
 .container__inner .main_header .text {
   width: 100%;
   max-width: 520px;
+}
+
+.container__inner.mw_800 {
+  max-width: 800px;
 }
 
 .color_bg {
@@ -1631,7 +1634,7 @@ body.open #mobile_nav {
 .tabs_nav_wrapper .tabs_nav li:last-child {
   border-right: none !important;
 }
-.tabs_nav_wrapper .tabs_nav li a {
+.tabs_nav_wrapper .tabs_nav li :is(a, button) {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1644,12 +1647,15 @@ body.open #mobile_nav {
   -moz-transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Aller-Regular";
 }
-.tabs_nav_wrapper .tabs_nav li a:hover,
-.tabs_nav_wrapper .tabs_nav li a.active {
+.tabs_nav_wrapper .tabs_nav li :is(a, button):hover,
+.tabs_nav_wrapper .tabs_nav li :is(a, button).active {
   color: #ae5432;
 }
-.tabs_nav_wrapper .tabs_nav li a.active:after {
+.tabs_nav_wrapper .tabs_nav li :is(a, button).active:after {
   content: "";
   position: absolute;
   top: 100%;
@@ -2420,7 +2426,7 @@ body.open #mobile_nav {
   align-items: center;
 }
 #product_main .description .options .quantity_select_wrapper label {
-  display: none;
+  display:block;
   width: 50px;
   font-family: "Aller-Regular", sans-serif;
   font-size: 1em;
@@ -4503,6 +4509,11 @@ body.open #mobile_nav {
   ul {
     padding-left: 20px;
     margin-bottom: 30px;
+    font-family: "Aller-Light", sans-serif;
+    font-size: 1.1875em;
+    line-height: 1.4;
+    color: #444549;
+
     li {
       list-style: disc;
       padding-bottom: 10px;
@@ -5230,7 +5241,7 @@ p.stock {
   padding: 0.5rem 1rem;
   border-radius: 50px;
   font-family: "Aller-Light", sans-serif;
-} 
+}
 
 #content-page a.c-tag:hover {
   background-color: #dadada;
@@ -5298,14 +5309,15 @@ body {
   }
 }
 
-.c-pagination, .woocommerce-pagination {
+.c-pagination,
+.woocommerce-pagination {
   a {
     i {
       transform: translateX(0px);
       transition: 150ms;
       margin-bottom: -1px;
-      
-      &[class *= "left"]{
+
+      &[class*="left"] {
         margin-bottom: 1px;
       }
     }
@@ -5360,16 +5372,14 @@ body {
     gap: 0.5rem;
     font-weight: 600;
 
-    
-
     i {
       font-size: 1rem;
       transform: translateX(0px);
       transition: 150ms;
       margin-bottom: -1px;
       font-weight: 600;
-      
-      &[class *= "left"]{
+
+      &[class*="left"] {
         margin-bottom: 1px;
       }
     }
@@ -5386,7 +5396,7 @@ body {
     li {
       padding: 0.4rem;
       font-family: "Aller-Light", sans-serif;
-      
+
       a {
         display: flex;
         align-items: center;
@@ -5395,14 +5405,13 @@ body {
         i {
           font-size: 1.1rem;
           margin-top: 2px;
-
         }
       }
 
       span {
         font-weight: 600;
         .page-numbers-current {
-        }  
+        }
       }
     }
   }
@@ -5413,7 +5422,7 @@ body {
     transform: scale(1);
     transition: 150ms;
   }
-  
+
   .product:hover {
     transform: scale(1.02);
   }
@@ -5426,5 +5435,117 @@ body {
   font-size: 1rem;
   margin-top: -0.3rem;
   margin-bottom: 0.3rem;
+}
+
+
+#content-page ul, #product_description ul {
+  padding-left: 20px;
+  margin-bottom: 30px;
+  font-family: "Aller-Light", sans-serif;
+  font-size: 1.1875em;
+  line-height: 1.4;
+  color:#444549;
+}
+
+#content-page ul li, #product_description ul li{
+  list-style: disc;
+  padding-bottom: 10px;
+}
+
+#content-page ol, #product_description ol {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+#content-page ol li, #product_description ol li {
+  list-style: decimal;
+  padding-bottom: 10px;
+}
+
+
+
+// .tabs_nav_wrapper .tabs_nav li a, .tabs_nav_wrapper .tabs_nav li button {
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-box-orient: vertical;
+//   -webkit-box-direction: normal;
+//   -ms-flex-direction: column;
+//   flex-direction: column;
+//   -webkit-box-align: center;
+//   -ms-flex-align: center;
+//   align-items: center;
+//   -webkit-box-pack: center;
+//   -ms-flex-pack: center;
+//   justify-content: center;
+//   position: relative;
+//   height: 78px;
+//   padding: 0 10px;
+//   -webkit-transition: all 0.2s ease;
+//   transition: all 0.2s ease;
+//   width: 100%;
+//   font-size: 1rem;
+//   font-family: "Aller",sans-serif;
+// }
+
+// .tabs_nav_wrapper .tabs_nav li a:hover, .tabs_nav_wrapper .tabs_nav li a.active, .tabs_nav_wrapper .tabs_nav li button:hover, .tabs_nav_wrapper .tabs_nav li button.active {
+//   color: #ae5432;
+// }
+
+figure.wp-block-image{
+	text-align: center;
+}
+
+figure.wp-block-image img{
+	margin:0 auto;
+	display:block;
+}
+
+figcaption{
+	font-family: "Aller-Light", sans-serif;
+	font-size:0.9rem;
+	color:#333;
+}
+
+a.wp-block-button__link{
+	text-decoration: none;
+	font-family: "Aller-Light", sans-serif;
+}
+
+a.wp-block-button__link:hover{
+	background:#777;
+	color:#fff;
+}
+
+ins{
+	text-decoration: none;
+}
+
+ins bdi:after{
+	content: "";
+}
+
+.price del{
+	color:#ccc;
+}
+
+span.onsale{
+  font-family: "Aller-Bold", sans-serif;
+  z-index: 20000;
+  position: absolute;
+  background: gold;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 10px;
+  color: #fff;
+  transform: rotate(-10deg);
+  box-shadow: 0px 0px 10px #ddd;
+}
+
+.product_description .heading.c-ingredients__heading h2{
+	font-size:auto;
 }
 

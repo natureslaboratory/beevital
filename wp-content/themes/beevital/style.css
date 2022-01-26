@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
 * Theme Name: bv
 * Author: Nibbr <contact@nibbr.co.uk>
@@ -146,7 +147,7 @@ table {
 @font-face {
   font-family: "Aller-Light";
   src: url("fonts/Aller-Light.woff2") format("woff2"), url("fonts/Aller-Light.woff") format("woff");
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: normal;
 }
@@ -154,7 +155,7 @@ table {
 @font-face {
   font-family: "Aller-Regular";
   src: url("fonts/Aller-Regular.woff2") format("woff2"), url("fonts/Aller-Regular.woff") format("woff");
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: normal;
 }
@@ -162,7 +163,7 @@ table {
 @font-face {
   font-family: "Aller-Bold";
   src: url("fonts/Aller-Bold.woff2") format("woff2"), url("fonts/Aller-Bold.woff") format("woff");
-  font-display: auto;
+  font-display: swap;
   font-style: normal;
   font-weight: normal;
 }
@@ -375,12 +376,11 @@ img {
 }
 
 .checkbox_field > label .checkbox.tick::after {
-  content: "\f00c";
+  content: "✔";
   width: auto;
   height: auto;
   background: none;
   border-radius: 0;
-  font-family: "Font Awesome 5 Free";
   font-size: 16px;
   font-weight: 900;
   line-height: 16px;
@@ -582,7 +582,7 @@ span.new_line {
 }
 
 .container__inner.mw_1146 {
-  max-width: 1146px;
+  max-width: 1024px;
 }
 
 .container__inner .intro .heading:last-child,
@@ -594,6 +594,10 @@ span.new_line {
 .container__inner .main_header .text {
   width: 100%;
   max-width: 520px;
+}
+
+.container__inner.mw_800 {
+  max-width: 800px;
 }
 
 .color_bg {
@@ -1818,7 +1822,7 @@ body.open #mobile_nav {
   border-right: none !important;
 }
 
-.tabs_nav_wrapper .tabs_nav li a {
+.tabs_nav_wrapper .tabs_nav li :is(a, button) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1837,14 +1841,17 @@ body.open #mobile_nav {
   padding: 0 10px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Aller-Regular";
 }
 
-.tabs_nav_wrapper .tabs_nav li a:hover,
-.tabs_nav_wrapper .tabs_nav li a.active {
+.tabs_nav_wrapper .tabs_nav li :is(a, button):hover,
+.tabs_nav_wrapper .tabs_nav li :is(a, button).active {
   color: #ae5432;
 }
 
-.tabs_nav_wrapper .tabs_nav li a.active:after {
+.tabs_nav_wrapper .tabs_nav li :is(a, button).active:after {
   content: "";
   position: absolute;
   top: 100%;
@@ -2776,7 +2783,7 @@ body.open #mobile_nav {
 }
 
 #product_main .description .options .quantity_select_wrapper label {
-  display: none;
+  display: block;
   width: 50px;
   font-family: "Aller-Regular", sans-serif;
   font-size: 1em;
@@ -5155,6 +5162,10 @@ body.open #mobile_nav {
 #content-page ul {
   padding-left: 20px;
   margin-bottom: 30px;
+  font-family: "Aller-Light", sans-serif;
+  font-size: 1.1875em;
+  line-height: 1.4;
+  color: #444549;
 }
 
 #content-page ul li {
@@ -6005,7 +6016,8 @@ body {
      object-fit: cover;
 }
 
-.c-pagination a i, .woocommerce-pagination a i {
+.c-pagination a i,
+.woocommerce-pagination a i {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
   -webkit-transition: 150ms;
@@ -6013,21 +6025,25 @@ body {
   margin-bottom: -1px;
 }
 
-.c-pagination a i[class*="left"], .woocommerce-pagination a i[class*="left"] {
+.c-pagination a i[class*="left"],
+.woocommerce-pagination a i[class*="left"] {
   margin-bottom: 1px;
 }
 
-.c-pagination a:hover:not(.disabled).prev i, .woocommerce-pagination a:hover:not(.disabled).prev i {
+.c-pagination a:hover:not(.disabled).prev i,
+.woocommerce-pagination a:hover:not(.disabled).prev i {
   -webkit-transform: translateX(-3px);
           transform: translateX(-3px);
 }
 
-.c-pagination a:hover:not(.disabled).next i, .woocommerce-pagination a:hover:not(.disabled).next i {
+.c-pagination a:hover:not(.disabled).next i,
+.woocommerce-pagination a:hover:not(.disabled).next i {
   -webkit-transform: translateX(3px);
           transform: translateX(3px);
 }
 
-.c-pagination a.disabled, .woocommerce-pagination a.disabled {
+.c-pagination a.disabled,
+.woocommerce-pagination a.disabled {
   color: #c7c7c7;
 }
 
@@ -6144,5 +6160,88 @@ body {
   font-size: 1rem;
   margin-top: -0.3rem;
   margin-bottom: 0.3rem;
+}
+
+#content-page ul, #product_description ul {
+  padding-left: 20px;
+  margin-bottom: 30px;
+  font-family: "Aller-Light", sans-serif;
+  font-size: 1.1875em;
+  line-height: 1.4;
+  color: #444549;
+}
+
+#content-page ul li, #product_description ul li {
+  list-style: disc;
+  padding-bottom: 10px;
+}
+
+#content-page ol, #product_description ol {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+#content-page ol li, #product_description ol li {
+  list-style: decimal;
+  padding-bottom: 10px;
+}
+
+figure.wp-block-image {
+  text-align: center;
+}
+
+figure.wp-block-image img {
+  margin: 0 auto;
+  display: block;
+}
+
+figcaption {
+  font-family: "Aller-Light", sans-serif;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+a.wp-block-button__link {
+  text-decoration: none;
+  font-family: "Aller-Light", sans-serif;
+}
+
+a.wp-block-button__link:hover {
+  background: #777;
+  color: #fff;
+}
+
+ins {
+  text-decoration: none;
+}
+
+ins bdi:after {
+  content: "";
+}
+
+.price del {
+  color: #ccc;
+}
+
+span.onsale {
+  font-family: "Aller-Bold", sans-serif;
+  z-index: 20000;
+  position: absolute;
+  background: gold;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 10px;
+  color: #fff;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  -webkit-box-shadow: 0px 0px 10px #ddd;
+          box-shadow: 0px 0px 10px #ddd;
+}
+
+.product_description .heading.c-ingredients__heading h2 {
+  font-size: auto;
 }
 /*# sourceMappingURL=style.css.map */

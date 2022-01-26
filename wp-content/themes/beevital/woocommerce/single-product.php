@@ -25,7 +25,7 @@ if (!is_object($product)) {
             <div class="description">
 
                 <a href="<?php echo get_permalink(bv__getShopPageID()); ?>" class="back_cta">
-                    <i class="fas fa-arrow-left"></i>Back
+                    &larr; Back
                 </a>
 
                 <div class="type">
@@ -90,6 +90,12 @@ if (!is_object($product)) {
 
                     </div>
                 <?php endif; ?>
+                
+                <!-- TrustBox widget - Micro Review Count -->
+				<div class="trustpilot-widget" data-locale="en-GB" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="618bb2da31723d1506ccf3ee" data-style-height="24px" data-style-width="100%" data-theme="light" data-min-review-count="10">
+				  <a href="https://uk.trustpilot.com/review/beevitalpropolis.com" target="_blank" rel="noopener">Trustpilot</a>
+				</div>
+				<!-- End TrustBox widget -->
 
                 <?php do_action('woocommerce_template_single_add_to_cart'); ?>
 
@@ -173,7 +179,14 @@ if (!is_object($product)) {
                     <div class="column">
 
                         <?php echo apply_filters('the_content', $product->get_description()); ?>
-
+						
+						<?php if ($shankar = bv__getExtraProductData($product->get_id(), 'shankar')) : ?>
+							<div class="shankar">
+	                            <p><strong><a href="/about-us/" title="About Us">Dr. Shankar</a> Says</strong></p>
+	                            <a href="/about-us/" title="The Herbal Docs"><img class="herbaldocs" src="/wp-content/themes/beevital/images/products/shankar.webp" alt="Dr Shankar" /></a>
+	                            <p>&ldquo;<?php echo $shankar; ?>&rdquo;</p>
+							</div>
+                        <?php endif; ?>
 
                     </div>
 

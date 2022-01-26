@@ -23,6 +23,9 @@
 	  src="https://ct.pinterest.com/v3/?event=init&tid=2613183829422&pd[em]=<hashed_email_address>&noscript=1" />
 	</noscript>
 	<!-- end Pinterest Tag -->
+	<!-- TrustBox script -->
+	<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+	<!-- End TrustBox script -->
 	<style>
 		.thwmsc-buttons {
 
@@ -138,6 +141,32 @@
     .remove_cta svg{
 	    height:32px;
     }
+    figcaption{
+	    font-family:"Aller",sans-serif;
+	    font-size:0.9rem;
+	    color:#777;
+    }
+    ol{
+	    font-family:"Aller-Light",sans-serif;
+	    font-size: 1.1875em;
+    }
+    .author_bio_section{
+		background-color: #F5F5F5;
+		padding: 15px;
+		border: 1px solid #ccc;
+	}
+	  
+	.author_name{
+		font-size:16px;
+		font-weight: bold;
+	}
+	  
+	.author_details img {
+		border: 1px solid #D8D8D8;
+		border-radius: 50%;
+		float: left;
+		margin: 0 10px 10px 0;
+	}
     </style>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/beevital/images/favicon/apple-touch-icon.png">

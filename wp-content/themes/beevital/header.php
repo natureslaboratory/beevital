@@ -183,6 +183,10 @@
 		padding:24px;
 	}
 	
+	.shankar p{
+		font-size:0.9rem;
+	}
+	
 	.shankar img{
 		border-radius:50%;
 		margin-left:12px;

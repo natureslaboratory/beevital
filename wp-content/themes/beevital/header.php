@@ -192,6 +192,16 @@
 		margin-left:12px;
 		margin-bottom:12px;
 	}
+	
+	p.stock{
+		margin-top:1rem;
+	}
+	
+	@media screen and (480px){
+		#product_main .description .options .quantity_select_wrapper{
+			display:none;
+		}
+	}
     </style>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/beevital/images/favicon/apple-touch-icon.png">

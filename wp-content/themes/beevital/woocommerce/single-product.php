@@ -61,6 +61,8 @@ if (!is_object($product)) {
 
                 </div> -->
 
+                <?php do_action('woocommerce_template_single_add_to_cart'); ?>
+                
                 <div class="excerpt">
 
                     <p>
@@ -74,8 +76,6 @@ if (!is_object($product)) {
 				  <a href="https://uk.trustpilot.com/review/beevitalpropolis.com" target="_blank" rel="noopener">Trustpilot</a>
 				</div>
 				<!-- End TrustBox widget -->
-
-                <?php do_action('woocommerce_template_single_add_to_cart'); ?>
 
                 <?php if ($remedies = bv__getRemediesForProduct($product)) : ?>
                     <div class="remedy_list">

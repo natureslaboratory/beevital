@@ -197,7 +197,7 @@
 		margin-top:1rem;
 	}
 	
-	@media screen and (480px){
+	@media screen and (max-width:480px){
 		#product_main .description .options .quantity_select_wrapper{
 			display:none;
 		}

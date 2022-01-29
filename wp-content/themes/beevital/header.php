@@ -167,6 +167,27 @@
 		float: left;
 		margin: 0 10px 10px 0;
 	}
+	
+	#product_main .description .remedy_list{
+		margin-bottom:1rem;
+	}
+	
+	.trustpilot-widget{
+		margin-bottom: 1rem;
+		border-bottom: solid 1px rgba(192, 192, 192, 0.5);
+		padding-bottom: 1rem;
+	}
+	
+	.shankar{
+		background:#f6f6f6;
+		padding:24px;
+	}
+	
+	.shankar img{
+		border-radius:50%;
+		margin-left:12px;
+		margin-bottom:12px;
+	}
     </style>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/beevital/images/favicon/apple-touch-icon.png">

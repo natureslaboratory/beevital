@@ -198,7 +198,7 @@
 	}
 	
 	@media screen and (max-width:480px){
-		#product_main .description .options .quantity_select_wrapper{
+		#product_main .description .options{
 			display:none;
 		}
 	}

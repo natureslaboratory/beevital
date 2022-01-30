@@ -198,9 +198,7 @@
 	}
 	
 	@media screen and (max-width:480px){
-		#product_main .description .options{
-			display:none;
-		}
+		
 	}
     </style>
 
@@ -569,8 +567,8 @@
 
                     </ul>
 
-                    <a href="<?php echo site_url(); ?>" class="logo">
-	                    <span>BeeVital</span>
+                    <a href="<?php echo site_url(); ?>" class="logo" title="Propolis">
+	                    <span>Propolis</span>
                         <img src="<?php bv__getThemeImageUrl('global/misc/beevital_logo.webp'); ?>" alt="BeeVital Propolis" width="180" height="42" />
                     </a>
 

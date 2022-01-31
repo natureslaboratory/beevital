@@ -197,6 +197,11 @@
 		margin-top:1rem;
 	}
 	
+	#product_main .description .options{
+		margin-bottom:0px;
+		margin-top:1rem;
+	}
+	
 	@media screen and (max-width:480px){
 		
 	}

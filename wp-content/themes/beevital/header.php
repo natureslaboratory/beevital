@@ -232,6 +232,9 @@
 		.nav.upper{
 			display:none;
 		}
+		#basket #banner{
+			display:none;
+		}
 	}
 	
 	#header{

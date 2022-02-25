@@ -224,6 +224,12 @@
 		color:#777;
 	}
 	
+	@media screen and (max-width:1177px){
+		.nav.upper{
+			display:none;
+		}
+	}
+	
 	#header{
 		clear:both;
 	}
@@ -354,6 +360,28 @@
             	<a href="/beevital-story/">
 	            	The BeeVital Story
             	</a>
+            </li>
+            
+            <li>
+            	<a href="/contact/">
+	            	Contact
+            	</a>
+            </li>
+            
+            <li>
+            	<a href="https://instagram.com/beevitalpropolis/">
+	            	Instagram
+	            </a>
+            </li>
+            <li>
+            	<a href="https://facebook.com/beevitalpropolis/">
+	            	Facebook
+	            </a>
+            </li>
+            <li>
+            	<a href="https://twitter.com/beevitaluk">
+	            	Twitter
+	            </a>
             </li>
 
         </ul>

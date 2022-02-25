@@ -302,7 +302,7 @@
 
             <li>
                 <a href="/propolis/">
-                    Propolis
+                    What is Propolis?
                 </a>
             </li>
             
@@ -315,6 +315,18 @@
             <li>
             	<a href="/faq/">
 	            	Propolis FAQ
+            	</a>
+            </li>
+            
+            <li>
+            	<a href="/propolis-experts/">
+	            	Propolis Experts
+            	</a>
+            </li>
+            
+            <li>
+            	<a href="/beevital-story/">
+	            	The BeeVital Story
             	</a>
             </li>
 
@@ -360,6 +372,30 @@
 
             <!-- HEADER -->
             <div id="header_wrapper">
+	            
+	            <ul class="nav upper left">
+		            <li>
+		            	<a href="/beevital-story/">The BeeVital Story</a>
+		            </li>
+		            <li>
+		            	<a href="/propolis-experts/">Propolis Experts</a>
+		            </li>
+	            </ul>
+	            
+	            <ul class="nav upper right">
+		            <li>
+		            	<a href="/contact/">Contact</a>
+		            </li>
+		            <li>
+		            	<a href="https://instagram.com/beevitalpropolis/">Instagram</a>
+		            </li>
+		            <li>
+		            	<a href="https://facebook.com/beevitalpropolis/">Facebook</a>
+		            </li>
+		            <li>
+		            	<a href="https://twitter.com/beevitaluk">Twitter</a>
+		            </li>
+	            </ul>
 
                 <div id="header">
 

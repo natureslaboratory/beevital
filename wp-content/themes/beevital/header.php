@@ -206,7 +206,7 @@
 		list-style:none;
 		font-family:'Aller';
 		font-size:0.9rem;
-		margin-bottom:0.5rem;
+		margin-bottom:1rem;
 		float:left;
 	}
 	.nav.upper.right{

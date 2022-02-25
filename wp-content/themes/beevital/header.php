@@ -204,7 +204,7 @@
 	
 	.nav.upper{
 		list-style:none;
-		font-family:'Aller';
+		font-family:"Aller-Light", sans-serif;
 		font-size:0.9rem;
 		margin-bottom:1rem;
 		float:left;

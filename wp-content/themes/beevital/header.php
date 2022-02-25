@@ -249,7 +249,7 @@
 		margin-top:1rem;
 	}
 	#product_main .description .options .quantity_select_wrapper{
-		margin-top:-12px;
+		margin-top:4px;
 	}
     </style>
 

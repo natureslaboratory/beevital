@@ -214,11 +214,18 @@
 	}
 	.nav.upper li{
 		display:inline-block;
-		margin-right:2rem;
+		margin-right:1rem;
 	}
 	.nav.upper.right li{
 		margin-right:0px;
-		margin-left:2rem;
+		margin-left:1rem;
+	}
+	.nav.upper li a{
+		color:#777;
+	}
+	
+	#header{
+		clear:both;
 	}
     </style>
 

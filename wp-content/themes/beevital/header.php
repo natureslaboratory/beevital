@@ -201,6 +201,25 @@
 		margin-bottom:0px;
 		margin-top:1rem;
 	}
+	
+	.nav.upper{
+		list-style:none;
+		font-family:'Aller';
+		font-size:0.9rem;
+		margin-bottom:0.5rem;
+		float:left;
+	}
+	.nav.upper.right{
+		float:right;
+	}
+	.nav.upper li{
+		display:inline-block;
+		margin-right:2rem;
+	}
+	.nav.upper.right li{
+		margin-right:0px;
+		margin-left:2rem;
+	}
     </style>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/beevital/images/favicon/apple-touch-icon.png">

@@ -237,6 +237,11 @@
 	#header{
 		clear:both;
 	}
+	
+	.reset_variations{
+		font-size:0.9rem;
+		margin-bottom:1rem;
+	}
     </style>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/beevital/images/favicon/apple-touch-icon.png">

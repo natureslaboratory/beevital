@@ -222,6 +222,10 @@
 	}
 	.nav.upper li a{
 		color:#777;
+		border-bottom:1px solid #f1f2f2;
+	}
+	.nav.upper li a:hover{
+		color:#000;
 	}
 	
 	@media screen and (max-width:1177px){

@@ -243,7 +243,6 @@
 	
 	.reset_variations{
 		font-size:0.9rem;
-		margin-bottom:1rem;
 	}
 	
 	#product_main .description .block_cta{

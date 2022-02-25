@@ -239,6 +239,15 @@
             document.querySelector('body').style.overflow = 'visible';
         }
     });
+    
+    jQuery('.variations select').change(function(){
+	  	var variant = jQuery('.variations select').val();
+	  	if(variant !== ''){
+		  	jQuery('#product_main .description .price').hide();
+	  	}else{
+		  	jQuery('#product_main .description .price').show();
+	  	}
+    });
 
 </script>
 

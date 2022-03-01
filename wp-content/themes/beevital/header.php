@@ -375,6 +375,12 @@
             </li>
             
             <li>
+            	<a href="/propolis-research/">
+	            	Propolis Research
+            	</a>
+            </li>
+            
+            <li>
             	<a href="/beevital-story/">
 	            	The BeeVital Story
             	</a>
@@ -451,6 +457,9 @@
 		            </li>
 		            <li>
 		            	<a href="/propolis-experts/">Propolis Experts</a>
+		            </li>
+		            <li>
+		            	<a href="/propolis-research/">Propolis Research</a>
 		            </li>
 	            </ul>
 	            

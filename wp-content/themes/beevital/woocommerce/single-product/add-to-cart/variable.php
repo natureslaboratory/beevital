@@ -88,6 +88,7 @@ do_action('woocommerce_before_add_to_cart_form'); ?>
 
                 <div class="quantity_select">
 
+<!--
                     <a href="#" class="btn minus">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="minus" class="svg-inline--fa fa-minus fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
                         <span>Reduce Quantity</span>
@@ -99,6 +100,20 @@ do_action('woocommerce_before_add_to_cart_form'); ?>
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" class="svg-inline--fa fa-plus fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
                         <span>Increase Quantity</span>
                     </a>
+-->
+
+					<select name="quantity" id="quantity" class="qty">
+						<option vaue="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option valuw="8">8</option>
+						<option valuw="9">9</option>
+						<option value="10">10</option>						
+					</select>
 
                 </div>
 

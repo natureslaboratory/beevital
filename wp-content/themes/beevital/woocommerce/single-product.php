@@ -45,7 +45,6 @@ if (!is_object($product)) {
                 <div class="woocommerce c-rating">
                     <?php woocommerce_template_single_rating() ?>
                 </div>
-                <!-- Not even tried here have they -->
                 <!-- <div class="rating">
                     <div class="stars">
                         <i class="far fa-star"></i>

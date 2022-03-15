@@ -6,7 +6,7 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('bv', get_bloginfo('stylesheet_directory') . '/style.css');
     //     wp_enqueue_style('font-awesome','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
-    // wp_enqueue_script('jquery');
+    wp_enqueue_script('jquery');
     wp_enqueue_script('faq', "/wp-content/themes/beevital/dist/scripts/index.js", [], false, true);
 ?>
 

@@ -24,7 +24,9 @@ $attribute_keys  = array_keys($attributes);
 $variations_json = wp_json_encode($available_variations);
 $variations_attr = function_exists('wc_esc_json') ? wc_esc_json($variations_json) : _wp_specialchars($variations_json, ENT_QUOTES, 'UTF-8', true);
 
-do_action('woocommerce_before_add_to_cart_form'); ?>
+// do_action('woocommerce_before_add_to_cart_form'); 
+
+?>
 
 
 <form id="variations_form" class="variations_form cart" action="<?php echo esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink())); ?>" method="post" enctype='multipart/form-data' data-product_id="<?php echo absint($product->get_id()); ?>" data-product_variations="<?php echo $variations_attr; // WPCS: XSS ok. 
@@ -51,7 +53,8 @@ do_action('woocommerce_before_add_to_cart_form'); ?>
                             array(
                                 'options'   => $options,
                                 'attribute' => $attribute_name,
-                                'product'   => $product
+                                'product'   => $product,
+                                'class' => "variation__dropdown"
                             )
                         );
                         echo end($attribute_keys) === $attribute_name ? wp_kses_post(apply_filters('woocommerce_reset_variations_link', '<a id="reset_link" class="reset_variations" href="#">' . esc_html__('Clear Selection', 'woocommerce') . '</a>')) : '';
@@ -123,6 +126,27 @@ do_action('woocommerce_before_add_to_cart_form'); ?>
             const resetLink = document.getElementById("reset_link");
             const variationsForm = document.getElementById("variations_form");
             variationsForm.appendChild(resetLink);
+
+            const mainPrice = document.getElementsByClassName("price")[0];
+            const variationData = document.getElementsByClassName("single-variation")[0];
+            const variationDropdown = document.getElementsByClassName("variation__dropdown")[0];
+
+            variationDropdown.addEventListener("change", (e) => {
+                if (e.target.value) {
+                    mainPrice.style.display = "none";
+                } else {
+                    mainPrice.style.display = "block";
+                }
+            })
+            
+            const observer = new MutationObserver(m => {
+                m.forEach(mr => {
+                    console.log("style changed");
+                })
+            })
+
+            observer.observe(variationData, { attributes: true, attributeFilter: ['style'] });
+
         </script>
         <button type="submit" class="single_add_to_cart_button block_cta">
             <i class="fas fa-plus"></i>Add to basket

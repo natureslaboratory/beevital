@@ -419,24 +419,24 @@ if (!is_object($product)) {
     jQuery(document).ready(($) => {
         // QUANTITY CHANGER
 
-        $('.quantity_select .btn').on('click', function(e) {
-            e.preventDefault();
+        // $('.quantity_select .btn').on('click', function(e) {
+        //     e.preventDefault();
 
-            const oldVal = $(this).parent().find('input').val();
-            let newVal;
+        //     const oldVal = $(this).parent().find('input').val();
+        //     let newVal;
 
-            if ($(this).hasClass('plus')) {
-                newVal = parseFloat(oldVal) + 1;
-            } else {
-                if (oldVal > 1) {
-                    newVal = parseFloat(oldVal) - 1;
-                } else {
-                    newVal = 1;
-                }
-            }
+        //     if ($(this).hasClass('plus')) {
+        //         newVal = parseFloat(oldVal) + 1;
+        //     } else {
+        //         if (oldVal > 1) {
+        //             newVal = parseFloat(oldVal) - 1;
+        //         } else {
+        //             newVal = 1;
+        //         }
+        //     }
 
-            $(this).parent().find('input').val(newVal);
-        });
+        //     $(this).parent().find('input').val(newVal);
+        // });
 
 
         // TABS

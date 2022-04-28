@@ -89,7 +89,7 @@
                     
                     <li>
                         <a href="/become-a-stockist/">
-                            Become at Stockist
+                            Become a Stockist
                         </a>
                     </li>
 

@@ -29,6 +29,7 @@
             <!-- END OF PAGE INTRO -->
 
             <!-- BANNER -->
+<!--
             <div id="banner" class="stacked  container__inner mw_1366">
 
                 <div class="column">
@@ -78,6 +79,7 @@
                 </div>
 
             </div>
+-->
             <!-- END OF BANNER -->
 
             <!-- BASKET LISTINGS -->

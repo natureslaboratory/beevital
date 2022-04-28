@@ -21,7 +21,7 @@
                 </p>
 
                 <p>
-                    <strong>Email:</strong> <a href="mailto:sales@beevitalpropolis.com">sales@beevitalpropolis.com</a>
+                    <strong>Email:</strong> <a href="mailto:info@beevitalpropolis.com">info@beevitalpropolis.com</a>
                 </p>
 
                 <p>

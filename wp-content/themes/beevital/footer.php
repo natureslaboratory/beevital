@@ -86,6 +86,12 @@
                             Terms & Conditions
                         </a>
                     </li>
+                    
+                    <li>
+                        <a href="/become-a-stockist/">
+                            Become at Stockist
+                        </a>
+                    </li>
 
                 </ul>
 

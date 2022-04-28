@@ -6244,4 +6244,26 @@ span.onsale {
 .product_description .heading.c-ingredients__heading h2 {
   font-size: auto;
 }
+
+.options__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 0.5rem;
+}
+
+.quantity__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
 /*# sourceMappingURL=style.css.map */

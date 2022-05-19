@@ -87,13 +87,13 @@
                         </a>
                     </li>
                     
-<!--
+
                     <li>
                         <a href="/become-a-stockist/">
                             Become a Stockist
                         </a>
                     </li>
--->
+
 
                 </ul>
 

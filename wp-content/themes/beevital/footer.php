@@ -207,6 +207,18 @@
     </div>
 
 </div>
+
+<div class="overlay" style="display:none;">
+	<div class="popup">
+		<img src="https://beevitalpropolis.com/wp-content/uploads/2022/06/AdobeStock_285836511-2048x1623.jpeg" alt="Bee on a Flower">
+		<div class="text">
+			<h2>Want 10% Off?</h2>
+			<p>Use the discount code 'popup10' when you place your next order.</p>
+			<button>Close</button>
+		</div>
+	</div>
+</div>
+
 <script>
 
     // MOBILE NAV

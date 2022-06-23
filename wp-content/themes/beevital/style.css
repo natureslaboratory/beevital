@@ -6266,4 +6266,16 @@ span.onsale {
           align-items: center;
   gap: 0.5rem;
 }
+
+pre.wp-block-verse{
+	padding:1rem;
+	margin-bottom:2rem;
+	background: url("images/global/fractal.jpg");
+	font-family: "Aller-Bold", sans-serif;
+	color:#fff;
+}
+
+pre.wp-block-verse a{
+	color:#fff;
+}
 /*# sourceMappingURL=style.css.map */

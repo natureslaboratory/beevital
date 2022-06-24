@@ -255,13 +255,21 @@
 
 .popup .text h2{
 	font-family: aller-bold, sans-serif;
+	font-size:1.4rem;
+	margin-bottom:1rem;
 }
 
 .popup .text button{
 	position:absolute;
 	top:1rem;
 	left:1rem;
-	color:#fff;
+	color:#333;
+	background:#fff;
+	width:2rem;
+	height:2rem;
+	padding:0.8rem 1rem 1rem;
+	box-shadow: 0px 0px 5px #333;
+	border-radius: 1rem;
 }
 
 .popup .text pre{
@@ -269,6 +277,8 @@
 	background:#f1f2f2;
 	text-align: center;
 	font-family: monospace;
+	font-size:1.2rem;
+	padding:0.5rem;
 }
 
 @media screen and (max-width:540px){

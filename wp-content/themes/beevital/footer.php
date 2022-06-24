@@ -213,7 +213,8 @@
 		<img src="https://beevitalpropolis.com/wp-content/uploads/2022/06/AdobeStock_285836511-2048x1623.jpeg" alt="Bee on a Flower">
 		<div class="text">
 			<h2>Want 10% Off?</h2>
-			<p>Use the discount code 'popup10' when you place your next order.</p>
+			<p>Use this discount code when you place your next order:</p>
+			<pre>popup10</pre>
 			<button>&times;</button>
 		</div>
 	</div>
@@ -261,6 +262,13 @@
 	top:1rem;
 	left:1rem;
 	color:#fff;
+}
+
+.popup .text pre{
+	border:2px dashed #fff;
+	background:#f1f2f2;
+	text-align: center;
+	font-family: monospace;
 }
 
 @media screen and (max-width:540px){

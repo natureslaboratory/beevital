@@ -214,10 +214,61 @@
 		<div class="text">
 			<h2>Want 10% Off?</h2>
 			<p>Use the discount code 'popup10' when you place your next order.</p>
-			<button>Close</button>
+			<button>&times;</button>
 		</div>
 	</div>
 </div>
+
+<style>
+.overlay{
+	display: none;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: rgba(255,255,255,0.9);
+	border: 1px solid red;
+	align-items: center;
+	justify-content: center;
+}	
+
+.popup{
+	width: 500px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background: #d8e122;
+	box-shadow: 0px 0px 20px #333;
+	position: relative;
+}
+
+.popup img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+
+.popup .text{
+	padding:2rem;
+}
+
+.popup .text h2{
+	font-family: aller-bold, sans-serif;
+}
+
+.popup .text button{
+	position:absolute;
+	top:1rem;
+	left:1rem;
+	color:#fff;
+}
+
+@media screen and (max-width:540px){
+	.popup{
+		grid-template-columns: 1fr;
+	}
+}
+</style>
 
 <script>
 

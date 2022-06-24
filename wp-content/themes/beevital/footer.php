@@ -291,7 +291,7 @@
 <script>
 
 	jQuery(document).ready(function(){
-		jQuery("document").mouseout(function(){
+		jQuery(document).mouseout(function(){
 			jQuery(".overlay").css("display", "flex");
 		});
 	});

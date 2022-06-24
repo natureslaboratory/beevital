@@ -290,6 +290,10 @@
 
 <script>
 
+	jQuery("body").mouseout(function(){
+		jQuery(".overlay").css("display", "flex");
+	});
+
     // MOBILE NAV
 
     document.querySelector('.burger_cta').addEventListener('click', (e) => {

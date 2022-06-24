@@ -290,7 +290,7 @@
 
 <script>
 
-	jQuery("body").mouseout(function(){
+	jQuery("html").mouseout(function(){
 		jQuery(".overlay").css("display", "flex");
 	});
 

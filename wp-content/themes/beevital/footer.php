@@ -261,13 +261,13 @@
 
 .popup .text button{
 	position:absolute;
-	top:1rem;
-	left:1rem;
+	top:-1rem;
+	left:-1rem;
 	color:#333;
+	font-size:1.2rem;
 	background:#fff;
 	width:2rem;
 	height:2rem;
-	padding:0.8rem 1rem 1rem;
 	box-shadow: 0px 0px 5px #333;
 	border-radius: 1rem;
 }

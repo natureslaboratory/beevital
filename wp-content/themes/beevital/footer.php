@@ -290,8 +290,10 @@
 
 <script>
 
-	jQuery("document").mouseout(function(){
-		jQuery(".overlay").css("display", "flex");
+	jQuery(document).ready(function(){
+		jQuery("document").mouseout(function(){
+			jQuery(".overlay").css("display", "flex");
+		});
 	});
 
     // MOBILE NAV

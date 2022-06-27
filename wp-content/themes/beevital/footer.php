@@ -221,6 +221,7 @@
 </div>
 
 <style>
+/*
 .overlay{
 	display: none;
 	width: 100%;
@@ -286,6 +287,7 @@
 		grid-template-columns: 1fr;
 	}
 }
+*/
 </style>
 
 <script>

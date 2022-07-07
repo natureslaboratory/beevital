@@ -6318,3 +6318,8 @@ aside label{
 aside input[type=email]{
 	margin-bottom:1rem;
 }
+
+aside section{
+	position: sticky;
+	top:0px;
+}

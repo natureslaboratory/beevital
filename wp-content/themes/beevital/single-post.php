@@ -8,34 +8,36 @@
 				<?php the_content(); ?>
 		    </div>
         	<aside>
-	        	<div>
-		        	<h2>About the Author</h2>
-		        	<p>Jack lives in Whitby with his family. He loves long distance running, live music and enjoying the great outdoors. Since joining 
-			        	BeeVital in 2021 he's taken a keen interest in propolis, with particular interest in how it can be used to support the body's 
-			        	immune system and improve the immune response.</p>
-	        	</div>
-	        	<div>
-	        		<h2>Get Great Articles in Your Inbox</h2>
-		        	<form
-					  action="https://buttondown.email/api/emails/embed-subscribe/beevital"
-					  method="post"
-					  target="popupwindow"
-					  onsubmit="window.open('https://buttondown.email/beevital', 'popupwindow')"
-					  class="embeddable-buttondown-form"
-					>
-					  <label for="bd-email">Enter your email</label>
-					  <input type="email" name="email" id="bd-email" placeholder="you@example.com" />
-					  <button type="submit" class="single_add_to_cart_button block_cta">Sign Up</button>
-					</form>
-	        	</div>
-	        	<div>
-		        	<h2>Follow Us for Health &amp; Wellbeing Tips</h2>
-		        	<ul>
-                        <li><a href="https://www.facebook.com/beevitalpropolis" target="_blank">Facebook</a></li>
-                        <li><a href="https://twitter.com/beevitaluk" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.instagram.com/beevitalpropolis/" target="_blank">Instagram</a></li>
-                    </ul>
-	        	</div>
+	        	<section>
+		        	<div>
+		        		<h2>Get Health Tips &amp; Offers in Your Inbox</h2>
+			        	<form
+						  action="https://buttondown.email/api/emails/embed-subscribe/beevital"
+						  method="post"
+						  target="popupwindow"
+						  onsubmit="window.open('https://buttondown.email/beevital', 'popupwindow')"
+						  class="embeddable-buttondown-form"
+						>
+						  <label for="bd-email">Enter your email</label>
+						  <input type="email" name="email" id="bd-email" placeholder="you@example.com" />
+						  <button type="submit" class="single_add_to_cart_button block_cta">Sign Up</button>
+						</form>
+		        	</div>
+		        	<div>
+			        	<h2>Follow Us</h2>
+			        	<ul>
+	                        <li><a href="https://www.facebook.com/beevitalpropolis" target="_blank">Facebook</a></li>
+	                        <li><a href="https://twitter.com/beevitaluk" target="_blank">Twitter</a></li>
+	                        <li><a href="https://www.instagram.com/beevitalpropolis/" target="_blank">Instagram</a></li>
+	                    </ul>
+		        	</div>
+		        	<div>
+			        	<h2>About the Author</h2>
+			        	<p>Jack lives in Whitby with his family. He loves long distance running, live music and enjoying the great outdoors. Since joining 
+				        	BeeVital in 2021 he's taken a keen interest in propolis, with particular interest in how it can be used to support the body's 
+				        	immune system and improve the immune response.</p>
+		        	</div>
+	        	</section>
         	</aside>
 	    </article>
         <h3>Previous/Next Post</h3>

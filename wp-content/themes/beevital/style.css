@@ -6329,6 +6329,11 @@ aside p{
 	overflow:hidden;
 }
 
+#content-page aside ul li svg{
+	height:2rem;
+	width:auto;
+}
+
 aside label{
 	display:none;
 }

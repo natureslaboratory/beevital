@@ -54,6 +54,7 @@
 				        	immune system and improve the immune response.</p>
 		        	</div>
 		        	<div class="fixed">
+			        	<a class="close">&times;</a>
 			        	<h2>Support Your Immune System</h2>
 			        	<p>Explore our range of natural immune support medicines.</p>
 			        	<p><button class="single_add_to_cart_button block_cta" href="/products/">Shop Now</button></p>

@@ -6347,6 +6347,23 @@ aside section{
 	top:1rem;
 }
 
+aside div.fixed{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background: #fff;
+	box-shadow: 0px 0px 5px #ccc;
+	padding: 2rem;
+	width: 400px;
+}
+
+aside div.fixed a.close{
+	position:absolute;
+	top:0.8rem;
+	right:0.8rem;
+	color:#fff;
+}
+
 @media screen and (max-width:768px){
 	article{
 		grid-template-columns: 1fr;

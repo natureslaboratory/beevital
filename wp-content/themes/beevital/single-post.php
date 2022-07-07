@@ -49,8 +49,8 @@
 		        	</div>
 		        	<div>
 			        	<h2>Support Your Immune System</h2>
-			        	<img src="https://beevitalpropolis.com/wp-content/uploads/2021/09/Whole_Health_Range-scaled.jpg" alt="Immune Support Medicines" />
-			        	<p><a class="single_add_to_cart_button block_cta" href="/products/">Shop Now</a></p>
+			        	<p>Explore our range of natural immune support medicines.</p>
+			        	<p><button class="single_add_to_cart_button block_cta" href="/products/">Shop Now</button></p>
 		        	</div>
 		        	<div>
 			        	<h2>About the Author</h2>

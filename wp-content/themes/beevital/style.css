@@ -6311,7 +6311,7 @@ aside p{
 	color:#777;
 }
 
-aside ul{
+#content-page aside ul{
 	list-style: none;
 	margin:0;
 	padding:0;

@@ -6279,3 +6279,28 @@ pre.wp-block-verse a{
 	color:#fff;
 }
 /*# sourceMappingURL=style.css.map */
+
+article{
+	display:grid;
+	grid-template-columns: 2fr 1fr;
+	grid-column-gap: 2rem;
+}
+
+article h2{
+	grid-column: 1 / 3;
+}
+
+aside h2{
+	margin-top:0px;
+	font-size:120%;
+	font-weight:700;
+}
+
+aside p{
+	font-size:100%;
+	color:#777;
+}
+
+aside label{
+	display:none;
+}

@@ -25,7 +25,7 @@
 					>
 					  <label for="bd-email">Enter your email</label>
 					  <input type="email" name="email" id="bd-email" placeholder="you@example.com" />
-					  <input type="submit" value="Sign Up" />
+					  <button type="submit" class="single_add_to_cart_button block_cta">Sign Up</button>
 					</form>
 	        	</div>
 	        	<div>

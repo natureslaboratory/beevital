@@ -3,7 +3,7 @@
 
 add_action('wp_enqueue_scripts', function () {
 
-    wp_enqueue_style('bv', get_bloginfo('stylesheet_directory') . '/style.css?v=0.0.2');
+    wp_enqueue_style('bv', get_bloginfo('stylesheet_directory') . '/style.css?v=0.0.3');
     //     wp_enqueue_style('font-awesome','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
     wp_enqueue_script('jquery');

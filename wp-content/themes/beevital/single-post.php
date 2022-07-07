@@ -10,7 +10,8 @@
         	<aside>
 	        	<section>
 		        	<div>
-		        		<h2>Get Health Tips &amp; Offers in Your Inbox</h2>
+		        		<h2>BeeVital Newsletter</h2>
+		        		<p>Get health tips, news and special offers directly in your inbox, once per month. No spam. No tracking.</p>
 			        	<form
 						  action="https://buttondown.email/api/emails/embed-subscribe/beevital"
 						  method="post"

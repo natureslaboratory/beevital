@@ -6286,7 +6286,7 @@ article{
 	grid-column-gap: 2rem;
 }
 
-article h2{
+article h1{
 	grid-column: 1 / 3;
 }
 
@@ -6333,4 +6333,13 @@ aside input[type=email]{
 aside section{
 	position: sticky;
 	top:1rem;
+}
+
+@media screen and (max-width:768px){
+	article{
+		grid-template-columns: 1fr;
+	}
+	article h1{
+		grid-column: 1;
+	}
 }

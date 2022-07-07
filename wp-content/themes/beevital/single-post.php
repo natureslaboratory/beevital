@@ -48,6 +48,11 @@
 	                    </ul>
 		        	</div>
 		        	<div>
+			        	<h2>Support Your Immune System</h2>
+			        	<p>Explore our range of natural immune support medicines.</p>
+			        	<img src="https://beevitalpropolis.com/wp-content/uploads/2021/09/Whole_Health_Range-scaled.jpg" alt="Immune Support Medicines" />
+			        	<a class="single_add_to_cart_button block_cta" href="/products/">Shop Now</a>
+		        	<div>
 			        	<h2>About the Author</h2>
 			        	<p>Jack lives in Whitby with his family. He loves long distance running, live music and enjoying the great outdoors. Since joining 
 				        	BeeVital in 2021 he's taken a keen interest in propolis, with particular interest in how it can be used to support the body's 

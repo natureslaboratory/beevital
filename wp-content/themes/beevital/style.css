@@ -6377,5 +6377,9 @@ aside div.fixed a.close{
 	}
 	aside div.fixed{
 		position:relative;
+		width:100%;
+	}
+	aside div.fixed a.close{
+		display:none;
 	}
 }

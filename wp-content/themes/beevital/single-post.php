@@ -56,7 +56,7 @@
 		        	<div class="fixed">
 			        	<a class="close">&times;</a>
 			        	<h2>Support Your Immune System</h2>
-			        	<p>Explore our range of natural immune support medicines.</p>
+			        	<p>Explore our range of natural immune support medicines &amp; natural oral health products.</p>
 			        	<p><a class="single_add_to_cart_button block_cta" href="/products/?ref=blog">Shop Now</a></p>
 		        	</div>
 	        	</section>

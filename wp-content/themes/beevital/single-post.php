@@ -53,6 +53,11 @@
 				        	BeeVital in 2021 he's taken a keen interest in propolis, with particular interest in how it can be used to support the body's 
 				        	immune system and improve the immune response.</p>
 		        	</div>
+		        	<div class="fixed">
+			        	<h2>Support Your Immune System</h2>
+			        	<p>Explore our range of natural immune support medicines.</p>
+			        	<p><button class="single_add_to_cart_button block_cta" href="/products/">Shop Now</button></p>
+		        	</div>
 	        	</section>
         	</aside>
 	    </article>

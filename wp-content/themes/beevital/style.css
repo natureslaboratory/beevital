@@ -6376,7 +6376,6 @@ aside div.fixed a.close{
 		grid-column: 1;
 	}
 	aside div.fixed{
-		position:relative;
 		width:100%;
 	}
 	aside div.fixed a.close{

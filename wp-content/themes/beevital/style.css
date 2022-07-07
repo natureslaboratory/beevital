@@ -6355,6 +6355,7 @@ aside div.fixed{
 	box-shadow: 0px 0px 5px #ccc;
 	padding: 2rem;
 	width: 400px;
+	margin-bottom:0px;
 }
 
 aside div.fixed a.close{
@@ -6364,6 +6365,7 @@ aside div.fixed a.close{
 	color:#777;
 	text-decoration: none;
 	border-bottom: none;
+	cursor: pointer;
 }
 
 @media screen and (max-width:768px){
@@ -6372,5 +6374,8 @@ aside div.fixed a.close{
 	}
 	article h1{
 		grid-column: 1;
+	}
+	aside div.fixed{
+		position:relative;
 	}
 }

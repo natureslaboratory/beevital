@@ -6314,7 +6314,7 @@ aside p{
 #content-page aside ul{
 	list-style: none;
 	margin:0;
-	padding:0;
+	padding:0 !important;
 }
 
 aside ul li{
@@ -6332,5 +6332,5 @@ aside input[type=email]{
 
 aside section{
 	position: sticky;
-	top:0px;
+	top:1rem;
 }

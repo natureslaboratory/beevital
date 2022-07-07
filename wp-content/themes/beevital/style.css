@@ -6317,9 +6317,16 @@ aside p{
 	padding:0 !important;
 }
 
-aside ul li{
+#content-page aside ul li{
 	display:inline-block;
 	margin-right:2rem;
+}
+
+#content-page aside ul li span{
+	display:block;
+	width:0px;
+	height:0px;
+	overflow:hidden;
 }
 
 aside label{

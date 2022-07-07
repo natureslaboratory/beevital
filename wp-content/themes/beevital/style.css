@@ -6361,7 +6361,9 @@ aside div.fixed a.close{
 	position:absolute;
 	top:0.8rem;
 	right:0.8rem;
-	color:#fff;
+	color:#777;
+	text-decoration: none;
+	border-bottom: none;
 }
 
 @media screen and (max-width:768px){

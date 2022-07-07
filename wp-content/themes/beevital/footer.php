@@ -339,6 +339,10 @@
 		  	jQuery('#product_main .description .price').show();
 	  	}
     });
+    
+    jQuery('aside div.fixed a.close').click(function(){
+	    jQuery('aside div.fixed').fadeOut();
+    })
 
 </script>
 

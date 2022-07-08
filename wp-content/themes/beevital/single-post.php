@@ -11,7 +11,7 @@
 	        	<section>
 		        	<div>
 		        		<h2>BeeVital Newsletter</h2>
-		        		<p>Get health tips, news and special offers directly in your inbox, once per month. No spam. No tracking. <strong>Lots of bees!</strong></p>
+		        		<p>Get health tips, news and special offers directly in your inbox, once per month.</p>
 			        	<form
 						  action="https://buttondown.email/api/emails/embed-subscribe/beevital"
 						  method="post"
@@ -48,10 +48,9 @@
 	                    </ul>
 		        	</div>
 		        	<div>
-			        	<h2>About the Author</h2>
-			        	<p>Jack lives in Whitby with his family. He loves long distance running, live music and enjoying the great outdoors. Since joining 
-				        	BeeVital in 2021 he's taken a keen interest in propolis, with particular interest in how it can be used to support the body's 
-				        	immune system and improve the immune response.</p>
+			        	<h2>About Us</h2>
+			        	<p>BeeVital are world-leaders in the research and development of <a href="https://beevitalpropolis.com/propolis/">propolis</a> health 
+			        	products. Our range is backed by 20 years of scientific research, including collaborations with leading universities.</p>
 		        	</div>
 		        	<div class="fixed">
 			        	<a class="close">&times;</a>

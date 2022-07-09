@@ -6422,3 +6422,12 @@ article .buttondown-form button{
 		width:100%;
 	}
 }
+
+@media screen and (max-width:480px){
+	article .buttondown-form{
+		grid-template-columns: 1fr;
+	}
+	#content-page article .buttondown-form h2{
+		grid-column: 1;
+	}
+}

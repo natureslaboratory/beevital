@@ -6431,3 +6431,73 @@ article .buttondown-form button{
 		grid-column: 1;
 	}
 }
+
+.checkout.woocommerce-checkout input{
+	padding:5px 10px;
+	height:auto;
+	font-size:100%;
+}
+
+#ship-to-different-address-checkbox,
+.woocommerce form .form-row .input-checkbox{
+	float:left;
+	margin-right:1rem;
+	width:32px;
+	height:32px;
+	margin-top:10px;
+}
+
+.woocommerce form .form-row .input-checkbox{
+	margin-top:0px;
+}
+
+#ship-to-different-address-checkbox:checked:after,
+.woocommerce form .form-row .input-checkbox:checked:after {
+  content:"✔";
+} 
+
+#content-page h3#ship-to-different-address{
+	margin-top:0.8rem;
+}
+
+.woocommerce ul#shipping_method li{
+	margin:0;
+	padding:0;
+}
+
+.shop_table.woocommerce-checkout-review-order-table{
+	font-size:100%;
+}
+
+.shop_table.woocommerce-checkout-review-order-table p{
+	font-size:90%;
+}
+
+.woocommerce form .form-row label{
+	font-size:80%;
+}
+
+.payment_method_sagepayform .payment_method_sagepayform{
+	display:none;
+}
+
+#add_payment_method #payment ul.payment_methods li input, .woocommerce-cart #payment ul.payment_methods li input, .woocommerce-checkout #payment ul.payment_methods li input{
+	width:32px;
+	height:32px;
+	border-radius:50%;
+	float:left;
+}
+
+#add_payment_method #payment ul.payment_methods li input, .woocommerce-cart #payment ul.payment_methods li input, .woocommerce-checkout #payment ul.payment_methods li input:checked:after{
+	overflow:hidden;
+	content:"✔";
+}
+
+li.wc_payment_method.payment_method_sagepayform::marker,
+li.wc_payment_method.payment_method_ppcp-gateway::marker{
+	content: "" !important;
+}
+
+ul.woocommerce-error li{
+	text-indent:42px;
+}

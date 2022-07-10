@@ -1467,3 +1467,21 @@ function script_in_footer()
     </script>
 <?php
 }
+
+add_filter( 'woocommerce_checkout_fields' , 'remove_company_name' );
+
+function remove_company_name( $fields ) {
+     unset($fields['billing']['billing_company']);
+     unset($fields['billing']['billing_address_2']);
+     unset($fields['shipping']['shipping_company']);
+     unset($fields['shipping']['shipping_address_2']);
+     unset($fields['order']['order_comments']);
+     return $fields;
+}
+
+add_filter( 'woocommerce_localisation_address_formats', 'filter_localisation_address_formats' );
+function filter_localisation_address_formats( $address_formats ){
+    $address_formats['UK'] = "{name}\n{company}\n{address_1}\n{address_2}\n{city}\n{state} {postcode}\n{country}";
+
+    return $address_formats;
+}

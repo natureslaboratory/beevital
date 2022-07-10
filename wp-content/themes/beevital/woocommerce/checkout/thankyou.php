@@ -16,201 +16,73 @@
  */
 
 defined( 'ABSPATH' ) || exit;
-
-
-/** @var WC_Order $order */
-/** @var WC_Order_Item_Product[] $orderItems */
-$orderItems = $order->get_items();
-
-
 ?>
-<div class="container__outer" id="checkout">
-    <div class="container__inner mw_1146">
-        <div id="page_intro_wrapper">
 
-            <div id="page_intro">
+<div class="woocommerce-order">
 
-                <div class="heading large">
-                    Thank you <?php echo $order->get_billing_first_name(); ?>
-                </div>
+	<?php
+	if ( $order ) :
 
-                <div class="text">
-                    <p>
-                        Your order has been placed successfully. We have received your payment and are packing your items for delivery.
-                    </p>
-                </div>
+		do_action( 'woocommerce_before_thankyou', $order->get_id() );
+		?>
 
-            </div>
+		<?php if ( $order->has_status( 'failed' ) ) : ?>
 
-        </div>
-        <div id="checkout_steps">
+			<p class="woocommerce-notice woocommerce-notice--error woocommerce-thankyou-order-failed"><?php esc_html_e( 'Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction. Please attempt your purchase again.', 'woocommerce' ); ?></p>
 
-            <div class="column disabled">
+			<p class="woocommerce-notice woocommerce-notice--error woocommerce-thankyou-order-failed-actions">
+				<a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" class="button pay"><?php esc_html_e( 'Pay', 'woocommerce' ); ?></a>
+				<?php if ( is_user_logged_in() ) : ?>
+					<a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="button pay"><?php esc_html_e( 'My account', 'woocommerce' ); ?></a>
+				<?php endif; ?>
+			</p>
 
-                <div class="icon">
-                    <img src="<?php echo bv__getThemeImageUrl('global/misc/banner_icons/free_uk_delivery.png'); ?>" />
-                </div>
+		<?php else : ?>
 
-                <div class="sub_heading">
-                    Delivery details
-                </div>
+			<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.', 'woocommerce' ), $order ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 
-            </div>
+			<ul class="woocommerce-order-overview woocommerce-thankyou-order-details order_details">
 
-            <div class="separator"></div>
+				<li class="woocommerce-order-overview__order order">
+					<?php esc_html_e( 'Order number:', 'woocommerce' ); ?>
+					<strong><?php echo $order->get_order_number(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
+				</li>
 
-            <div class="column disabled">
+				<li class="woocommerce-order-overview__date date">
+					<?php esc_html_e( 'Date:', 'woocommerce' ); ?>
+					<strong><?php echo wc_format_datetime( $order->get_date_created() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
+				</li>
 
-                <div class="icon">
-                    <img src="<?php echo bv__getThemeImageUrl('global/misc/banner_icons/secured_payments.png'); ?>" />
-                </div>
+				<?php if ( is_user_logged_in() && $order->get_user_id() === get_current_user_id() && $order->get_billing_email() ) : ?>
+					<li class="woocommerce-order-overview__email email">
+						<?php esc_html_e( 'Email:', 'woocommerce' ); ?>
+						<strong><?php echo $order->get_billing_email(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
+					</li>
+				<?php endif; ?>
 
-                <div class="sub_heading">
-                    Payment
-                </div>
+				<li class="woocommerce-order-overview__total total">
+					<?php esc_html_e( 'Total:', 'woocommerce' ); ?>
+					<strong><?php echo $order->get_formatted_order_total(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></strong>
+				</li>
 
-            </div>
+				<?php if ( $order->get_payment_method_title() ) : ?>
+					<li class="woocommerce-order-overview__payment-method method">
+						<?php esc_html_e( 'Payment method:', 'woocommerce' ); ?>
+						<strong><?php echo wp_kses_post( $order->get_payment_method_title() ); ?></strong>
+					</li>
+				<?php endif; ?>
 
-            <div class="separator"></div>
+			</ul>
 
-            <div class="column">
+		<?php endif; ?>
 
-                <div class="icon">
-                    <img src="<?php echo bv__getThemeImageUrl('global/misc/banner_icons/secured_payments.png'); ?>" />
-                </div>
+		<?php do_action( 'woocommerce_thankyou_' . $order->get_payment_method(), $order->get_id() ); ?>
+		<?php do_action( 'woocommerce_thankyou', $order->get_id() ); ?>
 
-                <div class="sub_heading">
-                    Confirmation
-                </div>
+	<?php else : ?>
 
-            </div>
+		<p class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.', 'woocommerce' ), null ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 
-        </div>
-        <!-- END OF CHECKOUT STEPS -->
+	<?php endif; ?>
 
-        <!-- CHECKOUT CONFIRMATION -->
-        <div id="checkout_confirmation">
-
-            <div class="section order_details">
-
-                <div class="sub_heading">
-                    Order details
-                </div>
-
-                <div class="order_details">
-
-
-                    <?php /** @var WC_Order_Item_Product $orderItem */
-                        foreach($orderItems as $orderItem) :  ?>
-                            <div class="listing">
-                                <div class="product">
-                                    <div class="image">
-                                        <?php echo get_the_post_thumbnail($orderItem->get_product_id(),'medium'); ?>
-                                    </div>
-                                    <div class="product_details">
-
-                                        <div class="name"><?php echo $orderItem->get_name(); ?></div>
-                                        <div class="code">#<?php echo $orderItem->get_id(); ?></div>
-                                        <div class="quantity">Qty: <?php echo $orderItem->get_quantity(); ?></div>
-
-                                    </div>
-                                </div>
-                                <div class="price">
-                                    <?php echo get_woocommerce_currency_symbol() . $orderItem->get_total(); ?>
-                                </div>
-                            </div>
-                    <?php endforeach; ?>
-
-
-                </div>
-
-            </div>
-
-            <div class="section">
-
-                <div class="sub_heading">
-                    Total cost
-                </div>
-
-                <div class="total_cost">
-
-                    <div class="row">
-                        <div class="column">Order</div>
-                        <div class="column price">&pound;<?php echo $order->get_subtotal(); ?></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="column">Discount</div>
-                        <div class="column price"><?php echo get_woocommerce_currency_symbol() . $order->get_discount_total(); ?></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="column"><?php echo $order->get_shipping_method(); ?></div>
-                        <div class="column price"><?php echo get_woocommerce_currency_symbol() . $order->get_shipping_total(); ?></div>
-                    </div>
-                    <div class="row">
-                        <div class="column">VAT</div>
-                        <div class="column price">&pound;<?php echo $order->get_total_tax(); ?></div>
-                    </div>
-                    <div class="row">
-                        <div class="column">Total</div>
-                        <div class="column price">&pound;<?php echo $order->get_total(); ?></div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="section">
-
-                <div class="addresses">
-
-                    <div class="address">
-
-                        <div class="sub_heading">
-                            Shipping address
-                        </div>
-
-                        <p>
-
-                            <?php echo $order->get_formatted_shipping_address(); ?>
-
-                        </p>
-
-                    </div>
-
-                    <div class="address">
-
-                        <div class="sub_heading">
-                            Billing address
-                        </div>
-
-                        <p>
-                            <?php echo $order->get_formatted_billing_address(); ?>
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="section">
-
-                <div class="sub_heading">
-                    Payment method
-                </div>
-
-                <div class="payment_method">
-                    <?php echo $order->get_payment_method_title(); ?>
-
-                </div>
-
-            </div>
-
-        </div>
-    </div>
 </div>
-<script>
-pintrk('track', 'checkout');
-</script>

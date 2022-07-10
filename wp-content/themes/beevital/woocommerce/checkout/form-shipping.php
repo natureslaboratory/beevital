@@ -16,47 +16,18 @@
  * @global WC_Checkout $checkout
  */
 
-
-
 defined( 'ABSPATH' ) || exit;
-
-$chosen_methods = WC()->session->get( 'chosen_shipping_methods' );
-$chosen_shipping = $chosen_methods[0];
 ?>
-<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
-
-    <?php do_action( 'woocommerce_review_order_before_shipping' ); ?>
-
-    <?php bv__wc_cart_totals_shipping_html(); ?>
-
-    <?php do_action( 'woocommerce_review_order_after_shipping' ); ?>
-
-<?php endif; ?>
 <div class="woocommerce-shipping-fields">
 	<?php if ( true === WC()->cart->needs_shipping_address() ) : ?>
 
-        <div class="checkbox_field">
-            <input id="ship-to-different-address-checkbox"  <?php checked( apply_filters( 'woocommerce_ship_to_different_address_checked', 'shipping' === get_option( 'woocommerce_ship_to_destination' ) ? 1 : 0 ), 1 ); ?> type="checkbox" name="ship_to_different_address" value="1" />
-            <label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox" for="ship-to-different-address-checkbox">
-                <div class="checkbox tick"></div>
-                <p>Ship to a different address?</p>
-            </label>
-        </div>
+		<h3 id="ship-to-different-address">
+			<label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">
+				<input id="ship-to-different-address-checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" <?php checked( apply_filters( 'woocommerce_ship_to_different_address_checked', 'shipping' === get_option( 'woocommerce_ship_to_destination' ) ? 1 : 0 ), 1 ); ?> type="checkbox" name="ship_to_different_address" value="1" /> <span><?php esc_html_e( 'Ship to a different address?', 'woocommerce' ); ?></span>
+			</label>
+		</h3>
 
-        <script>
-            jQuery(document).ready(function($){
-                $('#ship-to-different-address-checkbox').change(function(e){
-                    if(!$(this).is(':checked')){
-                        $('.shipping_address').slideUp();
-                    }else{
-                        $('.shipping_address').slideDown();
-                    }
-                })
-            })
-        </script>
-
-
-        <div class="shipping_address">
+		<div class="shipping_address">
 
 			<?php do_action( 'woocommerce_before_checkout_shipping_form', $checkout ); ?>
 
@@ -65,8 +36,6 @@ $chosen_shipping = $chosen_methods[0];
 				$fields = $checkout->get_checkout_fields( 'shipping' );
 
 				foreach ( $fields as $key => $field ) {
-
-				    $field['class'][0] = 'field';
 					woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
 				}
 				?>
@@ -91,7 +60,7 @@ $chosen_shipping = $chosen_methods[0];
 
 		<div class="woocommerce-additional-fields__field-wrapper">
 			<?php foreach ( $checkout->get_checkout_fields( 'order' ) as $key => $field ) : ?>
-				<?php $field['class'][0] = 'field'; woocommerce_form_field( $key, $field, $checkout->get_value( $key ) ); ?>
+				<?php woocommerce_form_field( $key, $field, $checkout->get_value( $key ) ); ?>
 			<?php endforeach; ?>
 		</div>
 

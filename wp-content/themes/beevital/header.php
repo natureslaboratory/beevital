@@ -751,7 +751,7 @@
                                                     <?php else: ?>
                                                         <div class="name"><?php echo $wcProduct->get_title(); ?></div>
                                                     <?php endif; ?>
-                                                    <div class="quantity"><?php echo $cart_item['quantity']; ?> x <?php echo get_woocommerce_currency_symbol(); ?><?php echo apply_filters( 'woocommerce_cart_item_price', wc_get_price_including_tax( $_product ), $cart_item, $cart_item_key ); ?></div>
+                                                    <div class="quantity"><?php echo $cart_item['quantity']; ?> x <?php echo get_woocommerce_currency_symbol(); ?><?php echo number_format(apply_filters( 'woocommerce_cart_item_price', wc_get_price_including_tax( $_product ), $cart_item, $cart_item_key ),2); ?></div>
                                                 </div>
 
                                                 <a href="<?php echo wc_get_cart_remove_url($cart_item_key); ?>" class="remove_cta">

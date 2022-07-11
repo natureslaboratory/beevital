@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
-    <?php do_action( 'woocommerce_cart_actions' ); ?>
-    <?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
+   
     <div class="container__outer" id="basket">
 
+		<?php do_action( 'woocommerce_cart_actions' ); ?>
+		<?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
         <?php do_action( 'woocommerce_before_cart' ); ?>
 
         <div class="container__inner mw_1146">

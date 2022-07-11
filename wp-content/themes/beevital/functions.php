@@ -1485,3 +1485,18 @@ function filter_localisation_address_formats( $address_formats ){
 
     return $address_formats;
 }
+
+add_filter( 'woocommerce_checkout_fields', 'beevital_billing_fields' );
+
+function beevital_billing_fields( $checkout_fields ) {
+	$checkout_fields[ 'billing' ][ 'billing_email' ][ 'priority' ] = 21;
+	$checkout_fields[ 'billing' ][ 'billing_phone' ][ 'priority' ] = 22;
+	$checkout_fields[ 'billing' ][ 'billing_country' ][ 'priority' ] = 91;
+	
+	$checkout_fields[ 'billing' ][ 'billing_phone' ][ 'class' ][0] = 'form-row-first';
+	$checkout_fields[ 'billing' ][ 'billing_email' ][ 'class' ][0] = 'form-row-last';
+	
+	$checkout_fields[ 'shipping' ][ 'shipping_country' ][ 'priority' ] = 91;
+
+	return $checkout_fields;
+}

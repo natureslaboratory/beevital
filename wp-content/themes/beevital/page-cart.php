@@ -21,6 +21,9 @@
                         <p>
                             You have <strong><?php echo WC()->cart->get_cart_contents_count(); ?></strong> items at <strong><?php echo WC()->cart->get_cart_subtotal(); ?></strong>
                         </p>
+                        <a href="/checkout" class="block_cta" style="max-width:316px;">
+                            Continue to checkout<i class="far fa-long-arrow-right"></i>
+                        </a>
                     </div>
 
                 </div>

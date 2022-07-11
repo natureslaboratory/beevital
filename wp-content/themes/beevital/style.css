@@ -983,7 +983,7 @@ body.open #mobile_nav {
 }
 
 #header .nav li.with_dropdown .dropdown.basket .basket_listings .listing .remove_cta {
-  font-size: 16px;
+  font-size: 24px;
   line-height: 16px;
   margin: 14px 0 0 auto;
 }

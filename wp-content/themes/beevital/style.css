@@ -6501,3 +6501,10 @@ li.wc_payment_method.payment_method_ppcp-gateway::marker{
 ul.woocommerce-error li{
 	text-indent:42px;
 }
+
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1,
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2{
+	float:none;
+	clear:left;
+	margin:0 auto;
+}

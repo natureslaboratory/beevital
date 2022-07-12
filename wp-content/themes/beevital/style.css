@@ -6562,7 +6562,7 @@ a.wc-block-grid__product-link{
 	font-size:70%;
 }
 
-#content-page a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart{
+#content-page a.wp-block-button__link{
 	border-radius: 0px;
 	text-decoration: none;
 }

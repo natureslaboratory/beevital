@@ -69,3 +69,15 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 </div>
 
 <?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
+
+<script>
+let autocomplete;
+function initAutocomplete(){
+	autocomplete = new. google.maps.places.Autocomplete(
+		document.getElementById('billing_address_1'),
+		{
+			types: ['establishment'],
+			componentRestrictions: {'country': ['GB']}
+		});
+}
+</script>

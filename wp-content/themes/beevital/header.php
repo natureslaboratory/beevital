@@ -260,6 +260,9 @@
 	<link rel="mask-icon" href="/wp-content/themes/beevital/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
+	
+	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLvQA-AY-BR_z8hnu4He5Kj2KPif8nKlM&libraries=places&callback=initMap"></script>
+
 </head>
 
 <body>

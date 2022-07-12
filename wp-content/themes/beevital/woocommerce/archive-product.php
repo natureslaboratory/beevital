@@ -13,12 +13,12 @@ global $wp_query;
         <div id="page_intro" class="container__inner mw_1146">
 
             <div class="heading large">
-                Products
+                Immune Support Medicines
             </div>
 
             <div class="text">
                 <p class="large">
-                    Browse our full range or propolis products below, or select a category to refine your options.
+                	Browse our full range or propolis products below, or select a category to refine your options.
                 </p>
             </div>
 

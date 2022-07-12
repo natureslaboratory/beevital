@@ -18,7 +18,7 @@ global $wp_query;
 
             <div class="text">
                 <p class="large">
-                	Browse our full range or propolis products below, or select a category to refine your options.
+                	Natural medicines which support your whole health. Backed by over 20 years of scientific research and formulated by our expert team.
                 </p>
             </div>
 
@@ -102,7 +102,7 @@ global $wp_query;
                 <div class="main_header">
 
                     <div class="heading">
-                        <h1><strong><?php echo is_shop() ? 'All' : single_term_title(); ?></strong> <?php echo is_shop() ? 'products' : 'range'; ?></h1>
+                        <h1><strong><?php echo is_shop() ? 'All' : single_term_title(); ?></strong> <?php echo is_shop() ? 'our medicines' : 'range'; ?></h1>
                     </div>
 
                     <div class="text">

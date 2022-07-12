@@ -18,7 +18,7 @@ global $wp_query;
 
             <div class="text">
                 <p class="large">
-                	Natural medicines which support your whole health. Backed by over 20 years of scientific research and formulated by our expert team.
+                	Natural medicines which support your whole health. Backed by over 20 years of scientific research, formulated &amp; manufactured by our expert team.
                 </p>
             </div>
 

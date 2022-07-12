@@ -6540,3 +6540,33 @@ ul.woocommerce-shipping-methods li{
 	width:100%;
 	float:left;
 }
+
+.wc-block-grid__products{
+	margin:0;
+	padding:0;
+}
+
+.wc-block-grid__product-link li{
+	text-align: left;
+}
+
+.wc-block-grid__products li::marker{
+	content:"" !important;
+}
+
+a.wc-block-grid__product-link{
+	text-decoration: none;
+}
+
+.wc-block-grid__product-price.price{
+	font-size:70%;
+}
+
+a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart{
+	border-radius: 0px;
+	text-decoration: none;
+}
+
+.wc-block-grid__product .wc-block-grid__product-image:not(.wc-block-components-product-image), .wc-block-grid__product .wc-block-grid__product-title{
+	min-height:48px;
+}

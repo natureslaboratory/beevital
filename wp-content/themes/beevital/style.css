@@ -6541,12 +6541,12 @@ ul.woocommerce-shipping-methods li{
 	float:left;
 }
 
-.wc-block-grid__products{
+#content-page ul.wc-block-grid__products{
 	margin:0;
 	padding:0;
 }
 
-.wc-block-grid__product-link li{
+#content-page ul.wc-block-grid__product-link li{
 	text-align: left;
 }
 
@@ -6562,7 +6562,7 @@ a.wc-block-grid__product-link{
 	font-size:70%;
 }
 
-a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart{
+#content-page a.wp-block-button__link.add_to_cart_button.ajax_add_to_cart{
 	border-radius: 0px;
 	text-decoration: none;
 }

@@ -260,19 +260,6 @@
 	<link rel="mask-icon" href="/wp-content/themes/beevital/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
-	
-	<script>
-	let autocomplete;
-	function initAutocomplete(){
-		autocomplete = new google.maps.places.Autocomplete(
-			document.getElementById('billing_address_1'),
-			{
-				types: ['address', 'establishment'],
-				componentRestrictions: {'country': ['GB']}
-			});
-	}
-	</script>
-	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLvQA-AY-BR_z8hnu4He5Kj2KPif8nKlM&libraries=places&callback=initAutocomplete"></script>
 
 </head>
 

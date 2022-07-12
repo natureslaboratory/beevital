@@ -261,7 +261,18 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 	
-	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLvQA-AY-BR_z8hnu4He5Kj2KPif8nKlM&libraries=places&callback=initMap"></script>
+	<script>
+	let autocomplete;
+	function initAutocomplete(){
+		autocomplete = new. google.maps.places.Autocomplete(
+			document.getElementById('billing_address_1'),
+			{
+				types: ['establishment'],
+				componentRestrictions: {'country': ['GB']}
+			});
+	}
+	</script>
+	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLvQA-AY-BR_z8hnu4He5Kj2KPif8nKlM&libraries=places&callback=initAutocomplete"></script>
 
 </head>
 

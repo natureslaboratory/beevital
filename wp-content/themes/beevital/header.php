@@ -267,7 +267,7 @@
 		autocomplete = new google.maps.places.Autocomplete(
 			document.getElementById('billing_address_1'),
 			{
-				types: ['address'],
+				types: ['address', 'establishment'],
 				componentRestrictions: {'country': ['GB']}
 			});
 	}

@@ -52,12 +52,14 @@
 			        	<p>BeeVital are world-leaders in the research and development of <a href="https://beevitalpropolis.com/propolis/">propolis</a> health 
 			        	products. Our range is backed by 20 years of scientific research, including collaborations with leading universities.</p>
 		        	</div>
+<!--
 		        	<div class="fixed">
 			        	<a class="close">&times;</a>
 			        	<h2>Support Your Immune System</h2>
 			        	<p>Explore our range of natural immune support medicines &amp; natural oral health products.</p>
 			        	<p><a class="single_add_to_cart_button block_cta" href="/products/?ref=blog">Shop Now</a></p>
 		        	</div>
+-->
 	        	</section>
         	</aside>
 	    </article>

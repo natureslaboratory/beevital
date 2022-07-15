@@ -150,11 +150,13 @@ if (!is_object($product)) {
                         </button>
                     </li>
 
+<!--
                     <li>
                         <button onclick="javascript:void(0)" data-tab="reviews_tab">
                             Reviews
                         </button>
                     </li>
+-->
 
                 </ul>
 
@@ -280,7 +282,7 @@ if (!is_object($product)) {
             <?php if (comments_open()) : ?>
                 <!-- REVIEWS -->
                 <div id="reviews_tab" class="tab woocommerce">
-                    <?php comments_template(); ?>
+                    <?php //comments_template(); ?>
                     <div class="clear"></div>
                 </div>
                 <!-- END OF REVIEWS -->

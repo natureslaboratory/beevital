@@ -63,7 +63,6 @@
 	        	</section>
         	</aside>
 	    </article>
-        <h3>Previous/Next Post</h3>
         <div class="c-pagination c-pagination--wide">
             <div class="c-pagination__link-wrapper"><?= get_previous_post_link() ?></div>
             <div class="c-pagination__link-wrapper"><?= get_next_post_link() ?></div>

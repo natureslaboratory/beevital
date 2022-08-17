@@ -216,7 +216,97 @@
                     <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('remedies/cold_and_flu.jpg'); ?>');"></div>
 
                     <div class="caption">
-                        Propolis Can Support the Immune System Against Colds and Flu
+                        Propolis Supports the Immune System
+                    </div>
+                    
+					<?php } ?>
+					
+					<?php if(bv__isRemedy('joints-and-mobility')){ ?>
+
+                    <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('remedies/joints_and_mobility.jpg'); ?>');"></div>
+
+                    <div class="caption">
+                        Propolis Reduces Inflammation and Eases Pain
+                    </div>
+                    
+					<?php } ?>
+					
+					<?php if(bv__isRemedy('skin-conditions')){ ?>
+
+                    <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('remedies/skin_conditions.jpg'); ?>');"></div>
+
+                    <div class="caption">
+                        Propolis Can Help With Eczema, Acne and Psoriasis
+                    </div>
+                    
+					<?php } ?>
+					
+					<?php if(bv__isRemedy('fatigue-and-recovery')){ ?>
+
+                    <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('remedies/fatigue_and_recovery.jpg'); ?>');"></div>
+
+                    <div class="caption">
+                        Propolis Helps the Body Recover
+                    </div>
+                    
+					<?php } ?>
+					
+					<?php if(bv__isRemedy('respiratory-conditions')){ ?>
+
+                    <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('remedies/respiratory_conditions.jpg'); ?>');"></div>
+
+                    <div class="caption">
+                        Propolis Helps With Asthma &amp; Allergies
+                    </div>
+                    
+					<?php } ?>
+					
+					<?php if(bv__isRemedy('oral-hygiene')){ ?>
+
+                    <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('remedies/oral_hygiene.jpg'); ?>');"></div>
+
+                    <div class="caption">
+                        Propolis Helps Keep Your Mouth Clean &amp; Healthy
+                    </div>
+                    
+					<?php } ?>
+					
+					<?php if(bv__isRemedy('cuts-and-burns')){ ?>
+
+                    <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('remedies/cuts_and_burns.jpg'); ?>');"></div>
+
+                    <div class="caption">
+                        Propolis Helps Your Body Heal &amp; Prevents Infection
+                    </div>
+                    
+					<?php } ?>
+					
+					<?php if(bv__isRemedy('digestive-health')){ ?>
+
+                    <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('remedies/digestive_health.jpg'); ?>');"></div>
+
+                    <div class="caption">
+                        Propolis Helps Keep Your Gut Healthy
+                    </div>
+                    
+					<?php } ?>
+					
+					<?php if(bv__isRemedy('healthy-ageing')){ ?>
+
+                    <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('remedies/healthy_ageing.jpg'); ?>');"></div>
+
+                    <div class="caption">
+                        Propolis Helps Keep You Healthy As You Age
+                    </div>
+                    
+					<?php } ?>
+					
+					<?php if(bv__isRemedy('immune-support')){ ?>
+
+                    <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('remedies/immune_support.jpg'); ?>');"></div>
+
+                    <div class="caption">
+                        Propolis Provides Effective Immune Support
                     </div>
                     
 					<?php } ?>

@@ -108,7 +108,7 @@
 	jQuery(window).scroll(function () {
 		var y = jQuery(this).scrollTop();
 		if (y > 200) {
-			jQuery('.product-highlight.open').fadeIn(600);
+			jQuery('.product-highlight.open').fadeIn(200);
 		}
 	});
 </script>

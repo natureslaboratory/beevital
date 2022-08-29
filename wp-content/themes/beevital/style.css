@@ -6595,6 +6595,10 @@ a.wc-block-grid__product-link{
 	margin:0;
 }
 
+.product-highlight a.close{
+	display:none;
+}
+
 @media screen and (max-width:768px){
 	.product-highlight{
 		grid-column: 1;
@@ -6616,5 +6620,19 @@ a.wc-block-grid__product-link{
 	}
 	.product-highlight p.price{
 		display:none;
+	}
+	.product-highlight a.close{
+		display:block;
+		position: absolute;
+		top: -0.5rem;
+		left: -0.5rem;
+		background: #fff;
+		border: 2px solid #eee;
+		border-radius: 50%;
+		width: 20px;
+		height: 20px;
+		text-align: center;
+		text-decoration: none;
+		color: #ccc;
 	}
 }

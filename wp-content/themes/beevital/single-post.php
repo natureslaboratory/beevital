@@ -9,6 +9,7 @@
 			        $productObj = get_field('producthighlight');
 			        $product = wc_get_product($productObj);
 			        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $productObj ), 'single-post-thumbnail' );
+/*
 			        echo '
 			        <div class="product-highlight">
 			        <h2><a href="/product/'.$product->get_slug().'">'.$product->get_name().'</a></h2>
@@ -17,6 +18,7 @@
 			        echo '</p>
 			        <img src="'.$image[0].'" alt="'.$product->get_name().'" />
 			        </div>';
+*/
 			    endif;
 		    ?>
 		    <div>

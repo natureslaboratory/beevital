@@ -6584,13 +6584,17 @@ a.wc-block-grid__product-link{
 	margin:0;
 	position: relative;
 	z-index: 200;
+	padding:0.5rem;
+	background:url("images/global/fractal.jpg");
+	color:#fff;
+	font-weight: 700;
 }
 
 .product-highlight img{
 	width:100%;
 	height:100%;
 	object-fit:cover;
-	margin:0.5rem 0;
+	margin:0;
 	position: absolute;
 	bottom:0px;
 }

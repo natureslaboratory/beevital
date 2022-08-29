@@ -12,6 +12,7 @@
 
 			        echo '
 			        <div class="product-highlight">
+			        <a class="close">&times</a>
 			        <p>Product Highlight</p>
 			        <a href="/product/'.$product->get_slug().'"><img src="'.$image[0].'" alt="'.$product->get_name().'" /></a>
 			        <h2><a href="/product/'.$product->get_slug().'">'.$product->get_name().'</a></h2>

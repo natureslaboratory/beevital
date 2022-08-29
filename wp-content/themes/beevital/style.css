@@ -6605,6 +6605,7 @@ a.wc-block-grid__product-link{
 		background:#f1f2f2;
 		margin:0;
 		padding:0.5rem;
+		box-shadow:0px 0px 5px #ccc;
 	}
 	.product-highlight img{
 		width:100%;

@@ -4,7 +4,11 @@
     <div class="container__inner mw_1146" id="content-page">
 	    <article>
 		    <h1 class="heading large"><?php the_title(); ?></h1>
-		    <?php //the_field('producthighlight'); ?>
+		    <?php 
+			    if ( function_exists('get_field') && get_field('producthighlight') ):
+			        echo 'product';
+			    endif;
+		    ?>
 		    <div>
 				<!-- <ul id="categories-list"><?php bv__outputPostCategoryList(get_the_ID()); ?></ul> -->
 				<?php the_content(); ?>

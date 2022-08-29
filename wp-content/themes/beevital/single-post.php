@@ -104,3 +104,4 @@
 	jQuery('a.close').click(function(){
 		jQuery('.product-highlight').hide();
 	})
+</script>

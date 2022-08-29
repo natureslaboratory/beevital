@@ -104,4 +104,10 @@
 	jQuery('a.close').click(function(){
 		jQuery('.product-highlight').hide();
 	})
+	jQuery(window).scroll(function () {
+		var y = jQuery(this).scrollTop();
+		if (y > 200) {
+			jQuery('.product-highlight a').fadeIn(600);
+		}
+	});
 </script>

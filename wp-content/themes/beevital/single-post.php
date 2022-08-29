@@ -15,10 +15,10 @@
 			        <a class="close">&times</a>
 			        <p>Product Highlight</p>
 			        <a href="/product/'.$product->get_slug().'"><img src="'.$image[0].'" alt="'.$product->get_name().'" /></a>
-			        <h2><a href="/product/'.$product->get_slug().'">'.$product->get_name().'</a></h2>
+			        <h2><a href="/product/'.$product->get_slug().'">'.$product->get_name().'</a>
 			        <span class="price">&pound;'; 
 			        echo number_format($product->get_price()*1.2,2);
-			        echo '</span>
+			        echo '</span></h2>
 			        </div>';
 
 			    endif;

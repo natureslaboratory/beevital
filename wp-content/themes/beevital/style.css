@@ -6580,14 +6580,15 @@ a.wc-block-grid__product-link{
 }
 
 .product-highlight p{
-	font-size:0.9rem;
+	font-size:0.7rem;
 	margin:0;
 	position: relative;
 	z-index: 200;
-	padding:0.5rem;
-	background:url("images/global/fractal.jpg");
+	padding:0.2rem 0.5rem;
+	background:url("images/global/fractal.jpg") center center;
 	color:#fff;
 	font-weight: 700;
+	text-align: right;
 }
 
 .product-highlight img{

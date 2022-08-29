@@ -6570,3 +6570,23 @@ a.wc-block-grid__product-link{
 .wc-block-grid__product .wc-block-grid__product-image:not(.wc-block-components-product-image), .wc-block-grid__product .wc-block-grid__product-title{
 	min-height:48px;
 }
+
+.product-highlight{
+	grid-column: 2;
+	margin-bottom:2rem;
+}
+
+.product-highlight p{
+	font-size:0.9rem;
+	margin:0;
+}
+
+.product-highlight img{
+	width:60%;
+	height:100px;
+	object-fit:cover;
+}
+
+.product-highlight h2{
+	font-size:1rem;
+}

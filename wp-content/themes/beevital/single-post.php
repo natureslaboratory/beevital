@@ -9,16 +9,17 @@
 			        $productObj = get_field('producthighlight');
 			        $product = wc_get_product($productObj);
 			        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $productObj ), 'single-post-thumbnail' );
-/*
+
 			        echo '
 			        <div class="product-highlight">
-			        <h2><a href="/product/'.$product->get_slug().'">'.$product->get_name().'</a></h2>
-			        <p>&pound;'; 
-			        echo $product->get_price()*1.2;
-			        echo '</p>
+			        <p>Product Highlight</p>
 			        <img src="'.$image[0].'" alt="'.$product->get_name().'" />
+			        <h2><a href="/product/'.$product->get_slug().'">'.$product->get_name().'</a></h2>
+			        <p class="price">&pound;'; 
+			        echo number_formace($product->get_price()*1.2,2);
+			        echo '</p>
 			        </div>';
-*/
+
 			    endif;
 		    ?>
 		    <div>

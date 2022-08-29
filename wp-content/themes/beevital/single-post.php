@@ -102,5 +102,6 @@
 <?php get_footer(); ?>
 <script>
 	$('a.close').click(function(){
+		alert('close');
 		$('.product-highlight').hide();
 	})

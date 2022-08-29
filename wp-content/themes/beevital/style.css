@@ -6574,6 +6574,7 @@ a.wc-block-grid__product-link{
 .product-highlight{
 	grid-column: 2;
 	margin-bottom:2rem;
+	margin-top:1rem;
 }
 
 .product-highlight p{
@@ -6582,11 +6583,13 @@ a.wc-block-grid__product-link{
 }
 
 .product-highlight img{
-	width:60%;
-	height:100px;
+	width:80%;
+	height:120px;
 	object-fit:cover;
+	margin:0.5rem 0;
 }
 
-.product-highlight h2{
+#contentpage .product-highlight h2{
 	font-size:1rem;
+	font-weight:700;
 }

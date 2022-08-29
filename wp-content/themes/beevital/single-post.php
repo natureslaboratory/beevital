@@ -13,7 +13,7 @@
 			        echo '
 			        <div class="product-highlight">
 			        <p>Product Highlight</p>
-			        <img src="'.$image[0].'" alt="'.$product->get_name().'" />
+			        <a href="/product/'.$product->get_slug().'"><img src="'.$image[0].'" alt="'.$product->get_name().'" /></a>
 			        <h2><a href="/product/'.$product->get_slug().'">'.$product->get_name().'</a></h2>
 			        <p class="price">&pound;'; 
 			        echo number_format($product->get_price()*1.2,2);

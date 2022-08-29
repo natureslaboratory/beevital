@@ -12,7 +12,7 @@
 			        echo '
 			        <div class="product-highlight">
 			        <h2><a href="/product/'.$product->get_slug();.'">'.$product->get_name().'</a></h2>
-			        <p>&pound;'; echo $product->get_price()*1.2
+			        <p>&pound;'; echo $product->get_price()*1.2;
 			        echo '</p>
 			        <img src="'.$image[0].'" alt="'.$product->get_name().'" />
 			        </div>';

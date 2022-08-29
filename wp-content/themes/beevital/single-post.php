@@ -11,7 +11,7 @@
 			        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $productObj ), 'single-post-thumbnail' );
 
 			        echo '
-			        <div class="product-highlight">
+			        <div class="product-highlight open">
 			        <a class="close">&times</a>
 			        <p>Product Highlight</p>
 			        <a href="/product/'.$product->get_slug().'"><img src="'.$image[0].'" alt="'.$product->get_name().'" /></a>
@@ -103,11 +103,12 @@
 <script>
 	jQuery('a.close').click(function(){
 		jQuery('.product-highlight').hide();
+		jQuery('.product-highlight').removeClass('open');
 	})
 	jQuery(window).scroll(function () {
 		var y = jQuery(this).scrollTop();
 		if (y > 200) {
-			jQuery('.product-highlight').fadeIn(600);
+			jQuery('.product-highlight open').fadeIn(600);
 		}
 	});
 </script>

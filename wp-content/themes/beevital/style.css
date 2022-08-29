@@ -6603,5 +6603,14 @@ a.wc-block-grid__product-link{
 		right:0;
 		width:200px;
 		background:#f1f2f2;
+		margin:0;
+		padding:0.5rem;
+	}
+	.product-highlight img{
+		width:100%;
+		height:100px;
+	}
+	.product-highlight p{
+		font-size:0.8rem;
 	}
 }

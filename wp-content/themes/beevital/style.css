@@ -6601,5 +6601,7 @@ a.wc-block-grid__product-link{
 		position:fixed;
 		bottom:0;
 		right:0;
+		width:200px;
+		background:#f1f2f2;
 	}
 }

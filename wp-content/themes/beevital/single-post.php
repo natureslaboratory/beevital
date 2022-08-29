@@ -6,12 +6,12 @@
 		    <h1 class="heading large"><?php the_title(); ?></h1>
 		    <?php 
 			    if ( function_exists('get_field') && get_field('producthighlight') ):
-			        $product = get_field('producthighlight');
-			        $product = wc_get_product($product);
+			        $productObj = get_field('producthighlight');
+			        $product = wc_get_product($productObj);
 			        echo $product->get_name();
 			        echo $product->get_price();
 			        echo $product->get_slug();
-			        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $product ), 'single-post-thumbnail' );
+			        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $productObj ), 'single-post-thumbnail' );
 			        echo $image[0];
 			    endif;
 		    ?>

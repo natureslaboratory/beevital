@@ -32,6 +32,7 @@
 		        	<div>
 		        		<h2>BeeVital Newsletter</h2>
 		        		<p>Get health tips, news and special offers directly in your inbox, once per month.</p>
+		        		<p><strong>We'll also send you a 10% off code for our store when you sign up!</strong></p>
 			        	<form
 						  action="https://buttondown.email/api/emails/embed-subscribe/beevital"
 						  method="post"

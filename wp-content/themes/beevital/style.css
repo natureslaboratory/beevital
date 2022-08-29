@@ -6594,3 +6594,12 @@ a.wc-block-grid__product-link{
 	font-weight:700;
 	margin:0;
 }
+
+@media screen and (max-width:768px){
+	.product-highlight{
+		grid-column: 1;
+		position:fixed;
+		bottom:0;
+		right:0;
+	}
+}

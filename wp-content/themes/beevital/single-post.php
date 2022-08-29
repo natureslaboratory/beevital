@@ -107,7 +107,7 @@
 	jQuery(window).scroll(function () {
 		var y = jQuery(this).scrollTop();
 		if (y > 200) {
-			jQuery('.product-highlight a').fadeIn(600);
+			jQuery('.product-highlight').fadeIn(600);
 		}
 	});
 </script>

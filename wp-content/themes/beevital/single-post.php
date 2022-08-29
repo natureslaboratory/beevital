@@ -4,9 +4,7 @@
     <div class="container__inner mw_1146" id="content-page">
 	    <article>
 		    <h1 class="heading large"><?php the_title(); ?></h1>
-		    <?php if ($product = bv__getExtraPostData($post->ID, 'producthighlight')) : ?>
-                <?php print_r($product); ?>
-            <?php endif; ?>
+		    <?php the_field('producthighlight'); ?>
 		    <div>
 				<!-- <ul id="categories-list"><?php bv__outputPostCategoryList(get_the_ID()); ?></ul> -->
 				<?php the_content(); ?>

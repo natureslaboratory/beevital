@@ -100,3 +100,7 @@
     </div>
 </div>
 <?php get_footer(); ?>
+<script>
+	$('a.close').click(function(){
+		$('.product-highlight').hide();
+	})

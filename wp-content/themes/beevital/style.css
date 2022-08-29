@@ -6621,7 +6621,7 @@ a.wc-block-grid__product-link{
 	.product-highlight p.price{
 		display:none;
 	}
-	.product-highlight a.close{
+	#content-page .product-highlight a.close{
 		display:block;
 		position: absolute;
 		top: -0.5rem;

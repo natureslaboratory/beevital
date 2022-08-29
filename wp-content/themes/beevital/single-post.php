@@ -16,9 +16,9 @@
 			        <p>Product Highlight</p>
 			        <a href="/product/'.$product->get_slug().'"><img src="'.$image[0].'" alt="'.$product->get_name().'" /></a>
 			        <h2><a href="/product/'.$product->get_slug().'">'.$product->get_name().'</a></h2>
-			        <p class="price">&pound;'; 
+			        <span class="price">&pound;'; 
 			        echo number_format($product->get_price()*1.2,2);
-			        echo '</p>
+			        echo '</span>
 			        </div>';
 
 			    endif;

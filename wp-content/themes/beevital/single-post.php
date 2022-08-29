@@ -10,6 +10,9 @@
 			        $product = wc_get_product($product);
 			        echo $product->get_name();
 			        echo $product->get_price();
+			        echo $product->get_slug();
+			        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $product ), 'single-post-thumbnail' );
+			        echo $image[0];
 			    endif;
 		    ?>
 		    <div>

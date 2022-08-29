@@ -974,6 +974,20 @@ function bv__getExtraProductData(int $productId, string $key): ?string
 }
 
 /**
+ * @param string $key
+ * @return string|null
+ */
+function bv__getExtraPostData(int $postId, string $key): ?string
+{
+
+    $key = 'bevital__' . str_replace('bevital__', '', $key);
+
+    $info = get_post_meta($postId, $key, true);
+
+    return $info && !empty($info) ? (string)$info : null;
+}
+
+/**
  * @param WC_Product $product
  * @return array|null
  */

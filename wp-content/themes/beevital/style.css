@@ -6633,6 +6633,7 @@ a.wc-block-grid__product-link{
 		height: 20px;
 		text-align: center;
 		text-decoration: none;
-		color: #ccc;
+		border-bottom:none;
+		color: #333;
 	}
 }

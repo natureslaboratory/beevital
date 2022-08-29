@@ -6601,7 +6601,7 @@ a.wc-block-grid__product-link{
 		position:fixed;
 		bottom:0;
 		right:0;
-		width:200px;
+		width:240px;
 		background:#f1f2f2;
 		margin:0;
 		padding:0.5rem;
@@ -6611,6 +6611,9 @@ a.wc-block-grid__product-link{
 		height:100px;
 	}
 	.product-highlight p{
-		font-size:0.8rem;
+		font-size:0.7rem;
+	}
+	.product-highlight p.price{
+		display:none;
 	}
 }

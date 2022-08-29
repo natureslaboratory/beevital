@@ -6,7 +6,8 @@
 		    <h1 class="heading large"><?php the_title(); ?></h1>
 		    <?php 
 			    if ( function_exists('get_field') && get_field('producthighlight') ):
-			        get_field('producthighlight')
+			        $product = get_field('producthighlight');
+			        print_r($product);
 			    endif;
 		    ?>
 		    <div>

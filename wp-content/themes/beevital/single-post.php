@@ -7,6 +7,8 @@
 		    <?php 
 			    if ( function_exists('get_field') && get_field('producthighlight') ):
 			        $product = get_field('producthighlight');
+			        $product = wc_get_product($product['ID');
+			        print_r($product);
 			    endif;
 		    ?>
 		    <div>

@@ -24,6 +24,8 @@
 			    endif;
 		    ?>
 		    <div>
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox"></div>
 				<!-- <ul id="categories-list"><?php bv__outputPostCategoryList(get_the_ID()); ?></ul> -->
 				<?php the_content(); ?>
 		    </div>
@@ -113,3 +115,5 @@
 		}
 	});
 </script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-630dcb45a6fab5be"></script>

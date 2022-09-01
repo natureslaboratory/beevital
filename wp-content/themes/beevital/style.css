@@ -6670,6 +6670,12 @@ element.style {
     margin-top: 48px;
 }
 
+.forminator-description.forminator-description-password{
+	font-family: "Aller-Light", sans-serif;
+	font-size:0.9rem;
+	margin:0.5rem 0;
+}
+
 button.forminator-button.forminator-button-submit {
     display: block;
     background: #444549;

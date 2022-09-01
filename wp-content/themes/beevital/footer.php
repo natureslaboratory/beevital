@@ -288,7 +288,7 @@
 	}
 }
 */
-form#forminator-module-1537{
+form#forminator-module-1537,form#forminator-module-1551{
     display:block !important;
 }
 </style>

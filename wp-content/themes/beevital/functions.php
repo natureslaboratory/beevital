@@ -606,7 +606,7 @@ add_shortcode('bv__wc_reg_form', function () {
     ob_start();
 
 
-    do_action('woocommerce_before_customer_register_form');
+    do_action('woocommerce_before_customer_login_form');
 
 ?>
     <form method="post" class="woocommerce-form woocommerce-form-register register" action="/my-account/" <?php do_action('woocommerce_register_form_tag'); ?>>

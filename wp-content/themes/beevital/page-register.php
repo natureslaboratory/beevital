@@ -1,5 +1,5 @@
-<?php get_header(); ?>
-
+<?php get_header(); the_post(); ?>
+<?php global $post; ?>
 <div class="container__outer">
     <div class="container__inner" id="auth">
 

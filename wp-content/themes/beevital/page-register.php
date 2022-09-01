@@ -8,8 +8,7 @@
         </div>
 
         <div class="form">
-            <?php echo do_shortcode('[bv__wc_reg_form]'); ?>
-
+            <?php the_content(); ?>
         </div>
 
     </div>

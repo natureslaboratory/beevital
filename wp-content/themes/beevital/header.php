@@ -284,8 +284,8 @@
                 </li>
 
                 <li>
-                    <a href="/login">
-                        Login
+                    <a href="/sign-in/">
+                        Sign In
                     </a>
                 </li>
 
@@ -707,8 +707,8 @@
 
                         <?php if(!is_user_logged_in()): ?>
                             <li>
-                                <a href="/login/">
-                                    Login
+                                <a href="/sign-in/">
+                                    Sign In
                                 </a>
                             </li>
                         <?php else: ?>

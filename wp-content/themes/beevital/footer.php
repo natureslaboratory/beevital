@@ -288,6 +288,9 @@
 	}
 }
 */
+form#forminator-module-1537{
+    display:block !important;
+}
 </style>
 
 <script>

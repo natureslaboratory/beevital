@@ -1,5 +1,5 @@
-<?php get_header(); the_post(); ?>
-<?php global $post; ?>
+<?php get_header(); ?>
+
 <div class="container__outer">
     <div class="container__inner" id="auth">
 
@@ -8,7 +8,7 @@
         </div>
 
         <div class="form">
-            <?php the_content(); ?>
+            <?php echo do_shortcode('[bv__wc_reg_form]'); ?>
         </div>
 
     </div>

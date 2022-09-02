@@ -145,7 +145,7 @@ $variations_attr = function_exists('wc_esc_json') ? wc_esc_json($variations_json
                 })
             })
 
-            observer.observe(variationData, { attributes: true, attributeFilter: ['style'] });
+            //observer.observe(variationData, { attributes: true, attributeFilter: ['style'] });
 
         </script>
         <button type="submit" class="single_add_to_cart_button block_cta">

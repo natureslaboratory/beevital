@@ -417,7 +417,7 @@ if (!is_object($product)) {
     </div>
 </div>
 <script>
-    jQuery(document).ready(($) => {
+    $(document).ready(($) => {
         // QUANTITY CHANGER
 
         // $('.quantity_select .btn').on('click', function(e) {
@@ -454,12 +454,12 @@ if (!is_object($product)) {
             $('#' + tabID).addClass('active');
         });
         
-        jQuery('.variations select').change(function(){
-		  	var variant = jQuery('.variations select').val();
+        $('.variations select').change(function(){
+		  	var variant = $('.variations select').val();
 		  	if(variant !== ''){
-			  	jQuery('#product_main .description .price').hide();
+			  	$('#product_main .description .price').hide();
 		  	}else{
-			  	jQuery('#product_main .description .price').show();
+			  	$('#product_main .description .price').show();
 		  	}
 	    });
 	    

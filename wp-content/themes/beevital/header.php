@@ -221,7 +221,7 @@
 		margin-left:1rem;
 	}
 	.nav.upper li a{
-		color:#777;
+		color:#333;
 		border-bottom:1px solid #f1f2f2;
 	}
 	.nav.upper li a:hover{

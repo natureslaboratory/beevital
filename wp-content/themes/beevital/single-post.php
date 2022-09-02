@@ -101,17 +101,17 @@
 </div>
 <?php get_footer(); ?>
 <script>
-	jQuery('a.close').click(function(){
-		jQuery('.product-highlight').hide();
-		jQuery('.product-highlight').removeClass('open');
+	$('a.close').click(function(){
+		$('.product-highlight').hide();
+		$('.product-highlight').removeClass('open');
 	})
-	jQuery(window).scroll(function () {
-		var y = jQuery(this).scrollTop();
+	$(window).scroll(function () {
+		var y = $(this).scrollTop();
 		if (y > 200) {
-			jQuery('.product-highlight.open').fadeIn(200);
+			$('.product-highlight.open').fadeIn(200);
 		}
 	});
-	jQuery('aside div.fixed a.close').click(function(){
-	    jQuery('aside div.fixed').fadeOut();
+	$('aside div.fixed a.close').click(function(){
+	    $('aside div.fixed').fadeOut();
     });
 </script>

@@ -453,6 +453,16 @@ if (!is_object($product)) {
             $(this).addClass('active');
             $('#' + tabID).addClass('active');
         });
+        
+        jQuery('.variations select').change(function(){
+		  	var variant = jQuery('.variations select').val();
+		  	if(variant !== ''){
+			  	jQuery('#product_main .description .price').hide();
+		  	}else{
+			  	jQuery('#product_main .description .price').show();
+		  	}
+	    });
+	    
     })
 </script>
 <?php get_footer(); ?>

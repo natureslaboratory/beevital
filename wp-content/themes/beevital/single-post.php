@@ -114,6 +114,9 @@
 			jQuery('.product-highlight.open').fadeIn(200);
 		}
 	});
+	jQuery('aside div.fixed a.close').click(function(){
+	    jQuery('aside div.fixed').fadeOut();
+    });
 </script>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-630dcb45a6fab5be"></script>

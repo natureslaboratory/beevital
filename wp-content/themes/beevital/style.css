@@ -6369,7 +6369,7 @@ aside div.fixed{
 	opacity:1;
 }
 
-aside div.fixed a.close{
+aside div.fixed button.close{
 	position:absolute;
 	top:0.8rem;
 	right:0.8rem;

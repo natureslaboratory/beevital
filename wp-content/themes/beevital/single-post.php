@@ -102,7 +102,7 @@
 <?php get_footer(); ?>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script>
-	$('a.close').click(function(){
+	$('button.close').click(function(){
 		$('.product-highlight').hide();
 		$('.product-highlight').removeClass('open');
 	})
@@ -112,7 +112,7 @@
 			$('.product-highlight.open').fadeIn(200);
 		}
 	});
-	$('aside div.fixed a.close').click(function(){
+	$('aside div.fixed button.close').click(function(){
 	    $('aside div.fixed').fadeOut();
     });
 </script>

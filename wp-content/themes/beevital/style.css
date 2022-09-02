@@ -6620,7 +6620,7 @@ a.wc-block-grid__product-link{
 	margin-left:0.5rem;
 }
 
-.product-highlight a.close{
+.product-highlight button.close{
 	display:none;
 }
 
@@ -6643,7 +6643,7 @@ a.wc-block-grid__product-link{
 	.product-highlight p.price{
 		display:none;
 	}
-	#content-page .product-highlight a.close{
+	#content-page .product-highlight button.close{
 		display:block;
 		position: absolute;
 		top: -0.5rem;

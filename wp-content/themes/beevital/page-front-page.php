@@ -476,7 +476,7 @@
 
                         <div class="column image">
 
-                            <img src="<?php echo the_post_thumbnail($post->ID, 'large'); ?>" loading="lazy" alt="" />
+                            <?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
 
                         </div>
 

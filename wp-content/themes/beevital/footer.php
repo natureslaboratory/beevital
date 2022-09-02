@@ -334,19 +334,19 @@ form#forminator-module-1537,form#forminator-module-1551{
         }
     });
     
-    jQuery(document).ready(function(){
+    $(document).ready(function(){
 	 
-	    jQuery('.variations select').change(function(){
-		  	var variant = jQuery('.variations select').val();
+	    $('.variations select').change(function(){
+		  	var variant = $('.variations select').val();
 		  	if(variant !== ''){
-			  	jQuery('#product_main .description .price').hide();
+			  	$('#product_main .description .price').hide();
 		  	}else{
-			  	jQuery('#product_main .description .price').show();
+			  	$('#product_main .description .price').show();
 		  	}
 	    });
 	    
-	    jQuery('aside div.fixed a.close').click(function(){
-		    jQuery('aside div.fixed').fadeOut();
+	    $('aside div.fixed a.close').click(function(){
+		    $('aside div.fixed').fadeOut();
 	    })
     
     });

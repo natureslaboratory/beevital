@@ -100,6 +100,7 @@
     </div>
 </div>
 <?php get_footer(); ?>
+<script src="https://code.$.com/$-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script>
 	$('a.close').click(function(){
 		$('.product-highlight').hide();

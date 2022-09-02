@@ -334,18 +334,22 @@ form#forminator-module-1537,form#forminator-module-1551{
         }
     });
     
-    jQuery('.variations select').change(function(){
-	  	var variant = jQuery('.variations select').val();
-	  	if(variant !== ''){
-		  	jQuery('#product_main .description .price').hide();
-	  	}else{
-		  	jQuery('#product_main .description .price').show();
-	  	}
-    });
+    jQuery(document).ready(function(){
+	 
+	    jQuery('.variations select').change(function(){
+		  	var variant = jQuery('.variations select').val();
+		  	if(variant !== ''){
+			  	jQuery('#product_main .description .price').hide();
+		  	}else{
+			  	jQuery('#product_main .description .price').show();
+		  	}
+	    });
+	    
+	    jQuery('aside div.fixed a.close').click(function(){
+		    jQuery('aside div.fixed').fadeOut();
+	    })
     
-    jQuery('aside div.fixed a.close').click(function(){
-	    jQuery('aside div.fixed').fadeOut();
-    })
+    });
 
 </script>
 

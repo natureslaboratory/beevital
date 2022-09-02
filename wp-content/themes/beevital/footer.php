@@ -388,19 +388,6 @@ form#forminator-module-1537,form#forminator-module-1551{
     wl.src = 'https://assistant.woorank.com/hydra/assistantLoader.latest.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wl, s);
   })();
-  
-jQuery('.variations select').change(function(){
-		  	var variant = jQuery('.variations select').val();
-		  	if(variant !== ''){
-			  	jQuery('#product_main .description .price').hide();
-		  	}else{
-			  	jQuery('#product_main .description .price').show();
-		  	}
-	    });
-	    
-	    jQuery('aside div.fixed a.close').click(function(){
-		    jQuery('aside div.fixed').fadeOut();
-	    });
 </script>
 
 </body>

@@ -62,7 +62,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_uk_delivery.webp'); ?>" alt="Delivery" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_uk_delivery.webp'); ?>" alt="Delivery" loading="lazy" />
             </div>
 
             <div class="text">
@@ -75,7 +75,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_returns.webp'); ?>" alt="Returns" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/free_returns.webp'); ?>" alt="Returns" loading="lazy" />
             </div>
 
             <div class="text">
@@ -88,7 +88,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/secured_payments.webp'); ?>" alt="Payments" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/secured_payments.webp'); ?>" alt="Payments" loading="lazy" />
             </div>
 
             <div class="text">
@@ -101,7 +101,7 @@
         <div class="column">
 
             <div class="icon">
-                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/customer_service.webp'); ?>" alt="Service" />
+                <img src="<?php bv__getThemeImageUrl('global/misc/banner_icons/customer_service.webp'); ?>" alt="Service" loading="lazy" />
             </div>
 
             <div class="text">
@@ -297,7 +297,7 @@
             </div>
 
             <div class="column honey_bee">
-                <img src="<?php bv__getThemeImageUrl('home/natures_pharmacist/honey_bee.webp'); ?>" alt="Honey" />
+                <img src="<?php bv__getThemeImageUrl('home/natures_pharmacist/honey_bee.webp'); ?>" alt="Honey" loading="lazy" />
             </div>
 
             <div class="column">
@@ -375,15 +375,15 @@
     <div class="accreditation_logos">
 
         <div class="logo">
-            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/iso.webp'); ?>" alt="ISO" />
+            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/iso.webp'); ?>" alt="ISO" loading="lazy" />
         </div>
 
         <div class="logo">
-            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/soil_association_organic.webp'); ?>" alt="Organic Certification" />
+            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/soil_association_organic.webp'); ?>" loading="lazy" alt="Organic Certification" />
         </div>
 
         <div class="logo">
-            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/living_wage_employer.webp'); ?>" alt="Living Wage Employer" />
+            <img src="<?php bv__getThemeImageUrl('home/accreditation_logos/living_wage_employer.webp'); ?>" loading="lazy" alt="Living Wage Employer" />
         </div>
 
     </div>

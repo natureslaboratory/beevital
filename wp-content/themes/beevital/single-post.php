@@ -12,7 +12,7 @@
 
 			        echo '
 			        <div class="product-highlight open">
-			        <a class="close">&times</a>
+			        <button class="close">&times</button>
 			        <p>Product Highlight</p>
 			        <a href="/product/'.$product->get_slug().'"><img src="'.$image[0].'" alt="'.$product->get_name().'" /></a>
 			        <h2><a href="/product/'.$product->get_slug().'">'.$product->get_name().'
@@ -24,9 +24,6 @@
 			    endif;
 		    ?>
 		    <div>
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_inline_share_toolbox" style="margin-bottom:1rem;"></div>
-				<!-- <ul id="categories-list"><?php bv__outputPostCategoryList(get_the_ID()); ?></ul> -->
 				<?php the_content(); ?>
 		    </div>
         	<aside>
@@ -42,8 +39,8 @@
 						  onsubmit="window.open('https://buttondown.email/beevital', 'popupwindow')"
 						  class="embeddable-buttondown-form"
 						>
-						  <label for="bd-email">Enter your email</label>
-						  <input type="email" name="email" id="bd-email" placeholder="you@example.com" />
+						  <label for="bd-email-sidebar">Enter your email</label>
+						  <input type="email" name="email" id="bd-email-sidebar" placeholder="you@example.com" />
 						  <button type="submit" class="single_add_to_cart_button block_cta">Sign Up</button>
 						</form>
 		        	</div>
@@ -118,5 +115,3 @@
 	    jQuery('aside div.fixed').fadeOut();
     });
 </script>
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-630dcb45a6fab5be"></script>

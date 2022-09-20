@@ -10,11 +10,11 @@
                 <div>
 
                     <div class="heading large">
-                        <h1>What is propolis?</h1>
+                        <h1>Guaranteed Flavonoid Level</h1>
                     </div>
 
                     <div class="text">
-                        <p class="large">Propolis is produced by honey bees. They make it by combining resins harvested from plants and trees with enzymes. They use it to protect their hives from infection - but it has also been used as a medicine by humans for thousands of years!</p>
+                        <p class="large">Propolis contains around 50% plant and tree resins, which contain high concentrations of flavonoids. Flavonoids are the natural chemicals which give propolis its medicinal properties. At BeeVital we want to produce products which are highly effective. To that end we have developed a standard which enables us to offer a Guaranteed Flavonoid Level - a key indicator of quality and efficacy.</p>
                     </div>
 
                 </div>

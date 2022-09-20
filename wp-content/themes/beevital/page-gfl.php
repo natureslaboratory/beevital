@@ -1,3 +1,4 @@
+<?php /* Template Name: GFL */ ?>
 <?php get_header(); ?>
 <div class="color_bg">
     <div class="container__outer">

@@ -165,26 +165,28 @@
                         	Below you'll find links to our flavonoid analysis documentation, along with the batch numbers and products which the analysis relates to. 
                         </p>
                         
-                        <table>
-	                        <thead>
-		                        <tr>
-			                        <th>Product Type</th>
-			                        <th>Batch Numbers</th>
-			                        <th>Analysis</th>
-			                        <th>Flavonoid %</th>
-			                        <th>Resultant GFL</th>
-		                        </tr>
-	                        </thead>
-	                        <tbody>
-	                        	<tr>
-		                    	    <td>Capsules</td>
-		                    	    <td></td>
-		                    	    <td><a href="https://www.dropbox.com/s/7bwptlbhol6lqgh/PI2209090217.pdf?dl=0">Download</a></td>
-		                    	    <td>5.6%</td>
-		                    	    <td>33.6mg/capsule</td>
-	                        	</tr>
-	                        </tbody>
-                        </table>
+                        <div class="wp-block-table">
+	                        <table>
+		                        <thead>
+			                        <tr>
+				                        <th>Product Type</th>
+				                        <th>Batch Numbers</th>
+				                        <th>Analysis</th>
+				                        <th>Flavonoid %</th>
+				                        <th>Resultant GFL</th>
+			                        </tr>
+		                        </thead>
+		                        <tbody>
+		                        	<tr>
+			                    	    <td>Capsules</td>
+			                    	    <td></td>
+			                    	    <td><a href="https://www.dropbox.com/s/7bwptlbhol6lqgh/PI2209090217.pdf?dl=0">Download</a></td>
+			                    	    <td>5.6%</td>
+			                    	    <td>33.6mg/capsule</td>
+		                        	</tr>
+		                        </tbody>
+	                        </table>
+                        </div>
 
                     </div>
 

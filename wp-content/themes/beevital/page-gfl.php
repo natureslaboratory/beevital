@@ -14,7 +14,7 @@
                     </div>
 
                     <div class="text">
-                        <p class="large">Propolis contains around 50% plant and tree resins, which contain high concentrations of flavonoids. Flavonoids are the natural chemicals which give propolis its medicinal properties. At BeeVital we want to produce products which are highly effective. To that end we have developed a standard which enables us to offer a Guaranteed Flavonoid Level - a key indicator of quality and efficacy.</p>
+                        <p class="large">Propolis contains around 50% plant and tree resins, which contain high concentrations of flavonoids. Flavonoids are the natural chemicals which give propolis its medicinal properties.</p>
                     </div>
 
                 </div>
@@ -27,28 +27,7 @@
 
             </div>
 
-            <div class="vertical_icons">
-
-                <div class="icon">
-                    <i class="far fa-seedling"></i>
-                </div>
-
-                <div class="icon">
-                    <i class="fas fa-plus"></i>
-                </div>
-
-                <div class="icon">
-                    <img src="<?php bv__getThemeImageUrl('global/misc/vertical_icons/bee.png'); ?>" alt="Bee" />
-                </div>
-
-                <div class="icon">
-                    <i class="fas fa-equals"></i>
-                </div>
-
-                    <i class="far fa-heart"></i>
-                </div>
-
-            </div>
+            <?php bv__includeTemplate('partials/vertical_icons') ?>
 
         </div>
         <!-- END OF PAGE INTRO -->
@@ -68,7 +47,7 @@
                 <div class="main_header">
 
                     <div class="heading">
-                        <strong>Early use</strong> of propolis
+                        <strong>Quality</strong> and Efficacy
                     </div>
 
                 </div>
@@ -89,11 +68,11 @@
                 <div class="column mw_410">
 
                     <p>
-                        The Egyptian priest-doctors first utilised propolis as a medicine, having observed it's role in the hive and already used it successfully for mummification.
+                    	At BeeVital we want to produce products which are both high quality and highly effective. To that end we have developed a standard which enables us to offer a Guaranteed Flavonoid Level - a key indicator of quality and efficacy.
                     </p>
 
                     <p>
-                        Propolis has been referred to in medical treatises from Arab, Greek and Roman times right up to the late nineteenth century - being cited as a natural aid for a variety of health problems, including respiratory and joint problems as well as infections and skin diseases.
+                    	Initially this standard only applies to our range of <a href="/product/propolis-capsules">Propolis Capsules</a>, but we will be applying the same standard to products across our range in 2023.
                     </p>
 
                 </div>
@@ -103,7 +82,7 @@
                     <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('propolis/early_use.jpg'); ?>');"></div>
 
                     <div class="caption">
-                        Ancient Egyptians used propolis
+                        Science and Nature Combined
                     </div>
 
                 </div>
@@ -121,15 +100,15 @@
                     <div class="text">
 
                         <div class="heading">
-                            <strong>Decline</strong> in use
+                            <strong>Accurately Measuring</strong> Flavonoid Content
                         </div>
 
                         <p>
-                            With the advent of modern synthetic drug-based medicines, around 100 years ago in the West, the use of propolis along with other natural products began to decline in favour of the New Medicine. Much of modern medicine is derived from plant sources but now based on single active ingredients designed to target specific health problems.
+                        	In order to demonstrate transparency and accountability we have chosen to use a third-party laboratory to undertake our testing. We have also chosen to publish our analysis data in full, so that it can be scrutinised by our customers.
                         </p>
 
                         <p>
-                            Only in Eastern Europe - Russia, Romania, the old Yugoslavia, Bulgaria, Poland, did propolis continue to be used and its scientific basis researched. Medical institutes in Russia since the 1930's have carried out a great deal of practical research into the chemical structure and in particular the antibiotic function of propolis.
+                        	Lots of companies make claims about their products, without providing data as proof or explaining their methods. At BeeVital we want our products to be recognised for their high quality and effectiveness and part of that means making our findings available and understandable.
                         </p>
 
                     </div>
@@ -145,7 +124,7 @@
                     <div class="text left">
 
                         <p>
-                            A renaissance of interest in the West came in the 1960's and 70's with the work of Dr. Aagard Lund in Denmark and Dr. Remy Chauvin in France. Dr. Lund describes an incredible variety of health problems that propolis can treat.
+                        	When BeeVital was founded back in 2002, our CEO James Fearnley wanted to ensure our products were backed by credible scientific research. BeeVital's <strong>Guaranteed Flavonoid Level</strong> standard highlights our ongoing commitment to producing the highest quality propolis products.
                         </p>
 
                     </div>
@@ -161,7 +140,7 @@
                     <div class="text right">
 
                         <p>
-                            Between 1980 and 1996 309 scientific papers were published about propolis. Nearly half of these were reports of projects conducted in Western countries. This ratio has continued to increase over the last 14 years.
+                        	As well as applying this standard to our own products, we hope other manufacturers will adopt the same standard. Doing this would enable consumers to make informed choices about the quality and efficacy of the products they buy.
                         </p>
 
                     </div>
@@ -185,24 +164,33 @@
                     <div class="text">
 
                         <div class="heading">
-                            <strong>Synergy</strong> of Propolis
+                            <strong>Flavonoid</strong> Analysis
                         </div>
 
                         <p>
-                            Many attempts have been made to isolate those particular chemicals in propolis thought to be the 'actives', but in general researchers agree that it is the combined and synergistic effect of propolis which remains most effective.
+                        	Below you'll find links to our flavonoid analysis documentation, along with the batch numbers and products which the analysis relates to. 
                         </p>
-
-                        <p>
-                            Pharmacological studies - studies which have looked at propolis in vitro i.e. not in humans - have illustrated, amongst others, the antibiotic, anti inflammatory, anti viral, antifungal, antioxidant and antiseptic properties of propolis.
-                        </p>
-
-                        <p>
-                            The fact that propolis has so many different properties makes it able to work in a whole or 'holistic' way - that is, through its ability to trigger the body's own fighting mechanisms rather than by killing or destroying specific bacteria, viruses or fungi.
-                        </p>
-
-                        <a href="/what-is-propolis/" class="inline_cta">
-                            Read more about propolis<i class="far fa-long-arrow-right"></i>
-                        </a>
+                        
+                        <table>
+	                        <thead>
+		                        <tr>
+			                        <th>Product Type</th>
+			                        <th>Batch Numbers</th>
+			                        <th>Analysis</th>
+			                        <th>Flavonoid %</th>
+			                        <th>Resultant GFL</th>
+		                        </tr>
+	                        </thead>
+	                        <tbody>
+	                        	<tr>
+		                    	    <td>Capsules</td>
+		                    	    <td></td>
+		                    	    <td><a href="https://www.dropbox.com/s/7bwptlbhol6lqgh/PI2209090217.pdf?dl=0">Download</a></td>
+		                    	    <td>5.6%</td>
+		                    	    <td>33.6mg/capsule</td>
+	                        	</tr>
+	                        </tbody>
+                        </table>
 
                     </div>
 

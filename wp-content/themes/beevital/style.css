@@ -6692,3 +6692,9 @@ button.forminator-button.forminator-button-submit {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
+
+.wp-block-table table thead tr th{
+	text-align: left;
+	font-weight:700;
+	border-bottom:2px solid #eee;
+}

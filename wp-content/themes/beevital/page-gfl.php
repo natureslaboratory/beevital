@@ -19,12 +19,6 @@
 
                 </div>
 
-                <div class="image_wrapper">
-                    <div class="image">
-                        <img src="<?php bv__getThemeImageUrl('remedies/plants_bees.png'); ?>" alt="Plant and Bee" />
-                    </div>
-                </div>
-
             </div>
 
             <?php bv__includeTemplate('partials/vertical_icons') ?>

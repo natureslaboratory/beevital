@@ -73,7 +73,7 @@
 
                 <div class="column image_wrapper">
 
-                    <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('propolis/early_use.jpg'); ?>');"></div>
+                    <div class="image" style="background-image: url('<?php bv__getThemeImageUrl('propolis/science.jpg'); ?>');"></div>
 
                     <div class="caption">
                         Science and Nature Combined
@@ -87,7 +87,7 @@
 
         <div class="container__inner mw_1366" id="propolis">
 
-            <div class="decline_in_use" style="background-image: url('<?php bv__getThemeImageUrl('propolis/decline_in_use.png'); ?>');">
+            <div class="decline_in_use" style="background-image: url('<?php bv__getThemeImageUrl('propolis/hplc.jpg'); ?>');">
 
                 <div class="container__inner mw_1146">
 

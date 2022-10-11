@@ -178,7 +178,7 @@
 		                        </thead>
 		                        <tbody>
 		                        	<tr>
-			                    	    <td>Capsules</td>
+			                    	    <td>Capsules (700mg)</td>
 			                    	    <td>B0711</td>
 			                    	    <td><a href="https://www.dropbox.com/s/7bwptlbhol6lqgh/PI2209090217.pdf?dl=0">Download</a></td>
 			                    	    <td>5.6%</td>

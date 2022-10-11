@@ -187,6 +187,8 @@
 		                        </tbody>
 	                        </table>
                         </div>
+                        
+                        <p>When calculating mg/capsule we account for 600mg of propolis powder blend in the capsule, deducting the weight of the vegetable cellulose capsule itself from the total weight of the capsule.</p>
 
                     </div>
 

@@ -5613,7 +5613,7 @@ OVERRIDE THE STEPS PLUGIN STYLE ON TABS
 p.stock {
   font-weight: 700;
   font-size: 0.9rem;
-  display:none;
+  display:none !important;
 }
 
 p.stock.out-of-stock {

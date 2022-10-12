@@ -10,13 +10,19 @@
                 <div>
 
                     <div class="heading large">
-                        <h1>Guaranteed Flavonoid Level</h1>
+                        <h1>Guaranteed Flavonoid Level (GFL)</h1>
                     </div>
 
                     <div class="text">
                         <p class="large">Propolis contains around 50% plant and tree resins, which contain high concentrations of flavonoids. Flavonoids are the natural chemicals which give propolis its medicinal properties.</p>
                     </div>
 
+                </div>
+                
+                <div class="image_wrapper">
+                    <div class="image">
+                        <img src="<?php bv__getThemeImageUrl('propolis/gfl.png'); ?>" alt="Plant and Bee" />
+                    </div>
                 </div>
 
             </div>

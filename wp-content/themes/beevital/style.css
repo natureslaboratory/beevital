@@ -2833,11 +2833,12 @@ body.open #mobile_nav {
     display: none;
   }
   #product_main .description .type {
+	font-size:1rem;
     margin-bottom: 5px;
   }
   #product_main .description .heading {
-    font-size: 2.125em;
-    margin-bottom: 20px;
+    font-size: 1.6em;
+    /**margin-bottom: 20px;**/
   }
   #product_main .description .price {
     font-size: 1.25em;
@@ -2880,7 +2881,7 @@ body.open #mobile_nav {
     display: block;
   }
   #product_main .description .block_cta {
-    width: 100%;
+    width: calc(100% - 27px);
     padding-right: 20px;
     padding-left: 20px;
     margin-right: 0;
@@ -5612,6 +5613,7 @@ OVERRIDE THE STEPS PLUGIN STYLE ON TABS
 p.stock {
   font-weight: 700;
   font-size: 0.9rem;
+  display:none;
 }
 
 p.stock.out-of-stock {

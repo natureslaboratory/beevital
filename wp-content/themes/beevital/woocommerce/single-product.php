@@ -40,7 +40,9 @@ if (!is_object($product)) {
 
                 <div class="price">
                     <?= wc_price(wc_get_price_including_tax($product)) ?>
+                    <p>&#9733;&#9733;&#9733;&#9733;&#9733; <small style="font-size:0.8rem;">4.6</small></p>
                 </div>
+
 
                 <div class="woocommerce c-rating">
                     <?php woocommerce_template_single_rating() ?>

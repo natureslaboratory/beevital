@@ -251,6 +251,39 @@
 	#product_main .description .options .quantity_select_wrapper{
 		margin-top:4px;
 	}
+	
+	@media screen and (max-width:1023px){
+		#product_main .description .block_cta{
+			margin-top:0px;
+			height:50px;
+			width: calc(100% - 27px);
+		}	
+		#variations_form .description .block_cta{
+			width:100%;
+		}
+		#product_main{
+			padding:27px 0px;
+		}
+		#product_main .description .options{
+			margin-top:0px;
+		}
+		.woocommerce-variation.single_variation{
+			margin-bottom:0px;
+		}
+		#variations_form{
+			display:grid;
+			grid-template-columns: 140px auto;
+			grid-column-gap: 1rem;
+		}
+		.woocommerce-variation.single_variation{
+			grid-column: 1 / 3;
+			margin-bottom:0.5rem;
+		}
+		.reset_variations{
+			grid-row: 3;
+			display:none !important;
+		}
+	}
     </style>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/beevital/images/favicon/apple-touch-icon.png">

@@ -12,9 +12,11 @@
 
                 <div class="text">
 
+<!--
                     <div class="hashtag">
                         #beevital
                     </div>
+-->
 
                     <div class="heading large">
                         <h1>Propolis</h1>
@@ -22,7 +24,11 @@
                     </div>
 
                     <p>
-                        BeeVital are world-leaders in the development of propolis-based health supplements, supported by the latest scientific research.
+                        Natural health supplements which support your body's immune system
+                    </p>
+                    
+                    <p>
+	                    &#9733;&#9733;&#9733;&#9733;&#9733; <small style="font-size:0.8rem;">4.6 &bull; Trustpilot</small>
                     </p>
 
                 </div>
@@ -35,8 +41,9 @@
 
                 <div class="made_in">
                     <p>
-                        Made in Whitby
-                        <span class="new_line">United Kingdom</span>
+                        World-leaders in propolis research
+                        <span class="new_line">Scientifically proven results</span>
+                        <span class="new_line">Made in Whitby, United Kingdom</span>
                     </p>
                 </div>
 

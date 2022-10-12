@@ -47,7 +47,7 @@ $variations_attr = function_exists('wc_esc_json') ? wc_esc_json($variations_json
 
                 <?php foreach ($attributes as $attribute_name => $options) : $label = wc_attribute_label($attribute_name); ?>
                     <div class="<?php echo strtolower($attribute_name); ?>">
-                        <label class="attribute-label"><?php echo $label; ?>: </label>
+<!--                         <label class="attribute-label"><?php echo $label; ?>: </label> -->
                         <?php
                         wc_dropdown_variation_attribute_options(
                             array(
@@ -57,7 +57,7 @@ $variations_attr = function_exists('wc_esc_json') ? wc_esc_json($variations_json
                                 'class' => "variation__dropdown"
                             )
                         );
-                        echo end($attribute_keys) === $attribute_name ? wp_kses_post(apply_filters('woocommerce_reset_variations_link', '<a id="reset_link" class="reset_variations" href="#">' . esc_html__('Clear Selection', 'woocommerce') . '</a>')) : '';
+                        echo end($attribute_keys) === $attribute_name ? wp_kses_post(apply_filters('woocommerce_reset_variations_link', '<a id="reset_link" class="reset_variations" href="#" style="display:none;grid-row:3">' . esc_html__('Clear Selection', 'woocommerce') . '</a>')) : '';
                         ?>
 
                     </div>
@@ -86,22 +86,25 @@ $variations_attr = function_exists('wc_esc_json') ? wc_esc_json($variations_json
 
                 do_action('woocommerce_before_add_to_cart_quantity'); ?>
 
-
-                <div class="quantity__wrapper">
-                    <label for="quantity">Qty:</label>
-                    <select name="quantity" id="quantity" class="qty">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </div>
+				<div style="display:none;">
+	
+	                <div class="quantity__wrapper">
+	                    <label for="quantity">Qty:</label>
+	                    <select name="quantity" id="quantity" class="qty">
+	                        <option value="1">1</option>
+	                        <option value="2">2</option>
+	                        <option value="3">3</option>
+	                        <option value="4">4</option>
+	                        <option value="5">5</option>
+	                        <option value="6">6</option>
+	                        <option value="7">7</option>
+	                        <option value="8">8</option>
+	                        <option value="9">9</option>
+	                        <option value="10">10</option>
+	                    </select>
+	                </div>
+                
+				</div>
 
                 <?php do_action('woocommerce_after_add_to_cart_quantity');
 
@@ -129,9 +132,10 @@ $variations_attr = function_exists('wc_esc_json') ? wc_esc_json($variations_json
 
             const mainPrice = document.getElementsByClassName("price")[0];
             const variationData = document.getElementsByClassName("single-variation")[0];
-            const variationDropdown = document.getElementsByClassName("variation__dropdown")[0];
+            const variationDropdown = document.getElementsByClassName("pa_container-size-capsules")[0];
 
             variationDropdown.addEventListener("change", (e) => {
+	            console.log('hello');
                 if (e.target.value) {
                     mainPrice.style.display = "none";
                 } else {
@@ -139,12 +143,14 @@ $variations_attr = function_exists('wc_esc_json') ? wc_esc_json($variations_json
                 }
             })
             
+            
+            
             const observer = new MutationObserver(m => {
                 m.forEach(mr => {
                     console.log("style changed");
                 })
             })
-
+		
             //observer.observe(variationData, { attributes: true, attributeFilter: ['style'] });
 
         </script>

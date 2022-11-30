@@ -1514,3 +1514,14 @@ function beevital_billing_fields( $checkout_fields ) {
 
 	return $checkout_fields;
 }
+
+//Hide “From:$X”
+add_filter('woocommerce_get_price_html', 'lw_hide_variation_price', 10, 2);
+function lw_hide_variation_price( $v_price, $v_product ) {
+$v_product_types = array( 'variable');
+if ( in_array ( $v_product->product_type, $v_product_types ) && !(is_shop()) ) {
+return '';
+}
+// return regular price
+return $v_price;
+}

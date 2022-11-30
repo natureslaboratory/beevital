@@ -156,10 +156,12 @@ $variations_attr = function_exists('wc_esc_json') ? wc_esc_json($variations_json
                     console.log("style changed");
                 })
             })
+            
 		
             //observer.observe(variationData, { attributes: true, attributeFilter: ['style'] });
 
         </script>
+        <style>.price{display:none;}</style>
         <button type="submit" class="single_add_to_cart_button block_cta">
             <i class="fas fa-plus"></i>Add to basket
         </button>

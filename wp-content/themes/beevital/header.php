@@ -199,7 +199,7 @@
 	
 	#product_main .description .options{
 		margin-bottom:0px;
-		margin-top:1rem;
+		margin-top:0;
 	}
 	
 	.nav.upper{

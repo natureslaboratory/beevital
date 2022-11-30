@@ -137,7 +137,7 @@ $variations_attr = function_exists('wc_esc_json') ? wc_esc_json($variations_json
 			{
 				const variationDropdown = document.getElementsByClassName("pa_container-size-capsules")[0];
 			}else{
-				const variationDropdown = document.getElementsByClassName("pa_multipack")[0];	
+				const variationDropdown = document.getElementsByID("pa_multipack")[0];	
 			}
 
             variationDropdown.addEventListener("change", (e) => {
